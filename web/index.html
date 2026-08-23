@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>配料侠 · 帮你读懂每一口</title>
+<style>
+  :root {
+    --brand:#2E7D32; --brand-light:#4CAF50;
+    --safe:#2E7D32; --safe-bg:#E8F5E9;
+    --caution:#EF6C00; --caution-bg:#FFF3E0;
+    --danger:#D32F2F; --danger-bg:#FFEBEE;
+    --ink:#1B2A1C; --ink-2:#5A6B5C; --ink-3:#93A294;
+    --line:#E3E9E3; --bg:#F5F7F5;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; background:var(--bg); color:var(--ink); font-size:15px; }
+  .page { max-width:480px; margin:0 auto; min-height:100vh; padding:20px 20px 96px; }
+  .card { background:#fff; border-radius:14px; padding:20px; margin-bottom:14px; }
+  .btn { display:flex; align-items:center; justify-content:center; height:54px; border-radius:27px; font-size:17px; font-weight:600; color:#fff; background:var(--brand); border:none; width:100%; cursor:pointer; }
+  .btn-ghost { background:#fff; color:var(--brand); border:1px solid var(--brand); }
+  .muted { color:var(--ink-2); } .tiny { font-size:12px; color:var(--ink-3); }
+  .hidden { display:none !important; }
+
+  /* 首页 */
+  .hero { text-align:center; padding:28px 0 20px; }
+  .hero h1 { font-size:28px; letter-spacing:1px; }
+  .hero p { color:var(--ink-2); font-size:13px; margin-top:8px; }
+  .scan-actions .btn { margin-bottom:12px; }
+  .sample-chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+  .chip { border:1px solid var(--line); background:#fff; border-radius:16px; padding:7px 13px; font-size:13px; cursor:pointer; }
+  .chip.on { background:var(--brand); color:#fff; border-color:var(--brand); }
+  .profile-bar { display:flex; justify-content:space-between; align-items:center; }
+  .demo-note { background:#FFF8E1; border-radius:10px; padding:10px 14px; font-size:12px; color:#8d6e00; margin-bottom:14px; }
+  textarea { width:100%; min-height:90px; border:1px solid var(--line); border-radius:10px; padding:12px; font-size:14px; font-family:inherit; resize:vertical; }
+
+  /* 分析中 */
+  .analyzing { text-align:center; padding-top:80px; }
+  .spinner { width:56px; height:56px; border:5px solid var(--line); border-top-color:var(--brand); border-radius:50%; margin:0 auto 24px; animation:spin 1s linear infinite; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .stage { color:var(--ink-2); font-size:14px; min-height:22px; }
+  .preview-img { width:120px; height:120px; object-fit:cover; border-radius:12px; margin-bottom:20px; }
+
+  /* 结果页 */
+  .verdict-banner { border-radius:14px; padding:22px 20px; color:#fff; margin-bottom:14px; }
+  .verdict-banner .v-label { font-size:24px; font-weight:700; }
+  .verdict-banner .v-text { margin-top:8px; font-size:14px; opacity:.95; line-height:1.6; }
+  .score-row { display:flex; align-items:center; gap:12px; margin-top:14px; }
+  .score-bar { flex:1; height:8px; background:rgba(255,255,255,.35); border-radius:4px; overflow:hidden; }
+  .score-bar > div { height:100%; background:#fff; }
+  .flag { display:flex; gap:10px; padding:12px 0; border-bottom:1px solid var(--line); }
+  .flag:last-child { border-bottom:none; }
+  .flag .dot { width:10px; height:10px; border-radius:50%; margin-top:6px; flex:none; }
+  .flag .f-name { font-weight:600; font-size:14px; }
+  .flag .f-reason { color:var(--ink-2); font-size:13px; margin-top:3px; line-height:1.5; }
+  .ing-row { display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid var(--line); font-size:14px; }
+  .ing-row:last-child { border-bottom:none; }
+  .ing-name { flex:none; min-width:88px; font-weight:500; }
+  .ing-tag { flex:none; font-size:11px; border-radius:8px; padding:2px 8px; margin-top:1px; }
+  .ing-explain { color:var(--ink-2); font-size:12px; line-height:1.5; }
+  .disclaimer { font-size:11px; color:var(--ink-3); line-height:1.7; margin-top:6px; }
+
+  /* 档案/历史 */
+  .opt-group { margin-bottom:18px; }
+  .opt-title { font-size:14px; font-weight:600; margin-bottom:10px; }
+  .history-item { display:flex; justify-content:space-between; align-items:center; padding:14px 0; border-bottom:1px solid var(--line); cursor:pointer; }
+  .history-item:last-child { border-bottom:none; }
+  .v-badge { font-size:12px; border-radius:10px; padding:3px 10px; }
+
+  /* 底部 tab */
+  .tabbar { position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid var(--line); display:flex; max-width:480px; margin:0 auto; }
+  .tabbar a { flex:1; text-align:center; padding:12px 0 18px; font-size:12px; color:var(--ink-2); text-decoration:none; }
+  .tabbar a.on { color:var(--brand); font-weight:600; }
+  .tabbar a span { display:block; font-size:20px; margin-bottom:2px; }
+
+  /* 样本选择弹层 */
+  .sheet-mask { position:fixed; inset:0; background:rgba(0,0,0,.4); z-index:20; }
+  .sheet { position:fixed; left:0; right:0; bottom:0; background:#fff; border-radius:16px 16px 0 0; padding:20px; z-index:21; max-width:480px; margin:0 auto; }
+  .sheet h3 { font-size:16px; margin-bottom:6px; }
+  .sheet-item { padding:14px 6px; border-bottom:1px solid var(--line); cursor:pointer; }
+  .sheet-item:last-child { border-bottom:none; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 首页 -->
+  <div id="view-home">
+    <div class="hero">
+      <h1>配料侠</h1>
+      <p>帮你读懂每一口 · 配料风险提示与更优选择</p>
+    </div>
+    <div class="demo-note">网页演示版：拍照/扫码后暂以样本商品演示分析效果（正式版小程序接入通义千问 OCR 自动识别）。规则引擎为真实运行，结论随健康档案实时变化。</div>
+    <div class="scan-actions">
+      <button class="btn" id="btnPhoto">📷 拍配料表</button>
+      <button class="btn btn-ghost" id="btnBarcode">扫商品条码</button>
+      <input type="file" id="fileInput" accept="image/*" capture="environment" class="hidden">
+    </div>
+    <div class="card">
+      <div style="font-weight:600;margin-bottom:4px">试试样本商品</div>
+      <div class="tiny" style="margin-bottom:6px">点击直接查看分析结果</div>
+      <div class="sample-chips" id="sampleChips"></div>
+    </div>
+    <div class="card">
+      <div style="font-weight:600;margin-bottom:8px">手动输入配料表</div>
+      <textarea id="manualInput" placeholder="粘贴或输入配料，如：小麦粉、白砂糖、人造奶油、山梨酸钾"></textarea>
+      <button class="btn btn-ghost" id="btnManual" style="margin-top:10px">分析这段配料</button>
+    </div>
+    <div class="card profile-bar" onclick="showView('profile')">
+      <div>
+        <div style="font-weight:600">我的健康档案</div>
+        <div class="tiny" id="profileSummary" style="margin-top:4px"></div>
+      </div>
+      <div style="color:var(--ink-3)">›</div>
+    </div>
+    <div class="card profile-bar" onclick="location.href='kb.html'">
+      <div>
+        <div style="font-weight:600">知识库（浏览 + 营养师审核）</div>
+        <div class="tiny" style="margin-top:4px">统一列表：筛选查找 · 详情解读 · 底部可编辑审定</div>
+      </div>
+      <div style="color:var(--ink-3)">›</div>
+    </div>
+  </div>
+
+  <!-- 分析中 -->
+  <div id="view-analyzing" class="hidden">
+    <div class="analyzing">
+      <img id="analyzingImg" class="preview-img hidden" alt="">
+      <div class="spinner"></div>
+      <div class="stage" id="stageText">正在识别配料表…</div>
+    </div>
+  </div>
+
+  <!-- 结果页 -->
+  <div id="view-result" class="hidden">
+    <div class="verdict-banner" id="verdictBanner">
+      <div class="v-label" id="vLabel"></div>
+      <div class="v-text" id="vText"></div>
+      <div class="score-row">
+        <span style="font-size:12px">配料评分</span>
+        <div class="score-bar"><div id="scoreFill"></div></div>
+        <span id="scoreNum" style="font-weight:700"></span>
+      </div>
+    </div>
+    <div class="card" id="flagsCard">
+      <div style="font-weight:600;margin-bottom:4px">风险提示</div>
+      <div id="flagsList"></div>
+    </div>
+    <div class="card">
+      <div style="font-weight:600;margin-bottom:4px">逐行配料解读</div>
+      <div id="ingList"></div>
+    </div>
+    <div class="card">
+      <div class="disclaimer">本结果为配料成分风险提示与信息参考，依据公开国家标准与规则引擎得出，不构成医疗、诊断或治疗建议。营养需求因人而异，过敏体质请务必以产品包装标识为准，必要时请咨询医生或注册营养师。</div>
+    </div>
+    <button class="btn" onclick="showView('home')" style="margin-bottom:10px">再分析一个</button>
+    <button class="btn btn-ghost" onclick="showView('home')">返回首页</button>
+  </div>
+
+  <!-- 健康档案 -->
+  <div id="view-profile" class="hidden">
+    <h2 style="margin:10px 0 16px">健康档案</h2>
+    <div class="card">
+      <div class="opt-group">
+        <div class="opt-title">给谁的</div>
+        <div class="sample-chips" id="roleChips"></div>
+      </div>
+      <div class="opt-group">
+        <div class="opt-title">健康目标（可多选）</div>
+        <div class="sample-chips" id="goalChips"></div>
+      </div>
+      <div class="opt-group">
+        <div class="opt-title">过敏原（可多选，命中即判风险）</div>
+        <div class="sample-chips" id="allergenChips"></div>
+      </div>
+      <button class="btn" id="btnSaveProfile">保存档案</button>
+      <div class="tiny" style="margin-top:10px">档案仅保存在本机浏览器（localStorage），不上传服务器。</div>
+    </div>
+  </div>
+
+  <!-- 历史 -->
+  <div id="view-history" class="hidden">
+    <h2 style="margin:10px 0 16px">历史记录</h2>
+    <div class="card" id="historyList"><div class="muted" style="text-align:center;padding:24px 0">暂无记录</div></div>
+  </div>
+</div>
+
+<!-- 样本选择弹层 -->
+<div id="sheetMask" class="sheet-mask hidden" onclick="closeSheet()"></div>
+<div id="sheet" class="sheet hidden">
+  <h3>选择要演示的商品</h3>
+  <div class="tiny" style="margin-bottom:8px">演示版未接入 OCR 云服务，请选一个样本代表你拍摄的商品</div>
+  <div id="sheetList"></div>
+</div>
+
+<div class="tabbar">
+  <a href="#" id="tab-home" class="on" onclick="showView('home');return false"><span>🏠</span>首页</a>
+  <a href="#" id="tab-profile" onclick="showView('profile');return false"><span>❤️</span>档案</a>
+  <a href="#" id="tab-history" onclick="showView('history');return false"><span>🕘</span>历史</a>
+</div>
+
+<script src="../cloudfunctions/analyze/rules/data.js"></script>
+<script src="kb-bundle.js"></script>
+<script src="../cloudfunctions/analyze/rules/engine.js"></script>
+<script>
+const VERDICT_UI = {
+  safe:    { color:'#2E7D32', bg:'#E8F5E9', emoji:'🟢', label:'放心吃' },
+  caution: { color:'#EF6C00', bg:'#FFF3E0', emoji:'🟡', label:'悠着点' },
+  danger:  { color:'#D32F2F', bg:'#FFEBEE', emoji:'🔴', label:'建议避开' }
+};
+const LEVEL_UI = {
+  safe:{color:'#2E7D32',bg:'#E8F5E9',label:'安心'}, notice:{color:'#8A948A',bg:'#F1F3F1',label:'了解'},
+  warning:{color:'#EF6C00',bg:'#FFF3E0',label:'注意'}, danger:{color:'#D32F2F',bg:'#FFEBEE',label:'风险'}
+};
+const ROLES = [ {id:'adult',label:'成年人'}, {id:'child_1_3',label:'宝宝 1-3 岁'}, {id:'child_3_12',label:'儿童 3-12 岁'}, {id:'pregnant',label:'孕期'} ];
+const GOALS = [ {id:'fat_loss',label:'减脂控卡'}, {id:'sugar_control',label:'控糖'}, {id:'salt_control',label:'控盐'}, {id:'child_health',label:'儿童健康'} ];
+const ALLERGEN_LIST = ['牛奶','鸡蛋','花生','坚果','大豆','小麦','海鲜'];
+
+let samples = [];
+let pendingPhotoUrl = null;
+
+const store = {
+  get profile() { try { return JSON.parse(localStorage.getItem('plx_profile')) || { role:'adult', goals:[], allergens:[] } } catch { return { role:'adult', goals:[], allergens:[] } } },
+  set profile(v) { localStorage.setItem('plx_profile', JSON.stringify(v)) },
+  get history() { try { return JSON.parse(localStorage.getItem('plx_history')) || [] } catch { return [] } },
+  pushHistory(item) { const h = store.history; h.unshift(item); store.history = h.slice(0, 50) },
+  set history(v) { localStorage.setItem('plx_history', JSON.stringify(v)) }
+};
+
+function showView(name) {
+  ['home','analyzing','result','profile','history'].forEach(v => document.getElementById('view-' + v).classList.toggle('hidden', v !== name));
+  document.querySelectorAll('.tabbar a').forEach(a => a.classList.remove('on'));
+  const tab = document.getElementById('tab-' + name); if (tab) tab.classList.add('on');
+  if (name === 'history') renderHistory();
+  if (name === 'profile') renderProfileForm();
+  if (name === 'home') renderProfileSummary();
+  window.scrollTo(0, 0);
+}
+
+function analyze(ingredients, productName) {
+  showView('analyzing');
+  const stages = ['正在识别配料表…', '规则引擎判定中…', '结合你的健康档案…', '生成大白话解读…'];
+  let i = 0;
+  const timer = setInterval(() => { i++; if (i < stages.length) document.getElementById('stageText').textContent = stages[i]; }, 450);
+  setTimeout(() => {
+    clearInterval(timer);
+    const result = window.RuleEngine.evaluate(ingredients, store.profile);
+    renderResult(productName || '手动输入配料', result, ingredients);
+  }, 1900);
+}
+
+function renderResult(name, r, ingredients) {
+  const ui = VERDICT_UI[r.verdict] || VERDICT_UI.caution;
+  const banner = document.getElementById('verdictBanner');
+  banner.style.background = ui.color;
+  document.getElementById('vLabel').textContent = ui.emoji + ' ' + ui.label;
+  document.getElementById('vText').textContent = r.verdictText;
+  document.getElementById('scoreFill').style.width = r.score + '%';
+  document.getElementById('scoreNum').textContent = r.score;
+
+  const flagsEl = document.getElementById('flagsList');
+  document.getElementById('flagsCard').style.display = r.flags.length ? '' : 'none';
+  flagsEl.innerHTML = r.flags.map(f => {
+    const lu = LEVEL_UI[f.level] || LEVEL_UI.notice;
+    return `<div class="flag"><span class="dot" style="background:${lu.color}"></span><div><div class="f-name">${f.name}</div><div class="f-reason">${f.reason}</div></div></div>`;
+  }).join('');
+
+  document.getElementById('ingList').innerHTML = r.ingredientRows.map(row => {
+    const lu = LEVEL_UI[row.level] || LEVEL_UI.safe;
+    return `<div class="ing-row"><span class="ing-name">${row.name}</span><span class="ing-tag" style="color:${lu.color};background:${lu.bg}">${lu.label}</span><span class="ing-explain">${row.explanation || '常规成分'}</span></div>`;
+  }).join('');
+
+  store.pushHistory({ ts: Date.now(), name, verdict: r.verdict, score: r.score, result: r });
+  showView('result');
+}
+
+function renderHistory() {
+  const h = store.history;
+  const el = document.getElementById('historyList');
+  if (!h.length) { el.innerHTML = '<div class="muted" style="text-align:center;padding:24px 0">暂无记录</div>'; return; }
+  el.innerHTML = h.map((it, i) => {
+    const ui = VERDICT_UI[it.verdict] || VERDICT_UI.caution;
+    const d = new Date(it.ts);
+    return `<div class="history-item" onclick="viewHistory(${i})"><div><div style="font-weight:600;font-size:14px">${it.name}</div><div class="tiny">${d.getMonth()+1}月${d.getDate()}日 ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')} · 评分 ${it.score}</div></div><span class="v-badge" style="color:${ui.color};background:${ui.bg}">${ui.label}</span></div>`;
+  }).join('');
+}
+
+function viewHistory(i) {
+  const it = store.history[i];
+  if (it && it.result) {
+    // 重看历史不重复入栈：渲染后手动切视图
+    const before = store.history.length;
+    renderResult(it.name, it.result);
+    if (store.history.length > before) { const h = store.history; h.shift(); store.history = h; }
+  }
+}
+
+function renderProfileSummary() {
+  const p = store.profile;
+  const parts = [ROLES.find(r => r.id === p.role)?.label || '成年人'];
+  if (p.goals.length) parts.push('关注 ' + p.goals.map(g => GOALS.find(x => x.id === g)?.label || g).join('/'));
+  if (p.allergens.length) parts.push('过敏 ' + p.allergens.join('/'));
+  document.getElementById('profileSummary').textContent = parts.join(' · ');
+}
+
+let draft = null;
+function renderProfileForm() {
+  draft = JSON.parse(JSON.stringify(store.profile));
+  const mk = (elId, list, cur, multi, key) => {
+    document.getElementById(elId).innerHTML = list.map(o => {
+      const id = typeof o === 'string' ? o : o.id, label = typeof o === 'string' ? o : o.label;
+      const on = multi ? cur.includes(id) : cur === id;
+      return `<span class="chip ${on ? 'on' : ''}" data-k="${key}" data-id="${id}">${label}</span>`;
+    }).join('');
+  };
+  mk('roleChips', ROLES, draft.role, false, 'role');
+  mk('goalChips', GOALS, draft.goals, true, 'goals');
+  mk('allergenChips', ALLERGEN_LIST, draft.allergens, true, 'allergens');
+  document.querySelectorAll('#view-profile .chip').forEach(c => c.onclick = () => {
+    const { k, id } = c.dataset;
+    if (k === 'role') draft.role = id;
+    else { const arr = draft[k]; const i = arr.indexOf(id); i >= 0 ? arr.splice(i, 1) : arr.push(id); }
+    renderProfileForm();
+  });
+}
+
+document.getElementById('btnSaveProfile').onclick = () => { store.profile = draft; showView('home'); };
+
+function openSheet() {
+  document.getElementById('sheetList').innerHTML = samples.map((s, i) =>
+    `<div class="sheet-item" onclick="pickSample(${i})"><div style="font-weight:600;font-size:14px">${s.productName}</div><div class="tiny">${s.brand} · ${s.ingredients.length} 种配料</div></div>`).join('');
+  document.getElementById('sheetMask').classList.remove('hidden');
+  document.getElementById('sheet').classList.remove('hidden');
+}
+function closeSheet() {
+  document.getElementById('sheetMask').classList.add('hidden');
+  document.getElementById('sheet').classList.add('hidden');
+  pendingPhotoUrl = null;
+  document.getElementById('analyzingImg').classList.add('hidden');
+}
+function pickSample(i) {
+  const s = samples[i];
+  closeSheet();
+  analyze(s.ingredients, s.productName);
+}
+
+document.getElementById('btnPhoto').onclick = () => document.getElementById('fileInput').click();
+document.getElementById('fileInput').onchange = e => {
+  const f = e.target.files[0];
+  e.target.value = '';
+  if (!f) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    pendingPhotoUrl = reader.result;
+    const img = document.getElementById('analyzingImg');
+    img.src = pendingPhotoUrl; img.classList.remove('hidden');
+    openSheet();
+  };
+  reader.readAsDataURL(f);
+};
+document.getElementById('btnBarcode').onclick = openSheet;
+document.getElementById('btnManual').onclick = () => {
+  const text = document.getElementById('manualInput').value.trim();
+  if (!text) return;
+  const ingredients = text.split(/[、,，;；\n]+/).map(s => s.trim()).filter(Boolean);
+  if (ingredients.length) analyze(ingredients, '手动输入配料');
+};
+
+fetch('../seed/products.seed.jsonl').then(r => r.text()).then(t => {
+  samples = t.trim().split('\n').map(l => JSON.parse(l));
+  document.getElementById('sampleChips').innerHTML = samples.map((s, i) => `<span class="chip" onclick="pickSample(${i})">${s.productName}</span>`).join('');
+}).catch(() => { document.getElementById('sampleChips').innerHTML = '<span class="tiny">样本加载失败（请通过 http 服务访问）</span>'; });
+
+renderProfileSummary();
+</script>
+</body>
+</html>
