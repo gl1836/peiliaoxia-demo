@@ -1,0 +1,5 @@
+{"barcode":"6901234567890","productName":"某品牌 全麦软面包","brand":"示例品牌","ingredients":["小麦粉","全麦粉","白砂糖","植物油","人造奶油","酵母","山梨酸钾","食用盐"],"status":"verified","source":"seed"}
+{"barcode":"6923456789012","productName":"纯牛奶 250ml","brand":"示例牧场","ingredients":["生牛乳"],"status":"verified","source":"seed"}
+{"barcode":"6934567890123","productName":"草莓味乳酸菌饮品","brand":"示例乳业","ingredients":["水","白砂糖","果葡糖浆","脱脂乳粉","阿斯巴甜","安赛蜜","柠檬黄","山梨酸钾","食用香精","乳酸菌"],"status":"verified","source":"seed"}
+{"barcode":"6945678901234","productName":"香辣味薯片","brand":"示例食品","ingredients":["马铃薯","植物油","香辣调味料","食用盐","谷氨酸钠","特丁基对苯二酚"],"status":"verified","source":"seed"}
+{"barcode":"6956789012345","productName":"无糖气泡苏打水","brand":"示例饮品","ingredients":["水","二氧化碳","赤藓糖醇","柠檬酸","三氯蔗糖"],"status":"verified","source":"seed"}
