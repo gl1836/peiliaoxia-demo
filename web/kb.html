@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>配料侠 · 知识库</title>
+<style>
+  :root {
+    --brand:#2E7D32; --safe:#2E7D32; --safe-bg:#E8F5E9;
+    --caution:#EF6C00; --caution-bg:#FFF3E0; --danger:#D32F2F; --danger-bg:#FFEBEE;
+    --ink:#1B2A1C; --ink-2:#5A6B5C; --ink-3:#93A294; --line:#E3E9E3; --bg:#F5F7F5;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { font-family:-apple-system,"PingFang SC",sans-serif; background:var(--bg); color:var(--ink); font-size:15px; padding-bottom:88px; }
+  .hidden { display:none !important; }
+
+  .sticky { position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid var(--line); }
+  .topbar { max-width:720px; margin:0 auto; padding:12px 16px 0; }
+  .topbar-row { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .topbar .back { color:var(--ink-2); text-decoration:none; font-size:13px; flex:none; }
+  .topbar h1 { font-size:18px; flex:1; }
+  .count { font-size:12px; color:var(--ink-3); }
+
+  .tabs { display:flex; gap:0; border-bottom:1px solid var(--line); margin:0 -16px; padding:0 16px; }
+  .tabs button { flex:1; border:none; background:none; padding:12px 8px; font-size:14px; color:var(--ink-2); cursor:pointer; border-bottom:2px solid transparent; }
+  .tabs button.on { color:var(--brand); font-weight:600; border-bottom-color:var(--brand); }
+
+  .filter-panel { max-width:720px; margin:0 auto; padding:12px 16px 10px; }
+  .search { width:100%; border:1px solid var(--line); border-radius:10px; padding:11px 14px; font-size:14px; background:#fafafa; margin-bottom:10px; }
+  .filter-block { margin-bottom:8px; }
+  .filter-label { font-size:11px; color:var(--ink-3); margin-bottom:6px; }
+  .chips { display:flex; gap:6px; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:2px; }
+  .chips::-webkit-scrollbar { display:none; }
+  .chip { flex:none; border:1px solid var(--line); background:#fff; border-radius:14px; padding:5px 12px; font-size:12px; cursor:pointer; color:var(--ink-2); }
+  .chip.on { background:var(--brand); color:#fff; border-color:var(--brand); }
+  .chip.warn-on { background:var(--caution); border-color:var(--caution); color:#fff; }
+  .chip.danger-on { background:var(--danger); border-color:var(--danger); color:#fff; }
+
+  .wrap { max-width:720px; margin:0 auto; padding:12px 16px; }
+  .list-meta { font-size:12px; color:var(--ink-3); margin-bottom:10px; display:flex; justify-content:space-between; }
+
+  .row { background:#fff; border-radius:12px; padding:14px 14px 12px; margin-bottom:8px; cursor:pointer; border:1px solid transparent; }
+  .row:active { border-color:var(--brand); }
+  .row.reviewed { opacity:.72; }
+  .row-head { display:flex; align-items:flex-start; gap:8px; }
+  .row-name { font-weight:600; font-size:15px; flex:1; line-height:1.3; }
+  .row-arrow { color:var(--ink-3); font-size:16px; line-height:1.2; }
+  .badges { display:flex; flex-wrap:wrap; gap:5px; margin-top:7px; }
+  .badge { font-size:11px; border-radius:8px; padding:2px 8px; }
+  .b-safe { background:var(--safe-bg); color:var(--safe); }
+  .b-notice { background:#F1F3F1; color:#8A948A; }
+  .b-warning { background:var(--caution-bg); color:var(--caution); }
+  .b-danger { background:var(--danger-bg); color:var(--danger); }
+  .b-cat { background:#EEF3EE; color:var(--ink-2); }
+  .b-pending { background:#EEF2FF; color:#4A6FA5; }
+  .b-done { background:#E8F5E9; color:var(--brand); }
+  .row-sub { color:var(--ink-2); font-size:12px; margin-top:8px; line-height:1.5; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .empty { text-align:center; color:var(--ink-3); padding:56px 0; }
+
+  /* 详情页 */
+  .page-detail { position:fixed; inset:0; background:var(--bg); z-index:30; overflow-y:auto; }
+  .detail-top { position:sticky; top:0; background:#fff; border-bottom:1px solid var(--line); padding:12px 16px; display:flex; align-items:center; gap:10px; z-index:1; }
+  .detail-top button { border:none; background:none; font-size:15px; color:var(--ink-2); cursor:pointer; }
+  .detail-top h2 { font-size:16px; flex:1; }
+  .detail-body { max-width:720px; margin:0 auto; padding:16px; }
+  .detail-card { background:#fff; border-radius:12px; padding:18px; margin-bottom:12px; }
+  .detail-title { font-size:22px; font-weight:700; }
+  .d-row { margin-top:14px; }
+  .d-label { font-size:12px; color:var(--ink-3); margin-bottom:4px; }
+  .d-val { font-size:14px; line-height:1.7; }
+  .src { display:inline-block; background:#EEF3EE; border-radius:8px; padding:2px 8px; font-size:12px; color:var(--ink-2); margin:3px 4px 0 0; }
+
+  /* 营养师操作区（详情页底部） */
+  .ops { background:#fff; border-radius:12px; padding:18px; margin-bottom:12px; border:1px solid #d9e8da; }
+  .ops h3 { font-size:15px; margin-bottom:4px; }
+  .ops .hint { font-size:12px; color:var(--ink-3); margin-bottom:14px; line-height:1.5; }
+  .ops .field { margin-bottom:12px; }
+  .ops label { display:block; font-size:12px; color:var(--ink-3); margin-bottom:5px; }
+  .ops select, .ops textarea, .ops input[type=text] {
+    width:100%; border:1px solid var(--line); border-radius:8px; padding:10px 12px;
+    font-size:14px; font-family:inherit; background:#fafafa;
+  }
+  .ops textarea { min-height:72px; resize:vertical; }
+  .ops-actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+  .ops-actions button { border:none; border-radius:8px; padding:11px 16px; font-size:14px; cursor:pointer; flex:1; min-width:120px; }
+  .btn-primary { background:var(--brand); color:#fff; }
+  .btn-secondary { background:#fff; color:var(--ink); border:1px solid var(--line) !important; }
+  .btn-danger-ghost { background:#fff; color:var(--danger); border:1px solid #f0c0c0 !important; }
+  .ops-status { font-size:12px; color:var(--brand); margin-top:10px; min-height:18px; }
+
+  .footer { position:fixed; bottom:0; left:0; right:0; background:#fff; border-top:1px solid var(--line); padding:12px 16px; display:flex; gap:10px; justify-content:center; z-index:20; }
+  .footer button { border:none; border-radius:10px; padding:12px 18px; font-size:14px; cursor:pointer; }
+  .footer .btn-export { background:var(--brand); color:#fff; flex:1; max-width:280px; }
+  .footer .btn-import { background:#f0f0f0; color:var(--ink); }
+</style>
+</head>
+<body>
+
+<!-- ===== 列表页 ===== -->
+<div id="listPage">
+  <div class="sticky">
+    <div class="topbar">
+      <div class="topbar-row">
+        <a class="back" href="index.html">‹ 演示首页</a>
+        <h1>知识库</h1>
+        <span class="count" id="versionTag"></span>
+      </div>
+      <div class="tabs">
+        <button id="tabAdd" class="on">添加剂与风险成分</button>
+        <button id="tabPurine">食物嘌呤</button>
+      </div>
+    </div>
+    <div class="filter-panel">
+      <input class="search" id="search" placeholder="搜索名称 / 别名 / INS 编号…">
+      <div id="addFilters">
+        <div class="filter-block">
+          <div class="filter-label">审核状态</div>
+          <div class="chips" id="statusChips"></div>
+        </div>
+        <div class="filter-block">
+          <div class="filter-label">风险等级</div>
+          <div class="chips" id="levelChips"></div>
+        </div>
+        <div class="filter-block">
+          <div class="filter-label">成分类别</div>
+          <div class="chips" id="catChips"></div>
+        </div>
+      </div>
+      <div id="purineFilters" class="hidden">
+        <div class="filter-block">
+          <div class="filter-label">嘌呤分级</div>
+          <div class="chips" id="pclassChips"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="list-meta">
+      <span id="listCount"></span>
+      <span id="pendingHint"></span>
+    </div>
+    <div id="list"></div>
+  </div>
+</div>
+
+<!-- ===== 详情页（含底部营养师操作） ===== -->
+<div id="detailPage" class="page-detail hidden">
+  <div class="detail-top">
+    <button id="btnBack">‹ 返回列表</button>
+    <h2 id="detailHeadTitle">条目详情</h2>
+  </div>
+  <div class="detail-body" id="detailBody"></div>
+</div>
+
+<div class="footer" id="listFooter">
+  <button class="btn-import" onclick="document.getElementById('fileInput').click()">导入审核</button>
+  <input type="file" id="fileInput" accept=".json" class="hidden">
+  <button class="btn-export" id="exportBtn">导出审核结果</button>
+</div>
+
+<script src="kb-bundle.js"></script>
+<script>
+const LEVEL_LABEL = { safe:'放心', notice:'了解', warning:'警告', danger:'危险' };
+const LEVELS = ['safe','notice','warning','danger'];
+const PCLASS_LABEL = { 1:'高嘌呤', 2:'较高嘌呤', 3:'较低嘌呤', 4:'低嘌呤' };
+
+const additivesRaw = window.AdditivesKB.entries;
+const purine = window.PurineKB.entries;
+
+// 统一列表项：把"需审定"规则内嵌到每条上（与 build-kb 一致）
+function needsReview(e) {
+  const reasons = [];
+  if (e.level === 'warning' || e.level === 'danger') reasons.push('成人分级为 ' + LEVEL_LABEL[e.level]);
+  if (e.childLevel && e.childLevel !== e.level) reasons.push('儿童分级更严 (' + LEVEL_LABEL[e.childLevel] + ')');
+  if (e.confidence !== 'high') reasons.push('置信度 ' + e.confidence);
+  return reasons;
+}
+
+// 本地审核状态（localStorage）
+const STORE_KEY = 'plx_kb_review_' + window.AdditivesKB.version;
+function loadReviews() {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch { return {}; }
+}
+function saveReviews(map) { localStorage.setItem(STORE_KEY, JSON.stringify(map)); }
+let reviews = loadReviews(); // id -> { decision, adjustedLevel, adjustedChildLevel, note, explain?, childExplain? }
+
+function getEffective(e) {
+  const r = reviews[e.id];
+  if (!r) return e;
+  return {
+    ...e,
+    level: r.adjustedLevel || e.level,
+    childLevel: r.adjustedChildLevel !== undefined ? r.adjustedChildLevel : e.childLevel,
+    explain: r.explain || e.explain,
+    childExplain: r.childExplain || e.childExplain,
+    _reviewed: true,
+    _decision: r.decision,
+    _note: r.note || ''
+  };
+}
+
+const state = {
+  tab: 'add',
+  q: '',
+  status: 'all',   // all | pending | done
+  level: '',
+  category: '',
+  pclass: 0,
+  currentId: null
+};
+
+document.getElementById('versionTag').textContent = 'v' + window.AdditivesKB.version;
+
+// ---- 顶部筛选 ----
+function renderFilterChips() {
+  const cats = [...new Set(additivesRaw.map(e => e.category))];
+  document.getElementById('statusChips').innerHTML = [
+    ['all','全部'], ['pending','待审'], ['done','已审']
+  ].map(([v,l]) => `<span class="chip ${state.status===v?'on':''}" data-k="status" data-v="${v}">${l}</span>`).join('');
+
+  document.getElementById('levelChips').innerHTML =
+    `<span class="chip ${!state.level?'on':''}" data-k="level" data-v="">全部等级</span>` +
+    LEVELS.map(l => {
+      const cls = state.level===l ? (l==='danger'?'danger-on':l==='warning'?'warn-on':'on') : '';
+      return `<span class="chip ${cls}" data-k="level" data-v="${l}">${LEVEL_LABEL[l]}</span>`;
+    }).join('');
+
+  document.getElementById('catChips').innerHTML =
+    `<span class="chip ${!state.category?'on':''}" data-k="category" data-v="">全部类别</span>` +
+    cats.map(c => `<span class="chip ${state.category===c?'on':''}" data-k="category" data-v="${c}">${c}</span>`).join('');
+
+  document.getElementById('pclassChips').innerHTML =
+    `<span class="chip ${!state.pclass?'on':''}" data-k="pclass" data-v="0">全部</span>` +
+    [1,2,3,4].map(c => `<span class="chip ${state.pclass===c?'on':''}" data-k="pclass" data-v="${c}">${PCLASS_LABEL[c]}</span>`).join('');
+
+  document.querySelectorAll('.filter-panel .chip').forEach(ch => {
+    ch.onclick = () => {
+      const k = ch.dataset.k, v = ch.dataset.v;
+      if (k === 'pclass') state.pclass = +v;
+      else state[k] = v;
+      renderList();
+      renderFilterChips();
+    };
+  });
+}
+
+function filteredAdditives() {
+  return additivesRaw.map(getEffective).filter(e => {
+    const reasons = needsReview(e);
+    const isPending = reasons.length > 0 && !reviews[e.id];
+    const isDone = !!reviews[e.id];
+    if (state.status === 'pending' && !isPending) return false;
+    if (state.status === 'done' && !isDone) return false;
+    if (state.level && e.level !== state.level) return false;
+    if (state.category && e.category !== state.category) return false;
+    if (state.q) {
+      const hay = [e.name, ...(e.aliases||[]), e.ins||'', e.category, e.explain||''].join(' ');
+      if (!hay.toLowerCase().includes(state.q.toLowerCase())) return false;
+    }
+    return true;
+  });
+}
+
+function filteredPurine() {
+  return purine.filter(e => {
+    if (state.pclass && e.class !== state.pclass) return false;
+    if (state.q && !e.name.includes(state.q)) return false;
+    return true;
+  });
+}
+
+function renderList() {
+  const el = document.getElementById('list');
+  if (state.tab === 'add') {
+    const rows = filteredAdditives();
+    const pendingTotal = additivesRaw.filter(e => needsReview(e).length && !reviews[e.id]).length;
+    document.getElementById('listCount').textContent = `显示 ${rows.length} / 共 ${additivesRaw.length} 条`;
+    document.getElementById('pendingHint').textContent = pendingTotal ? `待审 ${pendingTotal} 条` : '全部已处理';
+    if (!rows.length) { el.innerHTML = '<div class="empty">没有匹配的条目，试试放宽顶部筛选</div>'; return; }
+    el.innerHTML = rows.map(e => {
+      const reasons = needsReview(e);
+      const done = !!reviews[e.id];
+      const pending = reasons.length > 0 && !done;
+      return `<div class="row ${done?'reviewed':''}" onclick="openDetail('${e.id}')">
+        <div class="row-head">
+          <div class="row-name">${e.name}${e.ins ? ` <span style="color:var(--ink-3);font-weight:400;font-size:12px">INS ${e.ins}</span>` : ''}</div>
+          <div class="row-arrow">›</div>
+        </div>
+        <div class="badges">
+          <span class="badge b-${e.level}">${LEVEL_LABEL[e.level]}</span>
+          ${e.childLevel && e.childLevel !== e.level ? `<span class="badge b-${e.childLevel}">儿童:${LEVEL_LABEL[e.childLevel]}</span>` : ''}
+          <span class="badge b-cat">${e.category}</span>
+          ${pending ? '<span class="badge b-pending">待审</span>' : ''}
+          ${done ? '<span class="badge b-done">已审</span>' : ''}
+        </div>
+        <div class="row-sub">${e.explain}</div>
+      </div>`;
+    }).join('');
+  } else {
+    const rows = filteredPurine();
+    document.getElementById('listCount').textContent = `显示 ${rows.length} / 共 ${purine.length} 条`;
+    document.getElementById('pendingHint').textContent = '来源：卫健委痛风食养指南 2024';
+    if (!rows.length) { el.innerHTML = '<div class="empty">没有匹配的食物</div>'; return; }
+    el.innerHTML = rows.map(e => {
+      const lv = e.class===1?'danger':e.class===2?'warning':e.class===3?'notice':'safe';
+      const idx = purine.indexOf(e);
+      return `<div class="row" onclick="openPurine(${idx})">
+        <div class="row-head">
+          <div class="row-name">${e.name}</div>
+          <div class="row-arrow">›</div>
+        </div>
+        <div class="badges">
+          <span class="badge b-${lv}">${e.purineMgPer100g} mg/100g</span>
+          <span class="badge b-cat">${PCLASS_LABEL[e.class]}</span>
+        </div>
+        <div class="row-sub">${e.label}</div>
+      </div>`;
+    }).join('');
+  }
+}
+
+function openDetail(id) {
+  const raw = additivesRaw.find(x => x.id === id);
+  if (!raw) return;
+  const e = getEffective(raw);
+  const reasons = needsReview(raw);
+  const rev = reviews[id];
+  state.currentId = id;
+
+  document.getElementById('detailHeadTitle').textContent = e.name;
+  document.getElementById('detailBody').innerHTML = `
+    <div class="detail-card">
+      <div class="detail-title">${e.name}</div>
+      <div class="badges" style="margin-top:10px">
+        <span class="badge b-${e.level}">成人:${LEVEL_LABEL[e.level]}</span>
+        ${e.childLevel ? `<span class="badge b-${e.childLevel}">儿童/孕期:${LEVEL_LABEL[e.childLevel]}</span>` : ''}
+        <span class="badge b-cat">${e.category}</span>
+        ${rev ? '<span class="badge b-done">已审</span>' : (reasons.length ? '<span class="badge b-pending">待审</span>' : '')}
+      </div>
+      ${e.ins ? `<div class="d-row"><div class="d-label">INS 编号</div><div class="d-val">${e.ins}</div></div>` : ''}
+      <div class="d-row"><div class="d-label">别名（配料表常见写法）</div><div class="d-val">${(e.aliases||[]).length ? e.aliases.join('、') : '无'}</div></div>
+      ${e.func ? `<div class="d-row"><div class="d-label">作用</div><div class="d-val">${e.func}</div></div>` : ''}
+      <div class="d-row"><div class="d-label">大白话解读（成人）</div><div class="d-val">${e.explain}</div></div>
+      ${e.childExplain ? `<div class="d-row"><div class="d-label">大白话解读（儿童/孕期）</div><div class="d-val">${e.childExplain}</div></div>` : ''}
+      <div class="d-row"><div class="d-label">依据来源</div><div>${(e.sources||[]).map(s=>`<span class="src">${s}</span>`).join('')}</div></div>
+      <div class="d-row"><div class="d-label">置信度</div><div class="d-val">${e.confidence}${e.reviewedBy ? ' · 已由 '+e.reviewedBy+' 审定' : ''}</div></div>
+      ${reasons.length ? `<div class="d-row"><div class="d-label">待审原因</div><div class="d-val">${reasons.map(r=>'· '+r).join('<br>')}</div></div>` : ''}
+    </div>
+
+    <div class="ops">
+      <h3>营养师操作</h3>
+      <div class="hint">可调整风险分级、改写解读文案。操作保存在本机，完成后点底部「导出审核结果」回写主库。</div>
+      <div class="field">
+        <label>成人分级</label>
+        <select id="opLevel">${LEVELS.map(l=>`<option value="${l}" ${l===e.level?'selected':''}>${LEVEL_LABEL[l]}</option>`).join('')}</select>
+      </div>
+      <div class="field">
+        <label>儿童/孕期分级</label>
+        <select id="opChildLevel">
+          <option value="">同成人</option>
+          ${LEVELS.map(l=>`<option value="${l}" ${l===(e.childLevel||'')?'selected':''}>${LEVEL_LABEL[l]}</option>`).join('')}
+        </select>
+      </div>
+      <div class="field">
+        <label>成人解读（可改）</label>
+        <textarea id="opExplain">${e.explain||''}</textarea>
+      </div>
+      <div class="field">
+        <label>儿童解读（可改）</label>
+        <textarea id="opChildExplain">${e.childExplain||''}</textarea>
+      </div>
+      <div class="field">
+        <label>审核备注</label>
+        <input type="text" id="opNote" placeholder="如调整依据、文献出处" value="${(rev&&rev.note)||''}">
+      </div>
+      <div class="ops-actions">
+        <button class="btn-primary" onclick="saveOp('approve')">✓ 通过并保存</button>
+        <button class="btn-secondary" onclick="saveOp('adjust')">保存调整</button>
+        <button class="btn-danger-ghost" onclick="clearOp()">清除本条审核</button>
+      </div>
+      <div class="ops-status" id="opStatus">${rev ? '本条已有审核记录（'+(rev.decision==='approve'?'通过':'已调整')+'）' : ''}</div>
+    </div>
+  `;
+
+  document.getElementById('listPage').classList.add('hidden');
+  document.getElementById('listFooter').classList.add('hidden');
+  document.getElementById('detailPage').classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+
+function openPurine(idx) {
+  const e = purine[idx];
+  if (!e) return;
+  const lv = e.class===1?'danger':e.class===2?'warning':e.class===3?'notice':'safe';
+  const tip = e.class===1?'尽量避免，急性期绝对不吃':e.class===2?'严格限量，急性期不吃':e.class===3?'可以适量吃，注意总量':'放心选择，正常食用';
+  state.currentId = null;
+  document.getElementById('detailHeadTitle').textContent = e.name;
+  document.getElementById('detailBody').innerHTML = `
+    <div class="detail-card">
+      <div class="detail-title">${e.name}</div>
+      <div class="badges" style="margin-top:10px">
+        <span class="badge b-${lv}">${e.purineMgPer100g} mg/100g</span>
+        <span class="badge b-cat">${PCLASS_LABEL[e.class]}</span>
+      </div>
+      <div class="d-row"><div class="d-label">分级说明</div><div class="d-val">${e.label}</div></div>
+      <div class="d-row"><div class="d-label">给高尿酸/痛风人群的建议</div><div class="d-val">${tip}</div></div>
+      <div class="d-row"><div class="d-label">依据来源</div><div><span class="src">国家卫健委《成人高尿酸血症与痛风食养指南(2024)》附录1</span></div></div>
+    </div>
+    <div class="ops">
+      <h3>说明</h3>
+      <div class="hint">嘌呤数据来自官方指南附录，数值已固定标注来源，无需营养师逐条改分级。如发现错配条目，请在导出备注中反馈。</div>
+    </div>
+  `;
+  document.getElementById('listPage').classList.add('hidden');
+  document.getElementById('listFooter').classList.add('hidden');
+  document.getElementById('detailPage').classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+
+function closeDetail() {
+  document.getElementById('detailPage').classList.add('hidden');
+  document.getElementById('listPage').classList.remove('hidden');
+  document.getElementById('listFooter').classList.remove('hidden');
+  renderList();
+  renderFilterChips();
+}
+
+function saveOp(decision) {
+  const id = state.currentId;
+  if (!id) return;
+  const raw = additivesRaw.find(x => x.id === id);
+  const level = document.getElementById('opLevel').value;
+  const childLevel = document.getElementById('opChildLevel').value || null;
+  const explain = document.getElementById('opExplain').value.trim();
+  const childExplain = document.getElementById('opChildExplain').value.trim();
+  const note = document.getElementById('opNote').value.trim();
+  const changed = level !== raw.level || (childLevel || null) !== (raw.childLevel || null) || explain !== raw.explain || childExplain !== (raw.childExplain || '');
+  reviews[id] = {
+    decision: decision === 'approve' && !changed ? 'approve' : 'adjust',
+    adjustedLevel: level,
+    adjustedChildLevel: childLevel,
+    explain: explain !== raw.explain ? explain : undefined,
+    childExplain: childExplain !== (raw.childExplain || '') ? childExplain : undefined,
+    note
+  };
+  saveReviews(reviews);
+  document.getElementById('opStatus').textContent = '已保存 ✓';
+  setTimeout(closeDetail, 400);
+}
+
+function clearOp() {
+  const id = state.currentId;
+  if (!id || !reviews[id]) return;
+  delete reviews[id];
+  saveReviews(reviews);
+  document.getElementById('opStatus').textContent = '已清除本条审核';
+  setTimeout(() => openDetail(id), 300);
+}
+
+document.getElementById('btnBack').onclick = closeDetail;
+document.getElementById('tabAdd').onclick = () => {
+  state.tab = 'add';
+  document.getElementById('tabAdd').classList.add('on');
+  document.getElementById('tabPurine').classList.remove('on');
+  document.getElementById('addFilters').classList.remove('hidden');
+  document.getElementById('purineFilters').classList.add('hidden');
+  document.getElementById('listFooter').classList.remove('hidden');
+  renderList();
+};
+document.getElementById('tabPurine').onclick = () => {
+  state.tab = 'purine';
+  document.getElementById('tabPurine').classList.add('on');
+  document.getElementById('tabAdd').classList.remove('on');
+  document.getElementById('addFilters').classList.add('hidden');
+  document.getElementById('purineFilters').classList.remove('hidden');
+  document.getElementById('listFooter').classList.add('hidden');
+  renderList();
+};
+document.getElementById('search').oninput = e => { state.q = e.target.value; renderList(); };
+
+document.getElementById('exportBtn').onclick = () => {
+  const ids = Object.keys(reviews);
+  if (!ids.length) { alert('还没有审核记录可导出'); return; }
+  const reviewer = prompt('请填写您的署名（用于留痕）：') || '未署名';
+  const out = {
+    version: window.AdditivesKB.version,
+    reviewedAt: new Date().toISOString(),
+    reviewer,
+    decisions: ids.map(id => ({
+      id,
+      decision: reviews[id].decision,
+      adjustedLevel: reviews[id].adjustedLevel,
+      adjustedChildLevel: reviews[id].adjustedChildLevel,
+      explain: reviews[id].explain,
+      childExplain: reviews[id].childExplain,
+      note: reviews[id].note || ''
+    }))
+  };
+  const blob = new Blob([JSON.stringify(out, null, 2)], { type:'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `review-${window.AdditivesKB.version}.json`;
+  a.click();
+};
+
+document.getElementById('fileInput').onchange = e => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const data = JSON.parse(reader.result);
+      (data.decisions || []).forEach(d => {
+        reviews[d.id] = {
+          decision: d.decision,
+          adjustedLevel: d.adjustedLevel,
+          adjustedChildLevel: d.adjustedChildLevel,
+          explain: d.explain,
+          childExplain: d.childExplain,
+          note: d.note || ''
+        };
+      });
+      saveReviews(reviews);
+      renderList();
+      renderFilterChips();
+      alert('已导入 ' + (data.decisions||[]).length + ' 条审核记录');
+    } catch { alert('导入失败：文件格式不正确'); }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+};
+
+// 支持 ?status=pending 直达待审
+const params = new URLSearchParams(location.search);
+if (params.get('status')) state.status = params.get('status');
+
+renderFilterChips();
+renderList();
+</script>
+</body>
+</html>
