@@ -1,0 +1,9 @@
+{
+  "name": "analyze",
+  "version": "0.1.0",
+  "description": "配料侠分析云函数：条码查库 → VLM OCR → 规则引擎 → LLM 表达",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~3.0.0"
+  }
+}

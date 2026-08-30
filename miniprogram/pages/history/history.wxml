@@ -1,0 +1,30 @@
+<view class="plx-page history">
+
+  <view class="history-empty" wx:if="{{!list.length}}">
+    <view class="history-empty-icon">🥦</view>
+    <view class="plx-muted">还没有扫过任何食品</view>
+    <view class="plx-tiny">去首页扫一个试试吧</view>
+  </view>
+
+  <block wx:else>
+    <view
+      class="plx-card history-row"
+      wx:for="{{list}}"
+      wx:key="id"
+      data-id="{{item.id}}"
+      bindtap="openItem"
+    >
+      <view class="history-emoji" style="background: {{item.ui.bg}}">{{item.ui.emoji}}</view>
+      <view class="history-main">
+        <view class="history-name">{{item.productName}}</view>
+        <view class="history-sub plx-muted">{{item.verdictText}}</view>
+      </view>
+      <view class="history-time plx-tiny">{{item.timeText}}</view>
+    </view>
+
+    <view class="history-clear">
+      <button class="plx-btn plx-btn--ghost plx-btn--danger-text" bindtap="clearAll">清空记录</button>
+    </view>
+  </block>
+
+</view>

@@ -1,0 +1,57 @@
+.history-empty {
+  padding-top: 160rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+.history-empty-icon {
+  font-size: 96rpx;
+}
+
+.history-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  padding: 24rpx 28rpx;
+}
+.history-emoji {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  flex-shrink: 0;
+}
+.history-main {
+  flex: 1;
+  margin-left: 24rpx;
+  min-width: 0;
+}
+.history-name {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.history-sub {
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.history-time {
+  margin-left: 16rpx;
+  flex-shrink: 0;
+}
+
+.history-clear {
+  margin-top: 48rpx;
+}
+.plx-btn--danger-text {
+  color: var(--danger);
+  border-color: var(--danger);
+}

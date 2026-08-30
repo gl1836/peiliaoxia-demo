@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/scan/scan",
+    "pages/result/result",
+    "pages/profile/profile",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2E7D32",
+    "navigationBarTitleText": "配料侠",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F7F5"
+  },
+  "tabBar": {
+    "color": "#8A948A",
+    "selectedColor": "#2E7D32",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      { "pagePath": "pages/home/home", "text": "首页" },
+      { "pagePath": "pages/scan/scan", "text": "扫一扫" },
+      { "pagePath": "pages/history/history", "text": "历史" }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

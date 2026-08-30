@@ -108,6 +108,7 @@
       <div class="tabs">
         <button id="tabAdd" class="on">添加剂与风险成分</button>
         <button id="tabPurine">食物嘌呤</button>
+        <button id="tabDisease">慢病食养规则</button>
       </div>
     </div>
     <div class="filter-panel">
@@ -167,6 +168,7 @@ const PCLASS_LABEL = { 1:'高嘌呤', 2:'较高嘌呤', 3:'较低嘌呤', 4:'低
 
 const additivesRaw = window.AdditivesKB.entries;
 const purine = window.PurineKB.entries;
+const diseases = (window.DiseaseRulesKB && window.DiseaseRulesKB.conditions) || [];
 
 // 统一列表项：把"需审定"规则内嵌到每条上（与 build-kb 一致）
 function needsReview(e) {
@@ -297,7 +299,7 @@ function renderList() {
         <div class="row-sub">${e.explain}</div>
       </div>`;
     }).join('');
-  } else {
+  } else if (state.tab === 'purine') {
     const rows = filteredPurine();
     document.getElementById('listCount').textContent = `显示 ${rows.length} / 共 ${purine.length} 条`;
     document.getElementById('pendingHint').textContent = '来源：卫健委痛风食养指南 2024';
@@ -317,7 +319,54 @@ function renderList() {
         <div class="row-sub">${e.label}</div>
       </div>`;
     }).join('');
+  } else {
+    const rows = diseases.filter(c => !state.q || (c.name + c.source + (c.principles||[]).join('')).includes(state.q));
+    document.getElementById('listCount').textContent = `显示 ${rows.length} / 共 ${diseases.length} 组`;
+    document.getElementById('pendingHint').textContent = '来源：卫健委 4 项食养指南 2024';
+    if (!rows.length) { el.innerHTML = '<div class="empty">没有匹配的慢病规则</div>'; return; }
+    el.innerHTML = rows.map(c => {
+      const idx = diseases.indexOf(c);
+      return `<div class="row" onclick="openDisease(${idx})">
+        <div class="row-head">
+          <div class="row-name">${c.name}</div>
+          <div class="row-arrow">›</div>
+        </div>
+        <div class="badges">
+          <span class="badge b-cat">${(c.flags||[]).length} 组配料规则</span>
+          <span class="badge b-notice">${(c.tips||[]).length} 条食养建议</span>
+        </div>
+        <div class="row-sub">${c.source}</div>
+      </div>`;
+    }).join('');
   }
+}
+
+function openDisease(idx) {
+  const c = diseases[idx];
+  if (!c) return;
+  state.currentId = null;
+  document.getElementById('detailHeadTitle').textContent = c.name;
+  document.getElementById('detailBody').innerHTML = `
+    <div class="detail-card">
+      <div class="detail-title">${c.name}</div>
+      <div class="badges" style="margin-top:10px">
+        <span class="badge b-cat">${c.appliesTo.includes('adult') ? '成人' : '儿童青少年'}</span>
+      </div>
+      <div class="d-row"><div class="d-label">依据来源</div><div><span class="src">${c.source}</span></div></div>
+      <div class="d-row"><div class="d-label">食养原则</div><div class="d-val">${(c.principles||[]).map((p,i)=>`${i+1}. ${p}`).join('<br>')}</div></div>
+      <div class="d-row"><div class="d-label">配料触发规则</div><div class="d-val">${(c.flags||[]).map(f=>`· <b>${f.category}</b>（${f.level==='danger'?'危险':'注意'}）：${f.reason}`).join('<br>')}</div></div>
+      <div class="d-row"><div class="d-label">关键限量指标</div><div class="d-val">${Object.entries(c.nutrientLimits||{}).map(([k,v])=>`· ${v}`).join('<br>')}</div></div>
+      <div class="d-row"><div class="d-label">食养建议</div><div class="d-val">${(c.tips||[]).map(t=>'· '+t).join('<br>')}</div></div>
+    </div>
+    <div class="ops">
+      <h3>说明</h3>
+      <div class="hint">慢病规则逐字提取自卫健委官方指南原文，来源固定，无需营养师逐条审定。如需调整触发词或分级，请直接修改 data/disease-rules.kb.json 后重新构建。</div>
+    </div>
+  `;
+  document.getElementById('listPage').classList.add('hidden');
+  document.getElementById('listFooter').classList.add('hidden');
+  document.getElementById('detailPage').classList.remove('hidden');
+  window.scrollTo(0,0);
 }
 
 function openDetail(id) {
@@ -341,7 +390,10 @@ function openDetail(id) {
       ${e.ins ? `<div class="d-row"><div class="d-label">INS 编号</div><div class="d-val">${e.ins}</div></div>` : ''}
       <div class="d-row"><div class="d-label">别名（配料表常见写法）</div><div class="d-val">${(e.aliases||[]).length ? e.aliases.join('、') : '无'}</div></div>
       ${e.func ? `<div class="d-row"><div class="d-label">作用</div><div class="d-val">${e.func}</div></div>` : ''}
+      ${e.adi ? `<div class="d-row"><div class="d-label">每日允许摄入量 ADI</div><div class="d-val">${e.adi}${/^[\\d~]/.test(e.adi) ? ' mg/kg 体重/天' : ''}</div></div>` : ''}
+      ${e.intl ? `<div class="d-row"><div class="d-label">国际状态</div><div class="d-val">${e.intl}</div></div>` : ''}
       <div class="d-row"><div class="d-label">大白话解读（成人）</div><div class="d-val">${e.explain}</div></div>
+      ${e.funExplain ? `<div class="d-row"><div class="d-label">生动解读</div><div class="d-val">${e.funExplain}</div></div>` : ''}
       ${e.childExplain ? `<div class="d-row"><div class="d-label">大白话解读（儿童/孕期）</div><div class="d-val">${e.childExplain}</div></div>` : ''}
       <div class="d-row"><div class="d-label">依据来源</div><div>${(e.sources||[]).map(s=>`<span class="src">${s}</span>`).join('')}</div></div>
       <div class="d-row"><div class="d-label">置信度</div><div class="d-val">${e.confidence}${e.reviewedBy ? ' · 已由 '+e.reviewedBy+' 审定' : ''}</div></div>
@@ -459,24 +511,18 @@ function clearOp() {
 }
 
 document.getElementById('btnBack').onclick = closeDetail;
-document.getElementById('tabAdd').onclick = () => {
-  state.tab = 'add';
-  document.getElementById('tabAdd').classList.add('on');
-  document.getElementById('tabPurine').classList.remove('on');
-  document.getElementById('addFilters').classList.remove('hidden');
-  document.getElementById('purineFilters').classList.add('hidden');
-  document.getElementById('listFooter').classList.remove('hidden');
+function switchTab(tab) {
+  state.tab = tab;
+  ['tabAdd','tabPurine','tabDisease'].forEach(id => document.getElementById(id).classList.remove('on'));
+  document.getElementById(tab === 'add' ? 'tabAdd' : tab === 'purine' ? 'tabPurine' : 'tabDisease').classList.add('on');
+  document.getElementById('addFilters').classList.toggle('hidden', tab !== 'add');
+  document.getElementById('purineFilters').classList.toggle('hidden', tab !== 'purine');
+  document.getElementById('listFooter').classList.toggle('hidden', tab !== 'add');
   renderList();
-};
-document.getElementById('tabPurine').onclick = () => {
-  state.tab = 'purine';
-  document.getElementById('tabPurine').classList.add('on');
-  document.getElementById('tabAdd').classList.remove('on');
-  document.getElementById('addFilters').classList.add('hidden');
-  document.getElementById('purineFilters').classList.remove('hidden');
-  document.getElementById('listFooter').classList.add('hidden');
-  renderList();
-};
+}
+document.getElementById('tabAdd').onclick = () => switchTab('add');
+document.getElementById('tabPurine').onclick = () => switchTab('purine');
+document.getElementById('tabDisease').onclick = () => switchTab('disease');
 document.getElementById('search').oninput = e => { state.q = e.target.value; renderList(); };
 
 document.getElementById('exportBtn').onclick = () => {

@@ -8,6 +8,14 @@
 const _isNode = typeof module !== 'undefined' && module.exports
 const { ALLERGENS, SUGARS, SALTS } = _isNode ? require('./data') : window.RuleData
 const kb = _isNode ? require('./kb.additives.json') : window.AdditivesKB
+const _emptyDisease = { conditions: [] }
+const _emptyPurine = { entries: [] }
+const diseaseKb = _isNode
+  ? require('./disease-rules.json')
+  : (window.DiseaseRulesKB || _emptyDisease)
+const purineKb = _isNode
+  ? require('./purine.json')
+  : (window.PurineKB || _emptyPurine)
 
 // 构建词项索引：主名 + 别名，按长度降序，保证"山梨酸钾"优先于"山梨酸"命中
 const TERM_INDEX = []
@@ -20,8 +28,19 @@ TERM_INDEX.sort((a, b) => b.term.length - a.term.length)
 
 const isChildRole = role => role === 'child_1_3' || role === 'child_3_12'
 
+// 嘌呤索引：去掉括号注释（如"鲅鱼(烤)"→"鲅鱼"），按长度降序避免短词抢匹配
+const PURINE_INDEX = (purineKb.entries || [])
+  .map(e => ({ term: String(e.name || '').replace(/[（(].*$/, ''), entry: e }))
+  .filter(x => x.term.length >= 2)
+  .sort((a, b) => b.term.length - a.term.length)
+
 function matchRiskEntry(ingredient) {
   const hit = TERM_INDEX.find(x => ingredient.includes(x.term))
+  return hit ? hit.entry : null
+}
+
+function matchPurineEntry(ingredient) {
+  const hit = PURINE_INDEX.find(x => ingredient.includes(x.term))
   return hit ? hit.entry : null
 }
 
@@ -59,6 +78,7 @@ function evaluate(ingredients, profile) {
   ingredients.forEach(ing => {
     let level = 'safe'
     let explanation = ''
+    let fun = ''
 
     const allergenHit = allergenHits.find(h => h.ingredient === ing)
     if (allergenHit) {
@@ -69,9 +89,12 @@ function evaluate(ingredients, profile) {
       if (entry) {
         level = strict && entry.childLevel ? entry.childLevel : entry.level
         explanation = strict && entry.childExplain ? entry.childExplain : entry.explain
+        fun = entry.funExplain || ''
       }
     }
-    ingredientRows.push({ name: ing, level, explanation })
+    const row = { name: ing, level, explanation }
+    if (fun) row.fun = fun
+    ingredientRows.push(row)
   })
 
   // 3. 汇总 flags
@@ -131,7 +154,65 @@ function evaluate(ingredients, profile) {
     })
   }
 
-  // 7. 评分与结论
+  // 7. 慢病饮食规则：按健康档案 conditions 触发（卫健委 4 项食养指南结构化）
+  const SEVERITY = { safe: 0, notice: 1, warning: 2, danger: 3 }
+  const conditionNotes = []
+  const conditions = Array.isArray(p.conditions) ? p.conditions : []
+  for (const cid of conditions) {
+    const cond = (diseaseKb.conditions || []).find(c => c.id === cid)
+    if (!cond) continue
+    if (cond.appliesTo && cond.appliesTo.length && !cond.appliesTo.includes(p.role)) continue
+
+    ingredients.forEach(ing => {
+      cond.flags.forEach(f => {
+        if (!f.terms.some(t => ing.includes(t))) return
+        flags.push({
+          name: ing,
+          level: f.level,
+          reason: `【${cond.name}】${f.reason}`,
+          weight: f.level === 'danger' ? 30 : f.level === 'warning' ? 12 : 5
+        })
+      })
+      // 高尿酸：接嘌呤知识库（236 条，来自痛风食养指南）
+      if (cid === 'hyperuricemia') {
+        const pe = matchPurineEntry(ing)
+        if (pe && pe.class === 1) {
+          flags.push({
+            name: ing,
+            level: 'warning',
+            reason: `【${cond.name}】高嘌呤食物（${pe.purineMgPer100g}mg/100g），痛风人群避免`,
+            weight: 15
+          })
+        } else if (pe && pe.class === 2) {
+          flags.push({
+            name: ing,
+            level: 'notice',
+            reason: `【${cond.name}】中嘌呤食物（${pe.purineMgPer100g}mg/100g），限量`,
+            weight: 5
+          })
+        }
+      }
+    })
+
+    conditionNotes.push({
+      id: cond.id,
+      name: cond.name,
+      source: cond.source,
+      tips: cond.tips || [],
+      nutrientLimits: cond.nutrientLimits || {}
+    })
+  }
+
+  // 慢病规则命中的配料，同步升级对应成分行的分级与解释（保持 UI 一致）
+  flags.forEach(f => {
+    const row = ingredientRows.find(r => r.name === f.name)
+    if (row && SEVERITY[f.level] > SEVERITY[row.level]) {
+      row.level = f.level
+      row.explanation = f.reason
+    }
+  })
+
+  // 8. 评分与结论
   let score = 100
   flags.forEach(f => { score -= f.weight || 10 })
   score = Math.max(0, Math.min(100, score))
@@ -142,10 +223,17 @@ function evaluate(ingredients, profile) {
 
   const verdictText = buildVerdictText(verdict, flags, allergenHits)
 
-  // flags 输出前去掉内部权重字段
-  const outFlags = flags.map(({ name, level, reason }) => ({ name, level, reason }))
+  // flags 输出前去掉内部权重字段，并按 名称+原因 去重（慢病规则可能与成分规则重复命中）
+  const seen = new Set()
+  const outFlags = []
+  flags.forEach(({ name, level, reason }) => {
+    const key = `${name}|${reason}`
+    if (seen.has(key)) return
+    seen.add(key)
+    outFlags.push({ name, level, reason })
+  })
 
-  return { verdict, score, flags: outFlags, ingredientRows, verdictText }
+  return { verdict, score, flags: outFlags, ingredientRows, verdictText, conditionNotes }
 }
 
 function buildVerdictText(verdict, flags, allergenHits) {

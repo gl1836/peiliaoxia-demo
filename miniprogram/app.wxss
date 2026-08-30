@@ -1,0 +1,73 @@
+/* 配料侠全局样式 —— 移动端优先，375-414px 基准 */
+page {
+  --brand: #2E7D32;
+  --brand-light: #4CAF50;
+  --safe: #2E7D32;
+  --safe-bg: #E8F5E9;
+  --caution: #EF6C00;
+  --caution-bg: #FFF3E0;
+  --danger: #D32F2F;
+  --danger-bg: #FFEBEE;
+  --ink: #1B2A1C;
+  --ink-2: #5A6B5C;
+  --ink-3: #93A294;
+  --line: #E3E9E3;
+  --bg: #F5F7F5;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 30rpx;
+  font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+}
+
+.plx-page {
+  min-height: 100vh;
+  padding: 32rpx 32rpx 64rpx;
+  box-sizing: border-box;
+}
+
+.plx-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 108rpx;
+  border-radius: 54rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #fff;
+  background: var(--brand);
+  border: none;
+}
+.plx-btn::after { border: none; }
+.plx-btn--ghost {
+  background: #fff;
+  color: var(--brand);
+  border: 2rpx solid var(--brand);
+}
+.plx-btn--danger {
+  background: var(--danger);
+}
+.plx-btn[disabled] {
+  background: #B9C6BA;
+  color: #fff;
+}
+
+.plx-card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 32rpx;
+}
+
+.plx-section-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 40rpx 8rpx 20rpx;
+}
+
+.plx-muted {
+  color: var(--ink-2);
+}
+.plx-tiny {
+  font-size: 24rpx;
+  color: var(--ink-3);
+}

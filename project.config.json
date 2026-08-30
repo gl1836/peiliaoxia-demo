@@ -1,0 +1,15 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "appid": "touristappid",
+  "projectname": "peiliaoxia",
+  "compileType": "miniprogram",
+  "libVersion": "latest",
+  "setting": {
+    "es6": true,
+    "minified": true,
+    "urlCheck": false,
+    "postcss": true
+  },
+  "description": "配料侠 - 帮你读懂每一口"
+}

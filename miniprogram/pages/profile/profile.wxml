@@ -1,0 +1,57 @@
+<view class="plx-page profile">
+
+  <view class="profile-intro plx-muted">
+    档案只保存在你的手机本地，用于让分析更贴合你的身体情况。选填，随时可以改。
+  </view>
+
+  <view class="plx-section-title">这份档案是给谁的？</view>
+  <view class="chip-group">
+    <view
+      wx:for="{{roles}}"
+      wx:key="id"
+      class="chip {{role === item.id ? 'chip--on' : ''}}"
+      data-id="{{item.id}}"
+      bindtap="pickRole"
+    >{{item.label}}</view>
+  </view>
+
+  <view class="plx-section-title">重点关注（可多选）</view>
+  <view class="chip-group">
+    <view
+      wx:for="{{goals}}"
+      wx:key="id"
+      class="chip {{selectedGoals[item.id] ? 'chip--on' : ''}}"
+      data-id="{{item.id}}"
+      bindtap="toggleGoal"
+    >{{item.label}}</view>
+  </view>
+
+  <view class="plx-section-title">慢病情况（可多选，触发卫健委食养指南规则）</view>
+  <view class="chip-group">
+    <view
+      wx:for="{{conditions}}"
+      wx:key="id"
+      class="chip {{selectedConditions[item.id] ? 'chip--on' : ''}}"
+      data-id="{{item.id}}"
+      bindtap="toggleCondition"
+    >{{item.label}}</view>
+  </view>
+
+  <view class="plx-section-title">过敏成分（可多选）</view>
+  <view class="chip-group">
+    <view
+      wx:for="{{allergenOptions}}"
+      wx:key="*this"
+      class="chip chip--allergen {{selectedAllergens[item] ? 'chip--on-danger' : ''}}"
+      data-id="{{item}}"
+      bindtap="toggleAllergen"
+    >{{item}}</view>
+  </view>
+
+  <view class="profile-save">
+    <button class="plx-btn" bindtap="save">保存档案</button>
+  </view>
+
+  <view class="plx-tiny profile-privacy">隐私说明：档案仅存储于本机（微信本地存储），不上传服务器；清除微信缓存或卸载后自动消失。</view>
+
+</view>

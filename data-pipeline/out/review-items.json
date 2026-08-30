@@ -1,0 +1,1315 @@
+{
+  "version": "2026.08.30-1",
+  "generatedAt": "2026-08-30T13:09:03.220Z",
+  "totalEntries": 66,
+  "pendingCount": 48,
+  "items": [
+    {
+      "id": "INS250",
+      "name": "亚硝酸钠",
+      "aliases": [
+        "亚硝酸钾",
+        "亚硝酸盐"
+      ],
+      "ins": "250",
+      "category": "护色剂",
+      "func": "肉制品护色、防腐（抑制肉毒杆菌）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "腌肉制品常用，过量有风险，成人控制频率",
+      "childExplain": "孩子代谢能力弱，含亚硝酸盐的火腿肠、腊肉尽量不吃",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS211",
+      "name": "苯甲酸钠",
+      "aliases": [
+        "苯甲酸"
+      ],
+      "ins": "211",
+      "category": "防腐剂",
+      "func": "抑制霉菌和酵母",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "老牌防腐剂，合规剂量安全，但与维生素C共存可能生成苯，能少则少",
+      "childExplain": "孩子的食品防腐剂种类越少越好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS202",
+      "name": "山梨酸钾",
+      "aliases": [
+        "山梨酸"
+      ],
+      "ins": "202",
+      "category": "防腐剂",
+      "func": "抑制霉菌",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "常见防腐剂，安全性相对较好，但配料侠仍建议能少则少",
+      "childExplain": "孩子的食品防腐剂种类越少越好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS266",
+      "name": "脱氢乙酸钠",
+      "aliases": [
+        "脱氢醋酸钠",
+        "脱氢醋酸"
+      ],
+      "ins": "266",
+      "category": "防腐剂",
+      "func": "防霉",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "烘焙糕点常用防腐剂，2024版国标已大幅收紧使用范围",
+      "childExplain": "孩子的糕点里常见，尽量选短保新鲜的",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS282",
+      "name": "丙酸钙",
+      "aliases": [
+        "丙酸钠"
+      ],
+      "ins": "282",
+      "category": "防腐剂",
+      "func": "面包防霉",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "面包常用防霉剂，安全性较好",
+      "childExplain": "相对温和，但孩子的面包最好选现烤无添加的",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS218",
+      "name": "对羟基苯甲酸甲酯",
+      "aliases": [
+        "对羟基苯甲酸乙酯",
+        "对羟基苯甲酸丙酯",
+        "尼泊金甲酯",
+        "尼泊金乙酯",
+        "尼泊金丙酯",
+        "羟苯甲酯"
+      ],
+      "ins": "218",
+      "category": "防腐剂",
+      "func": "防腐（酱油、醋、酱料常见）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "尼泊金酯类防腐剂，有内分泌干扰争议，能避则避",
+      "childExplain": "儿童尽量避开尼泊金酯类防腐剂",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS220",
+      "name": "二氧化硫",
+      "aliases": [
+        "焦亚硫酸钾",
+        "焦亚硫酸钠",
+        "亚硫酸钠",
+        "低亚硫酸钠",
+        "亚硫酸氢钠",
+        "硫磺"
+      ],
+      "ins": "220",
+      "category": "漂白防腐剂",
+      "func": "漂白、防腐（干果、蜜饯、葡萄酒）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "哮喘和敏感人群可能不耐受，干果蜜饯里很常见",
+      "childExplain": "孩子吃蜜饯干果前先泡水，能减少残留",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS319",
+      "name": "特丁基对苯二酚",
+      "aliases": [
+        "TBHQ",
+        "叔丁基对苯二酚"
+      ],
+      "ins": "319",
+      "category": "抗氧化剂",
+      "func": "防止油脂氧化哈喇",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "油炸食品和方便面常用，成人偶尔吃没事，别天天吃",
+      "childExplain": "儿童尽量避开的添加剂，选不含TBHQ的同类产品",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS320",
+      "name": "丁基羟基茴香醚",
+      "aliases": [
+        "BHA"
+      ],
+      "ins": "320",
+      "category": "抗氧化剂",
+      "func": "油脂抗氧化",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "有潜在致癌争议（动物实验），欧盟限制更严",
+      "childExplain": "儿童尽量避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS321",
+      "name": "二丁基羟基甲苯",
+      "aliases": [
+        "BHT"
+      ],
+      "ins": "321",
+      "category": "抗氧化剂",
+      "func": "油脂抗氧化",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "与BHA类似，能避则避",
+      "childExplain": "儿童尽量避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS310",
+      "name": "没食子酸丙酯",
+      "aliases": [
+        "PG"
+      ],
+      "ins": "310",
+      "category": "抗氧化剂",
+      "func": "油脂抗氧化",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "相对温和，但孩子的食品里没必要有",
+      "childExplain": "",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS951",
+      "name": "阿斯巴甜",
+      "aliases": [
+        "阿斯帕坦",
+        "甜味素"
+      ],
+      "ins": "951",
+      "category": "甜味剂",
+      "func": "代糖（无糖可乐、口香糖）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "2023年IARC列为2B类可能致癌（证据有限），正常量无需恐慌；苯丙酮尿症患者必须避开",
+      "childExplain": "会强化孩子对甜味的依赖，少给为好",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS950",
+      "name": "安赛蜜",
+      "aliases": [
+        "乙酰磺胺酸钾",
+        "AK糖"
+      ],
+      "ins": "950",
+      "category": "甜味剂",
+      "func": "代糖",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "不升糖但甜度是蔗糖200倍，容易越吃越想吃甜",
+      "childExplain": "儿童不建议常吃人工甜味剂",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS952",
+      "name": "甜蜜素",
+      "aliases": [
+        "环己基氨基磺酸钠"
+      ],
+      "ins": "952",
+      "category": "甜味剂",
+      "func": "代糖（蜜饯、饮料）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "美国等多国已禁用，国内限量使用，能避则避",
+      "childExplain": "儿童避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS954",
+      "name": "糖精钠",
+      "aliases": [
+        "糖精"
+      ],
+      "ins": "954",
+      "category": "甜味剂",
+      "func": "代糖（老式汽水、蜜饯）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "最老牌人工甜味剂，有苦味且争议多，基本该被淘汰",
+      "childExplain": "儿童避开",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS955",
+      "name": "三氯蔗糖",
+      "aliases": [
+        "蔗糖素"
+      ],
+      "ins": "955",
+      "category": "甜味剂",
+      "func": "代糖",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "相对新一代，安全性记录较好，但仍不建议当水喝",
+      "childExplain": "儿童少给为好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS961",
+      "name": "纽甜",
+      "aliases": [],
+      "ins": "961",
+      "category": "甜味剂",
+      "func": "高强度代糖",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "甜度极高用量极少，安全性记录尚可",
+      "childExplain": "儿童少给为好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS968",
+      "name": "赤藓糖醇",
+      "aliases": [],
+      "ins": "968",
+      "category": "甜味剂",
+      "func": "糖醇类代糖（气泡水常用）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "近年研究提示高剂量或与血栓风险相关，偶尔喝没事，别当水喝",
+      "childExplain": "孩子的肠胃对糖醇敏感，容易胀气腹泻",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS967",
+      "name": "木糖醇",
+      "aliases": [],
+      "ins": "967",
+      "category": "甜味剂",
+      "func": "糖醇（口香糖）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "对牙齿友好，过量会腹泻",
+      "childExplain": "孩子容易吃多导致拉肚子，控制量",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS965",
+      "name": "麦芽糖醇",
+      "aliases": [
+        "氢化麦芽糖"
+      ],
+      "ins": "965",
+      "category": "甜味剂",
+      "func": "糖醇（无糖糕点）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "无糖糕点的甜味来源，过量易腹泻",
+      "childExplain": "",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS420",
+      "name": "山梨糖醇",
+      "aliases": [
+        "山梨醇"
+      ],
+      "ins": "420",
+      "category": "甜味剂",
+      "func": "保湿、甜味",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "保湿剂兼甜味剂，过量易腹泻",
+      "childExplain": "",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS102",
+      "name": "柠檬黄",
+      "aliases": [
+        "酒石黄"
+      ],
+      "ins": "102",
+      "category": "着色剂",
+      "func": "人工色素（黄色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "部分人工色素与儿童注意力问题相关（南安普顿研究），建议避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS110",
+      "name": "日落黄",
+      "aliases": [],
+      "ins": "110",
+      "category": "着色剂",
+      "func": "人工色素（橙黄色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "与儿童注意力问题相关的色素之一，建议避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS124",
+      "name": "胭脂红",
+      "aliases": [
+        "丽春红4R"
+      ],
+      "ins": "124",
+      "category": "着色剂",
+      "func": "人工色素（红色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "建议孩子避开人工色素",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS129",
+      "name": "诱惑红",
+      "aliases": [
+        "艳丽红"
+      ],
+      "ins": "129",
+      "category": "着色剂",
+      "func": "人工色素（红色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "建议孩子避开人工色素",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS133",
+      "name": "亮蓝",
+      "aliases": [],
+      "ins": "133",
+      "category": "着色剂",
+      "func": "人工色素（蓝色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "建议孩子避开人工色素",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS123",
+      "name": "苋菜红",
+      "aliases": [],
+      "ins": "123",
+      "category": "着色剂",
+      "func": "人工色素（紫红色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "建议孩子避开人工色素",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS150",
+      "name": "焦糖色",
+      "aliases": [
+        "焦糖色素",
+        "酱色"
+      ],
+      "ins": "150",
+      "category": "着色剂",
+      "func": "上色（可乐、酱油）",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "用量大但相对温和，普通法工艺更优",
+      "childExplain": "",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS171",
+      "name": "二氧化钛",
+      "aliases": [
+        "钛白粉"
+      ],
+      "ins": "171",
+      "category": "着色剂",
+      "func": "增白（糖果、口香糖）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "欧盟2022年已禁用（潜在遗传毒性争议），国内仍允许，建议避开",
+      "childExplain": "儿童避开，选不靠增白剂的糖果",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS621",
+      "name": "谷氨酸钠",
+      "aliases": [
+        "味精"
+      ],
+      "ins": "621",
+      "category": "增味剂",
+      "func": "增鲜",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "就是味精，安全性其实不错，但常和高钠食品一起出现",
+      "childExplain": "1岁内宝宝辅食不该加，大孩子也要少",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS635",
+      "name": "呈味核苷酸二钠",
+      "aliases": [
+        "I+G",
+        "5'-呈味核苷酸二钠"
+      ],
+      "ins": "635",
+      "category": "增味剂",
+      "func": "强力增鲜（与味精协同）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "鲜味放大器，痛风人群注意嘌呤来源",
+      "childExplain": "孩子不需要这么强的鲜味刺激",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS338",
+      "name": "磷酸",
+      "aliases": [
+        "正磷酸"
+      ],
+      "ins": "338",
+      "category": "酸度调节剂",
+      "func": "可乐类饮料调酸",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "可乐的酸味来源，长期大量摄入影响钙吸收",
+      "childExplain": "影响钙吸收，长身体的孩子别常喝可乐",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (warning)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS433",
+      "name": "聚氧乙烯山梨醇酐单油酸酯",
+      "aliases": [
+        "吐温80",
+        "聚山梨酯80"
+      ],
+      "ins": "433",
+      "category": "乳化剂",
+      "func": "乳化（冰淇淋、饮料）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "有研究提示高剂量或影响肠道菌群，偶尔吃没事",
+      "childExplain": "孩子的冰淇淋里常见，控制频率",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS407",
+      "name": "卡拉胶",
+      "aliases": [
+        "角叉菜胶"
+      ],
+      "ins": "407",
+      "category": "增稠剂",
+      "func": "增稠凝胶（果冻、火腿肠）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "食品级安全，但降解卡拉胶有肠道刺激争议，婴幼儿食品已禁用",
+      "childExplain": "婴幼儿食品不允许加，大孩子也要少吃果冻",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS522",
+      "name": "硫酸铝钾",
+      "aliases": [
+        "明矾",
+        "钾明矾",
+        "硫酸铝铵",
+        "铵明矾"
+      ],
+      "ins": "522",
+      "category": "膨松剂",
+      "func": "膨松（油条、粉条）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "含铝！铝摄入过量影响神经和骨骼，能避则避",
+      "childExplain": "铝对孩子神经发育有潜在影响，油条粉条选无铝配方的",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS551",
+      "name": "二氧化硅",
+      "aliases": [
+        "硅石"
+      ],
+      "ins": "551",
+      "category": "抗结剂",
+      "func": "防结块（奶粉、冲调粉）",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "防结块用，合规剂量安全",
+      "childExplain": "",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "INS451",
+      "name": "三聚磷酸钠",
+      "aliases": [
+        "焦磷酸钠",
+        "六偏磷酸钠",
+        "复合磷酸盐"
+      ],
+      "ins": "451",
+      "category": "水分保持剂",
+      "func": "保水（肉制品、丸子）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "让肉丸Q弹保水，磷摄入过多影响钙磷平衡",
+      "childExplain": "孩子的丸子虾滑里常见，控制频率",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "FLAVOR",
+      "name": "食用香精",
+      "aliases": [
+        "食用香料",
+        "食品用香精",
+        "香精"
+      ],
+      "ins": null,
+      "category": "香精香料",
+      "func": "调香",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "成分不透明的复合添加，靠香精调味的食品往往原料不够好",
+      "childExplain": "孩子的味觉在发育，香精调出来的重口味没好处",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "儿童分级更严 (warning)",
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "RISK-HVO",
+      "name": "氢化植物油",
+      "aliases": [
+        "部分氢化植物油",
+        "氢化油"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "起酥、增香（反式脂肪来源）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "可能含反式脂肪酸，增加心血管负担，大人也要少吃",
+      "childExplain": "反式脂肪影响孩子发育，最好不要碰",
+      "sources": [
+        "膳食指南",
+        "WHO",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "RISK-SHORTENING",
+      "name": "起酥油",
+      "aliases": [
+        "酥油",
+        "白油"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "起酥（反式脂肪风险）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "起酥油多为氢化工艺，反式脂肪风险同上",
+      "childExplain": "孩子最好不要碰",
+      "sources": [
+        "膳食指南",
+        "WHO",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "RISK-MARGARINE",
+      "name": "人造奶油",
+      "aliases": [
+        "人造黄油",
+        "麦淇淋",
+        "玛琪琳"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "替代黄油（反式脂肪风险）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "可能含反式脂肪酸，会增加心血管负担",
+      "childExplain": "反式脂肪影响发育，孩子最好不要碰",
+      "sources": [
+        "膳食指南",
+        "WHO",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "RISK-NONDairy",
+      "name": "植脂末",
+      "aliases": [
+        "奶精",
+        "咖啡伴侣"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "替代奶（反式脂肪风险）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "奶茶咖啡里的'奶'多半是它，可能含反式脂肪",
+      "childExplain": "孩子最好不要碰",
+      "sources": [
+        "膳食指南",
+        "WHO",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "RISK-COCOA",
+      "name": "代可可脂",
+      "aliases": [
+        "类可可脂"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "替代可可脂",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "不是真巧克力，可能含反式脂肪，口感和成本都降级",
+      "childExplain": "给孩子买巧克力认准'可可脂'而非'代可可脂'",
+      "sources": [
+        "膳食指南",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 warning",
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "FUNC-CAFFEINE",
+      "name": "咖啡因",
+      "aliases": [
+        "咖啡碱",
+        "瓜拉纳",
+        "瓜拉纳提取物"
+      ],
+      "ins": null,
+      "category": "功能成分",
+      "func": "提神（功能饮料、可乐）",
+      "level": "notice",
+      "childLevel": "danger",
+      "explain": "成人每日不超过400mg，功能饮料一罐约50-80mg",
+      "childExplain": "儿童和孕妇应避开含咖啡因饮料",
+      "sources": [
+        "膳食指南",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "儿童分级更严 (danger)"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "BANNED-SUDAN",
+      "name": "苏丹红",
+      "aliases": [
+        "苏丹红1号"
+      ],
+      "ins": null,
+      "category": "已禁用物质",
+      "func": "非法添加（染色）",
+      "level": "danger",
+      "childLevel": "danger",
+      "explain": "国家明令禁止的非法添加物！如在配料表出现，请勿购买并可举报",
+      "childExplain": "非法添加物，举报",
+      "sources": [
+        "食品安全法",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 danger"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "BANNED-BROMATE",
+      "name": "溴酸钾",
+      "aliases": [
+        "溴酸钠"
+      ],
+      "ins": null,
+      "category": "已禁用物质",
+      "func": "非法添加（面粉处理）",
+      "level": "danger",
+      "childLevel": "danger",
+      "explain": "已禁用的面粉处理剂，致癌风险，如出现请举报",
+      "childExplain": "非法添加物，举报",
+      "sources": [
+        "食品安全法",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 danger"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "BANNED-RONGALIT",
+      "name": "吊白块",
+      "aliases": [
+        "甲醛次硫酸氢钠"
+      ],
+      "ins": null,
+      "category": "已禁用物质",
+      "func": "非法添加（漂白）",
+      "level": "danger",
+      "childLevel": "danger",
+      "explain": "非法漂白剂，分解出甲醛，如出现请举报",
+      "childExplain": "非法添加物，举报",
+      "sources": [
+        "食品安全法",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 danger"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "BANNED-BORAX",
+      "name": "硼砂",
+      "aliases": [
+        "硼酸钠"
+      ],
+      "ins": null,
+      "category": "已禁用物质",
+      "func": "非法添加（增筋、防腐）",
+      "level": "danger",
+      "childLevel": "danger",
+      "explain": "非法添加物，毒性累积，如出现请举报",
+      "childExplain": "非法添加物，举报",
+      "sources": [
+        "食品安全法",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "reviewReasons": [
+        "成人分级为 danger"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    }
+  ]
+}

@@ -1,0 +1,1487 @@
+{
+  "version": "2026.08.30-1",
+  "meta": {
+    "sources": [
+      "GB 2760 食品添加剂使用标准",
+      "GB 7718 预包装食品标签通则",
+      "JECFA / 国家食品安全风险评估中心（ADI）",
+      "欧盟食品添加剂法规（国际差异对照）"
+    ],
+    "notes": "人工整理的高频条目 v2；level/childLevel 为配料侠自建方法论分级，待注册营养师审定"
+  },
+  "entries": [
+    {
+      "id": "INS250",
+      "name": "亚硝酸钠",
+      "aliases": [
+        "亚硝酸钾",
+        "亚硝酸盐"
+      ],
+      "ins": "250",
+      "category": "护色剂",
+      "func": "肉制品护色、防腐（抑制肉毒杆菌）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "腌肉制品常用，过量有风险，成人控制频率",
+      "childExplain": "孩子代谢能力弱，含亚硝酸盐的火腿肠、腊肉尽量不吃",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~0.07",
+      "intl": "欧盟 E250、美国均允许，限量同样严格；各国都盯着它",
+      "funExplain": "肉制品的\"腮红\"，让火腿肠红润诱人。本身合规使用没事，但它能在胃里和蛋白质代谢产物牵手变成亚硝胺——那可是明确的一类致癌物。所以腊肉火腿肠，偶尔解馋行，天天吃不妙。"
+    },
+    {
+      "id": "INS211",
+      "name": "苯甲酸钠",
+      "aliases": [
+        "苯甲酸"
+      ],
+      "ins": "211",
+      "category": "防腐剂",
+      "func": "抑制霉菌和酵母",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "老牌防腐剂，合规剂量安全，但与维生素C共存可能生成苯，能少则少",
+      "childExplain": "孩子的食品防腐剂种类越少越好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~5",
+      "intl": "欧盟 E211、美国 FDA 均批准",
+      "funExplain": "饮料酱菜里的\"防腐老将\"。单独用安全，但如果和维生素 C（抗坏血酸）同框又遇光照高温，可能生成微量苯——所以配料表里它和维 C 同时出现时，留个心眼。"
+    },
+    {
+      "id": "INS202",
+      "name": "山梨酸钾",
+      "aliases": [
+        "山梨酸"
+      ],
+      "ins": "202",
+      "category": "防腐剂",
+      "func": "抑制霉菌",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "常见防腐剂，安全性相对较好，但配料侠仍建议能少则少",
+      "childExplain": "孩子的食品防腐剂种类越少越好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~25",
+      "intl": "欧盟 E202、美国 FDA 均批准，公认较温和",
+      "funExplain": "防腐剂里的\"乖学生\"，进入人体后基本被当成脂肪酸代谢掉。合规使用很安全，但它存在的意义是让食物放得久——能吃到新鲜的，何必吃防腐的呢？"
+    },
+    {
+      "id": "INS266",
+      "name": "脱氢乙酸钠",
+      "aliases": [
+        "脱氢醋酸钠",
+        "脱氢醋酸"
+      ],
+      "ins": "266",
+      "category": "防腐剂",
+      "func": "防霉",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "烘焙糕点常用防腐剂，2024版国标已大幅收紧使用范围",
+      "childExplain": "孩子的糕点里常见，尽量选短保新鲜的",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "JECFA 未制定",
+      "intl": "欧盟未批准；美国仅限极少数品类；中国 GB 2760-2024 已把它从面包糕点中除名",
+      "funExplain": "曾经的烘焙界\"防腐红人\"，因为长期大量摄入可能伤肝伤肾，新版国标直接把它请出了面包糕点。2025 年起配料表里还有它的烘焙食品，属于违规操作。"
+    },
+    {
+      "id": "INS282",
+      "name": "丙酸钙",
+      "aliases": [
+        "丙酸钠"
+      ],
+      "ins": "282",
+      "category": "防腐剂",
+      "func": "面包防霉",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "面包常用防霉剂，安全性较好",
+      "childExplain": "相对温和，但孩子的面包最好选现烤无添加的",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E282、美国 FDA 均批准",
+      "funExplain": "面包房的\"防霉卫士\"，毒性低到国际组织都懒得给它设上限。不过它防的是霉，不是让你把面包当饭吃。"
+    },
+    {
+      "id": "INS218",
+      "name": "对羟基苯甲酸甲酯",
+      "aliases": [
+        "对羟基苯甲酸乙酯",
+        "对羟基苯甲酸丙酯",
+        "尼泊金甲酯",
+        "尼泊金乙酯",
+        "尼泊金丙酯",
+        "羟苯甲酯"
+      ],
+      "ins": "218",
+      "category": "防腐剂",
+      "func": "防腐（酱油、醋、酱料常见）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "尼泊金酯类防腐剂，有内分泌干扰争议，能避则避",
+      "childExplain": "儿童尽量避开尼泊金酯类防腐剂",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "0~10（尼泊金酯类合计）",
+      "intl": "欧盟 E218 允许；长链同类（丙酯/丁酯）已被欧盟踢出食品名单",
+      "funExplain": "化妆品防腐跨界来的\"尼泊金\"家族成员。甲酯还算温和，但它整个家族因为有类雌激素嫌疑正在被全球收紧——食品里见到它，说明厂家选了条省事的防腐路线。"
+    },
+    {
+      "id": "INS235",
+      "name": "纳他霉素",
+      "aliases": [
+        "游霉素"
+      ],
+      "ins": "235",
+      "category": "防腐剂",
+      "func": "表面防霉（奶酪、肉制品）",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "天然抗真菌剂，不内渗，安全性较好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~0.3",
+      "intl": "欧盟 E235、美国 FDA 均批准",
+      "funExplain": "从土壤链霉菌里请来的\"霉菌克星\"，只杀霉菌不伤人，奶酪表面喷一点就能防霉。天然来源、用量极小，是防腐剂里的\"精准狙击手\"。"
+    },
+    {
+      "id": "INS234",
+      "name": "乳酸链球菌素",
+      "aliases": [
+        "尼生素"
+      ],
+      "ins": "234",
+      "category": "防腐剂",
+      "func": "抑菌（乳制品、罐头）",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "发酵来源的天然防腐剂，安全性较好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~33000 IU/kg",
+      "intl": "欧盟 E234、美国 FDA 均批准",
+      "funExplain": "乳酸菌自己分泌的\"抗菌小肽\"，相当于用细菌的武器对付细菌。喝酸奶时你早吃过它了，安全性在防腐剂里排第一梯队。"
+    },
+    {
+      "id": "INS220",
+      "name": "二氧化硫",
+      "aliases": [
+        "焦亚硫酸钾",
+        "焦亚硫酸钠",
+        "亚硫酸钠",
+        "低亚硫酸钠",
+        "亚硫酸氢钠",
+        "硫磺"
+      ],
+      "ins": "220",
+      "category": "漂白防腐剂",
+      "func": "漂白、防腐（干果、蜜饯、葡萄酒）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "哮喘和敏感人群可能不耐受，干果蜜饯里很常见",
+      "childExplain": "孩子吃蜜饯干果前先泡水，能减少残留",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~0.7",
+      "intl": "欧盟 E220、美国均允许（美国要求标注）",
+      "funExplain": "干果蜜饯的\"美白师\"，让杏干金黄不发黑。问题是它对哮喘人群不友好，可能诱发气喘；而且熏得越漂亮的干果，往往营养流失越多。选丑一点的反而实在。"
+    },
+    {
+      "id": "INS319",
+      "name": "特丁基对苯二酚",
+      "aliases": [
+        "TBHQ",
+        "叔丁基对苯二酚"
+      ],
+      "ins": "319",
+      "category": "抗氧化剂",
+      "func": "防止油脂氧化哈喇",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "油炸食品和方便面常用，成人偶尔吃没事，别天天吃",
+      "childExplain": "儿童尽量避开的添加剂，选不含TBHQ的同类产品",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~0.7",
+      "intl": "欧盟 E319、美国允许；日本未批准",
+      "funExplain": "油脂的\"防锈剂\"，专门阻止哈喇味。动物实验里高剂量出现过肝脏异常，日本干脆不用它。方便面、薯片里常见——偶尔吃没事，天天吃就是给肝脏加班。"
+    },
+    {
+      "id": "INS320",
+      "name": "丁基羟基茴香醚",
+      "aliases": [
+        "BHA"
+      ],
+      "ins": "320",
+      "category": "抗氧化剂",
+      "func": "油脂抗氧化",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "有潜在致癌争议（动物实验），欧盟限制更严",
+      "childExplain": "儿童尽量避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~0.5",
+      "intl": "欧盟 E320、美国 FDA 允许",
+      "funExplain": "和 TBHQ 是同行，给油脂\"抗氧化续命\"。争议在于高剂量动物实验显示可能促进肿瘤发展，虽然合规剂量远低于危险线，但孩子代谢系统娇嫩，能避则避。"
+    },
+    {
+      "id": "INS321",
+      "name": "二丁基羟基甲苯",
+      "aliases": [
+        "BHT"
+      ],
+      "ins": "321",
+      "category": "抗氧化剂",
+      "func": "油脂抗氧化",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "与BHA类似，能避则避",
+      "childExplain": "儿童尽量避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~0.3",
+      "intl": "欧盟 E321、美国 FDA 允许",
+      "funExplain": "BHA 的孪生兄弟 BHT，同样给油脂防哈喇。它的争议点是可能干扰内分泌，欧盟对它的态度一直在收紧。看到配料表同时有 BHA+BHT，说明这包零食的油脂\"保质期焦虑\"很重。"
+    },
+    {
+      "id": "INS310",
+      "name": "没食子酸丙酯",
+      "aliases": [
+        "PG"
+      ],
+      "ins": "310",
+      "category": "抗氧化剂",
+      "func": "油脂抗氧化",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "相对温和，但孩子的食品里没必要有",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "0~0.5",
+      "intl": "欧盟 E310、美国 FDA 允许",
+      "funExplain": "从五倍子等植物里提取的抗氧化剂，比前面几位\"化学感\"低一些。但高剂量对肾脏不友好，欧盟给它的 ADI 一降再降——天然的也不等于可以随便吃。"
+    },
+    {
+      "id": "INS300",
+      "name": "抗坏血酸",
+      "aliases": [
+        "维生素C",
+        "VC",
+        "抗坏血酸钠",
+        "异抗坏血酸钠"
+      ],
+      "ins": "300",
+      "category": "抗氧化剂",
+      "func": "天然抗氧化",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "就是维生素C，放心的抗氧化方式",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E300、全球通行",
+      "funExplain": "就是维生素 C 本人！配料表里的\"卧底好人\"，既抗氧化又补维 C。看到它不用慌，这是添加剂里的三好学生。"
+    },
+    {
+      "id": "INS951",
+      "name": "阿斯巴甜",
+      "aliases": [
+        "阿斯帕坦",
+        "甜味素"
+      ],
+      "ins": "951",
+      "category": "甜味剂",
+      "func": "代糖（无糖可乐、口香糖）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "2023年IARC列为2B类可能致癌（证据有限），正常量无需恐慌；苯丙酮尿症患者必须避开",
+      "childExplain": "会强化孩子对甜味的依赖，少给为好",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~40（美国 FDA 为 50）",
+      "intl": "欧盟 E951、美国批准；2023 年 IARC 列为 2B 类\"可能致癌\"，JECFA 维持原 ADI",
+      "funExplain": "无糖可乐的灵魂，甜度是蔗糖的 200 倍。2023 年被世卫组织列为\"可能致癌\"引发全球刷屏，但注意：要达到风险剂量，你得每天灌十几罐无糖可乐还坚持很多年。苯丙酮尿症患者必须避开。"
+    },
+    {
+      "id": "INS950",
+      "name": "安赛蜜",
+      "aliases": [
+        "乙酰磺胺酸钾",
+        "AK糖"
+      ],
+      "ins": "950",
+      "category": "甜味剂",
+      "func": "代糖",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "不升糖但甜度是蔗糖200倍，容易越吃越想吃甜",
+      "childExplain": "儿童不建议常吃人工甜味剂",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~15",
+      "intl": "欧盟 E950、美国 FDA 批准",
+      "funExplain": "安赛蜜，代糖界的\"老实人\"，不被人体代谢、原样排出。单吃有苦味所以常和阿斯巴甜组 CP。安全性记录干净，但\"无糖\"饮料喝多了照样让你对甜味上瘾。"
+    },
+    {
+      "id": "INS952",
+      "name": "甜蜜素",
+      "aliases": [
+        "环己基氨基磺酸钠"
+      ],
+      "ins": "952",
+      "category": "甜味剂",
+      "func": "代糖（蜜饯、饮料）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "美国等多国已禁用，国内限量使用，能避则避",
+      "childExplain": "儿童避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~11",
+      "intl": "欧盟 E952 允许；美国 1970 年起禁用至今",
+      "funExplain": "甜蜜素，老一辈汽水里的回忆杀。因为早期动物实验疑云，美国禁了它半个多世纪，中国和欧盟则认为合规剂量安全。它的故事说明：同一种添加剂，不同国家可以有完全相反的判决。"
+    },
+    {
+      "id": "INS954",
+      "name": "糖精钠",
+      "aliases": [
+        "糖精"
+      ],
+      "ins": "954",
+      "category": "甜味剂",
+      "func": "代糖（老式汽水、蜜饯）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "最老牌人工甜味剂，有苦味且争议多，基本该被淘汰",
+      "childExplain": "儿童避开",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~5",
+      "intl": "欧盟 E954、美国允许（需标注）",
+      "funExplain": "人类第一个代糖，1879 年就被意外发现，甜度是蔗糖 300 倍。曾因\"大鼠膀胱癌\"风波被判死刑又平反。如今地位尴尬：安全但口感差，后味发苦，逐渐被新一代代糖取代。"
+    },
+    {
+      "id": "INS955",
+      "name": "三氯蔗糖",
+      "aliases": [
+        "蔗糖素"
+      ],
+      "ins": "955",
+      "category": "甜味剂",
+      "func": "代糖",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "相对新一代，安全性记录较好，但仍不建议当水喝",
+      "childExplain": "儿童少给为好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~15",
+      "intl": "欧盟 E955、美国 FDA 批准",
+      "funExplain": "三氯蔗糖，用蔗糖改造来的代糖，甜度 600 倍，口感最接近真糖。争议点是高温下可能分解出有害物质——所以标注\"不可用于烘焙\"的代糖产品里往往有它。"
+    },
+    {
+      "id": "INS960",
+      "name": "甜菊糖苷",
+      "aliases": [
+        "甜菊糖"
+      ],
+      "ins": "960",
+      "category": "甜味剂",
+      "func": "植物来源代糖",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "植物提取，相对更放心的代糖选择",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~4（以甜菊醇计）",
+      "intl": "欧盟 E960、美国 GRAS 认证",
+      "funExplain": "从南美甜叶菊叶子里提取的天然代糖，甜度 200~300 倍。植物出身让它自带\"健康光环\"，但后味有股甘草似的回苦，爱的人很爱，恨的人很恨。"
+    },
+    {
+      "id": "INS961",
+      "name": "纽甜",
+      "aliases": [],
+      "ins": "961",
+      "category": "甜味剂",
+      "func": "高强度代糖",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "甜度极高用量极少，安全性记录尚可",
+      "childExplain": "儿童少给为好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "0~2",
+      "intl": "欧盟 E961、美国 FDA 批准",
+      "funExplain": "纽甜，阿斯巴甜的\"加强版\"，甜度高达蔗糖 7000~13000 倍——用量少到几乎可以忽略。因为用量极小，连苯丙酮尿症患者都能吃。代糖界的\"浓缩精华\"。"
+    },
+    {
+      "id": "INS968",
+      "name": "赤藓糖醇",
+      "aliases": [],
+      "ins": "968",
+      "category": "甜味剂",
+      "func": "糖醇类代糖（气泡水常用）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "近年研究提示高剂量或与血栓风险相关，偶尔喝没事，别当水喝",
+      "childExplain": "孩子的肠胃对糖醇敏感，容易胀气腹泻",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "无需规定",
+      "intl": "欧盟 E968、美国 GRAS 认证",
+      "funExplain": "赤藓糖醇，网红无糖饮料的当家花旦，几乎零热量还不升血糖。但 2023 年《自然·医学》研究提示血液里赤藓糖醇偏高与心血管事件相关——虽然证据还不充分，\"无糖自由\"也别太放肆。"
+    },
+    {
+      "id": "INS967",
+      "name": "木糖醇",
+      "aliases": [],
+      "ins": "967",
+      "category": "甜味剂",
+      "func": "糖醇（口香糖）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "对牙齿友好，过量会腹泻",
+      "childExplain": "孩子容易吃多导致拉肚子，控制量",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E967、美国 FDA 批准",
+      "funExplain": "木糖醇，口香糖里的老朋友，真能防龋齿。但它有两个梗：吃多了会\"通便\"（渗透性腹泻），对狗狗是剧毒——家里有毛孩子的，含木糖醇的零食千万收好。"
+    },
+    {
+      "id": "INS965",
+      "name": "麦芽糖醇",
+      "aliases": [
+        "氢化麦芽糖"
+      ],
+      "ins": "965",
+      "category": "甜味剂",
+      "func": "糖醇（无糖糕点）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "无糖糕点的甜味来源，过量易腹泻",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "无需规定",
+      "intl": "欧盟 E965、美国 FDA 批准",
+      "funExplain": "麦芽糖醇，无糖巧克力的主力。热量只有蔗糖一半，升糖慢。但它是\"糖醇家族\"的共同特点：一次吃超过 20g，肠道就会用胀气提醒你什么叫过犹不及。"
+    },
+    {
+      "id": "INS420",
+      "name": "山梨糖醇",
+      "aliases": [
+        "山梨醇"
+      ],
+      "ins": "420",
+      "category": "甜味剂",
+      "func": "保湿、甜味",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "保湿剂兼甜味剂，过量易腹泻",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "无需规定",
+      "intl": "欧盟 E420、美国 FDA 批准",
+      "funExplain": "山梨糖醇，无糖口香糖和牙膏的常客。和木糖醇一样，适量友好、过量\"滑肠\"。欧盟要求含它超过 10% 的食品必须标注\"过量食用可能引起腹泻\"——官方吐槽最为致命。"
+    },
+    {
+      "id": "INS102",
+      "name": "柠檬黄",
+      "aliases": [
+        "酒石黄"
+      ],
+      "ins": "102",
+      "category": "着色剂",
+      "func": "人工色素（黄色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "部分人工色素与儿童注意力问题相关（南安普顿研究），建议避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~7.5",
+      "intl": "欧盟 E102 允许但强制标注\"可能对儿童活动与注意力产生不良影响\"；美国要求单独标注",
+      "funExplain": "柠檬黄，让饮料和糖果黄得发亮。它是\"南安普顿六色\"之一——2007 年那项著名研究让欧盟强制它在标签上警告\"可能影响儿童注意力\"。孩子看到亮黄色零食就走不动道，家长看到这三个字就该警惕。"
+    },
+    {
+      "id": "INS110",
+      "name": "日落黄",
+      "aliases": [],
+      "ins": "110",
+      "category": "着色剂",
+      "func": "人工色素（橙黄色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "与儿童注意力问题相关的色素之一，建议避开",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~2.5",
+      "intl": "欧盟 E110 强制标注儿童警告；美国要求标注",
+      "funExplain": "日落黄，芬达橙色的幕后功臣（之一）。同为\"南安普顿六色\"，欧盟要求标注儿童注意力警告。它让饮料看起来像鲜榨橙汁，实际上一滴橙子都没有。"
+    },
+    {
+      "id": "INS124",
+      "name": "胭脂红",
+      "aliases": [
+        "丽春红4R"
+      ],
+      "ins": "124",
+      "category": "着色剂",
+      "func": "人工色素（红色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "建议孩子避开人工色素",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~2.5",
+      "intl": "欧盟 E124 强制标注儿童警告；美国允许",
+      "funExplain": "胭脂红，糖果饮料里的\"红颜担当\"。南安普顿六色成员，欧盟强制儿童警告。天然版胭脂红来自胭脂虫（对，是虫子），合成版来自煤焦油——配料表写\"胭脂红\"的通常是后者。"
+    },
+    {
+      "id": "INS129",
+      "name": "诱惑红",
+      "aliases": [
+        "艳丽红"
+      ],
+      "ins": "129",
+      "category": "着色剂",
+      "func": "人工色素（红色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "建议孩子避开人工色素",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~7",
+      "intl": "欧盟 E129 强制标注儿童警告；美国允许",
+      "funExplain": "诱惑红，名字就透着不安分。南安普顿六色之一，欧盟强制儿童注意力警告。它让草莓味零食红得娇艳欲滴——虽然里面可能连草莓的影子都没有。"
+    },
+    {
+      "id": "INS133",
+      "name": "亮蓝",
+      "aliases": [],
+      "ins": "133",
+      "category": "着色剂",
+      "func": "人工色素（蓝色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "建议孩子避开人工色素",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~6",
+      "intl": "欧盟 E133、美国均允许",
+      "funExplain": "亮蓝，蓝色饮料和糖果的御用色素。天然蓝色食物极其罕见，所以看到蓝色的零食，基本可以确定是它的手笔。安全性尚可，但蓝色食物本身就违反人类演化直觉——少吃为妙。"
+    },
+    {
+      "id": "INS123",
+      "name": "苋菜红",
+      "aliases": [],
+      "ins": "123",
+      "category": "着色剂",
+      "func": "人工色素（紫红色）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "合规剂量安全，属于非必要添加",
+      "childExplain": "建议孩子避开人工色素",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~0.5",
+      "intl": "欧盟 E123 允许；美国 1976 年起禁用",
+      "funExplain": "苋菜红，又一种红色合成色素。美国因为致癌疑虑禁了它快 50 年，欧盟和中国限量使用。同一种色素，太平洋两岸待遇天差地别——保守一点总没错。"
+    },
+    {
+      "id": "INS150",
+      "name": "焦糖色",
+      "aliases": [
+        "焦糖色素",
+        "酱色"
+      ],
+      "ins": "150",
+      "category": "着色剂",
+      "func": "上色（可乐、酱油）",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "用量大但相对温和，普通法工艺更优",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "普通法无需规定；氨法/亚硫酸铵法 0~200",
+      "intl": "欧盟 E150a-d、美国均允许",
+      "funExplain": "焦糖色，可乐棕黑色的来源，也是全球用量最大的色素。争议在氨法工艺会产生微量 4-甲基咪唑（加州 65 号提案点名物质）。可乐为此专门改过配方——大厂都紧张过，你说呢？"
+    },
+    {
+      "id": "INS160a",
+      "name": "β-胡萝卜素",
+      "aliases": [
+        "贝塔胡萝卜素"
+      ],
+      "ins": "160a",
+      "category": "着色剂",
+      "func": "天然色素",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "天然来源，还能转化维生素A，放心",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~5（合成品）；提取品无需规定",
+      "intl": "欧盟 E160a、全球通行",
+      "funExplain": "β-胡萝卜素，胡萝卜橙色的本尊，吃进身体还能转化成维生素 A。色素里的\"营养课代表\"，看到它等于看到半个胡萝卜。"
+    },
+    {
+      "id": "INS100",
+      "name": "姜黄",
+      "aliases": [
+        "姜黄素"
+      ],
+      "ins": "100",
+      "category": "着色剂",
+      "func": "天然色素",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "天然色素，放心",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~3（以姜黄素计）",
+      "intl": "欧盟 E100、美国 FDA 批准",
+      "funExplain": "姜黄素，咖喱金黄的源泉，也是保健品界的网红抗氧化成分。从咖喱到黄色饮料都有它，算是色素里为数不多\"可能有点好处\"的选手。"
+    },
+    {
+      "id": "INS171",
+      "name": "二氧化钛",
+      "aliases": [
+        "钛白粉"
+      ],
+      "ins": "171",
+      "category": "着色剂",
+      "func": "增白（糖果、口香糖）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "欧盟2022年已禁用（潜在遗传毒性争议），国内仍允许，建议避开",
+      "childExplain": "儿童避开，选不靠增白剂的糖果",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "曾无需规定，2019 年起 JECFA 撤回",
+      "intl": "欧盟 2022 年起全面禁用；美国仍允许",
+      "funExplain": "二氧化钛，让糖果口香糖白得发光的\"美白粉\"。欧盟 2022 年因为无法排除纳米颗粒的遗传毒性风险而全面禁用，美国还在用。糖果越白亮，越要翻配料表找这三个字。"
+    },
+    {
+      "id": "INS621",
+      "name": "谷氨酸钠",
+      "aliases": [
+        "味精"
+      ],
+      "ins": "621",
+      "category": "增味剂",
+      "func": "增鲜",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "就是味精，安全性其实不错，但常和高钠食品一起出现",
+      "childExplain": "1岁内宝宝辅食不该加，大孩子也要少",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E621、美国 GRAS 认证",
+      "funExplain": "谷氨酸钠，就是味精。背了半个多世纪\"中餐馆综合征\"的黑锅，科学界早已平反：合规使用安全。真正的问题是它让你不知不觉吃更多——鲜味的尽头是下饭。"
+    },
+    {
+      "id": "INS635",
+      "name": "呈味核苷酸二钠",
+      "aliases": [
+        "I+G",
+        "5'-呈味核苷酸二钠"
+      ],
+      "ins": "635",
+      "category": "增味剂",
+      "func": "强力增鲜（与味精协同）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "鲜味放大器，痛风人群注意嘌呤来源",
+      "childExplain": "孩子不需要这么强的鲜味刺激",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "无需规定",
+      "intl": "欧盟 E635、美国允许",
+      "funExplain": "呈味核苷酸二钠，鲜味界的\"放大器\"，和味精搭配能产生 1+1>8 的鲜味暴击。方便面调料包的灵魂。本身安全，但它出现的地方，往往钠含量都低不了。"
+    },
+    {
+      "id": "INS330",
+      "name": "柠檬酸",
+      "aliases": [
+        "柠檬酸钠"
+      ],
+      "ins": "330",
+      "category": "酸度调节剂",
+      "func": "调酸、防腐辅助",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "水果里本来就有的酸，放心",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E330、全球通行",
+      "funExplain": "柠檬酸，柠檬的酸味本体（现在多是发酵法生产）。酸度调节剂里最人畜无害的存在，还能促进矿物质吸收。饮料里有它，约等于挤了点柠檬。"
+    },
+    {
+      "id": "INS338",
+      "name": "磷酸",
+      "aliases": [
+        "正磷酸"
+      ],
+      "ins": "338",
+      "category": "酸度调节剂",
+      "func": "可乐类饮料调酸",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "可乐的酸味来源，长期大量摄入影响钙吸收",
+      "childExplain": "影响钙吸收，长身体的孩子别常喝可乐",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~70（以磷计，含所有磷来源）",
+      "intl": "欧盟 E338、美国 FDA 批准",
+      "funExplain": "磷酸，可乐\"杀口感\"的来源。问题是磷摄入过多会打破钙磷平衡，悄悄影响骨骼——青少年把可乐当水喝，骨头可能真的在\"漏钙\"。肾病患者更要躲着走。"
+    },
+    {
+      "id": "INS471",
+      "name": "单硬脂酸甘油酯",
+      "aliases": [
+        "单甘酯",
+        "单双甘油脂肪酸酯"
+      ],
+      "ins": "471",
+      "category": "乳化剂",
+      "func": "乳化（面包、冰淇淋）",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "常规乳化剂，安全性较好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E471、美国 FDA 批准",
+      "funExplain": "单硬脂酸甘油酯，面包柔软的幕后功臣，让水和油和平共处。本质是油脂改造来的，安全性高，但它的出现往往意味着这是一款\"工业柔软\"的面包。"
+    },
+    {
+      "id": "INS322",
+      "name": "大豆磷脂",
+      "aliases": [
+        "卵磷脂",
+        "大豆卵磷脂"
+      ],
+      "ins": "322",
+      "category": "乳化剂",
+      "func": "乳化（巧克力、糕点）",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "相对天然，大豆过敏者留意",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E322、全球通行",
+      "funExplain": "大豆磷脂，巧克力丝滑的秘密，也是天然的营养素（卵磷脂就是它）。乳化剂里的\"营养派\"，看到它不用皱眉。大豆过敏者除外。"
+    },
+    {
+      "id": "INS433",
+      "name": "聚氧乙烯山梨醇酐单油酸酯",
+      "aliases": [
+        "吐温80",
+        "聚山梨酯80"
+      ],
+      "ins": "433",
+      "category": "乳化剂",
+      "func": "乳化（冰淇淋、饮料）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "有研究提示高剂量或影响肠道菌群，偶尔吃没事",
+      "childExplain": "孩子的冰淇淋里常见，控制频率",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "0~25",
+      "intl": "欧盟 E433、美国 FDA 批准",
+      "funExplain": "吐温 80，冰淇淋细腻口感的功臣。近年有动物实验提示这类合成乳化剂长期大量摄入可能影响肠道菌群——证据还在积累，但\"冰淇淋自由\"确实该克制点。"
+    },
+    {
+      "id": "INS415",
+      "name": "黄原胶",
+      "aliases": [
+        "汉生胶"
+      ],
+      "ins": "415",
+      "category": "增稠剂",
+      "func": "增稠（酱料、酸奶）",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "发酵来源，安全性好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E415、美国 FDA 批准",
+      "funExplain": "黄原胶，玉米淀粉发酵来的\"增稠高手\"，让沙拉酱挂勺、让无麸质面包不散架。还是可溶性膳食纤维的一种，增稠剂里的实力派好人。"
+    },
+    {
+      "id": "INS407",
+      "name": "卡拉胶",
+      "aliases": [
+        "角叉菜胶"
+      ],
+      "ins": "407",
+      "category": "增稠剂",
+      "func": "增稠凝胶（果冻、火腿肠）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "食品级安全，但降解卡拉胶有肠道刺激争议，婴幼儿食品已禁用",
+      "childExplain": "婴幼儿食品不允许加，大孩子也要少吃果冻",
+      "sources": [
+        "GB2760",
+        "EU",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "无需规定",
+      "intl": "欧盟 E407、美国 FDA 批准（降解卡拉胶被禁）",
+      "funExplain": "卡拉胶，从红海藻提取的增稠剂，果冻布丁的定型担当。争议点是动物实验中降解卡拉胶可能致肠道炎症——食品级的是未降解的，安全，但肠胃敏感的人吃多了可能不舒服。"
+    },
+    {
+      "id": "INS466",
+      "name": "羧甲基纤维素钠",
+      "aliases": [
+        "CMC",
+        "纤维素胶"
+      ],
+      "ins": "466",
+      "category": "增稠剂",
+      "func": "增稠",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "常规增稠剂，安全性较好",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E466、美国 FDA 批准",
+      "funExplain": "羧甲基纤维素钠，听着化学，本质是改造过的植物纤维。让冰淇淋没有冰渣、让酸奶口感顺滑。2022 年有研究提示合成乳化剂或影响肠道菌群，但正常食用量无需焦虑。"
+    },
+    {
+      "id": "INS440",
+      "name": "果胶",
+      "aliases": [],
+      "ins": "440",
+      "category": "增稠剂",
+      "func": "增稠（果酱、酸奶）",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "水果里提取的膳食纤维，放心",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E440、全球通行",
+      "funExplain": "果胶，苹果皮和柑橘皮里提取的天然凝胶，果酱的灵魂。还是优质可溶性膳食纤维，能帮忙降胆固醇。添加剂里的\"水果本果\"，放心。"
+    },
+    {
+      "id": "INS412",
+      "name": "瓜尔胶",
+      "aliases": [
+        "瓜尔豆胶",
+        "刺槐豆胶",
+        "槐豆胶"
+      ],
+      "ins": "412",
+      "category": "增稠剂",
+      "func": "增稠",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "植物来源增稠剂，放心",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E412、美国 FDA 批准",
+      "funExplain": "瓜尔胶，印度瓜尔豆磨出来的天然植物胶，冰淇淋和酸奶的顺滑担当。本质是膳食纤维，增稠剂里的天然派。"
+    },
+    {
+      "id": "INS401",
+      "name": "海藻酸钠",
+      "aliases": [
+        "褐藻酸钠"
+      ],
+      "ins": "401",
+      "category": "增稠剂",
+      "func": "增稠",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "海藻提取，放心",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E401、美国 FDA 批准",
+      "funExplain": "海藻酸钠，海带里提取的天然胶质，分子料理\"爆珠\"的黑科技原料。来自大海的膳食纤维，安全又有点酷。"
+    },
+    {
+      "id": "INS500ii",
+      "name": "碳酸氢钠",
+      "aliases": [
+        "小苏打"
+      ],
+      "ins": "500ii",
+      "category": "膨松剂",
+      "func": "膨松",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "就是小苏打，放心",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E500ii、全球通行",
+      "funExplain": "碳酸氢钠，就是小苏打，厨房里的老熟人。让饼干酥脆、让油条蓬松。唯一的提醒：它也是钠，高血压人群注意总量。"
+    },
+    {
+      "id": "INS522",
+      "name": "硫酸铝钾",
+      "aliases": [
+        "明矾",
+        "钾明矾",
+        "硫酸铝铵",
+        "铵明矾"
+      ],
+      "ins": "522",
+      "category": "膨松剂",
+      "func": "膨松（油条、粉条）",
+      "level": "warning",
+      "childLevel": "warning",
+      "explain": "含铝！铝摄入过量影响神经和骨骼，能避则避",
+      "childExplain": "铝对孩子神经发育有潜在影响，油条粉条选无铝配方的",
+      "sources": [
+        "GB2760",
+        "JECFA",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~0.6（以铝计）",
+      "intl": "欧盟 E522、美国允许；中国已大幅收紧使用范围",
+      "funExplain": "硫酸铝钾，明矾的学名，传统油条蓬松的秘方。问题是铝会在体内慢慢蓄积，过量伤神经伤骨——这就是\"无铝油条\"成为卖点的原因。看到它，这根油条就该放下了。"
+    },
+    {
+      "id": "INS516",
+      "name": "硫酸钙",
+      "aliases": [
+        "石膏"
+      ],
+      "ins": "516",
+      "category": "凝固剂",
+      "func": "点豆腐",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "传统点豆腐用的，放心",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无需规定",
+      "intl": "欧盟 E516、全球通行",
+      "funExplain": "硫酸钙，就是石膏，点豆腐的千年古法原料。你吃的每一块石膏豆腐都有它。补钙又安全，凝固剂里的老字号。"
+    },
+    {
+      "id": "INS575",
+      "name": "葡萄糖酸-δ-内酯",
+      "aliases": [
+        "葡萄糖酸内酯",
+        "GDL"
+      ],
+      "ins": "575",
+      "category": "凝固剂",
+      "func": "内酯豆腐",
+      "level": "safe",
+      "childLevel": null,
+      "explain": "放心",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~50",
+      "intl": "欧盟 E575、美国 FDA 批准",
+      "funExplain": "葡萄糖酸内酯，内酯豆腐嫩滑的秘诀。由葡萄糖发酵而来，在体内代谢成葡萄糖酸——听着就像自己人。安全温和的凝固剂。"
+    },
+    {
+      "id": "INS551",
+      "name": "二氧化硅",
+      "aliases": [
+        "硅石"
+      ],
+      "ins": "551",
+      "category": "抗结剂",
+      "func": "防结块（奶粉、冲调粉）",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "防结块用，合规剂量安全",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "无需规定",
+      "intl": "欧盟 E551、美国 FDA 批准",
+      "funExplain": "二氧化硅，就是沙子的主要成分（食品级超细粉）。防止奶粉、咖啡伴侣结块的\"防潮珠\"。吃进去不吸收，原样排出——食品添加剂里的过客。"
+    },
+    {
+      "id": "INS535",
+      "name": "亚铁氰化钾",
+      "aliases": [],
+      "ins": "535",
+      "category": "抗结剂",
+      "func": "食盐防结块",
+      "level": "notice",
+      "childLevel": "notice",
+      "explain": "名字吓人但化学性质稳定，合规剂量安全；介意可选未添加的盐",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "0~0.025",
+      "intl": "欧盟 E535、美国 FDA 批准",
+      "funExplain": "亚铁氰化钾，食盐里的抗结剂。名字带\"氰\"吓坏不少人，其实它和剧毒的氰化物是两码事——化学键稳得很，正常吃盐远到不了有害剂量。实在介意，买无抗结剂盐即可。"
+    },
+    {
+      "id": "INS451",
+      "name": "三聚磷酸钠",
+      "aliases": [
+        "焦磷酸钠",
+        "六偏磷酸钠",
+        "复合磷酸盐"
+      ],
+      "ins": "451",
+      "category": "水分保持剂",
+      "func": "保水（肉制品、丸子）",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "让肉丸Q弹保水，磷摄入过多影响钙磷平衡",
+      "childExplain": "孩子的丸子虾滑里常见，控制频率",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "0~70（以磷计，含所有磷来源）",
+      "intl": "欧盟 E451、美国 FDA 批准",
+      "funExplain": "三聚磷酸钠，让虾仁 Q 弹、让火腿多汁的\"保水大师\"。代价是磷摄入超标——磷太多会拖累钙吸收、加重肾脏负担。肾病患者看到\"磷\"字辈添加剂，一律绕行。"
+    },
+    {
+      "id": "FLAVOR",
+      "name": "食用香精",
+      "aliases": [
+        "食用香料",
+        "食品用香精",
+        "香精"
+      ],
+      "ins": null,
+      "category": "香精香料",
+      "func": "调香",
+      "level": "notice",
+      "childLevel": "warning",
+      "explain": "成分不透明的复合添加，靠香精调味的食品往往原料不够好",
+      "childExplain": "孩子的味觉在发育，香精调出来的重口味没好处",
+      "sources": [
+        "GB2760",
+        "JECFA/EFSA"
+      ],
+      "confidence": "medium",
+      "adi": "按品种分别管理",
+      "intl": "全球均按肯定列表管理；中国 GB 2760 收录约 1800 种",
+      "funExplain": "食用香精，食品工业的\"化妆师\"：草莓味可以没有草莓，橙子味可以没有橙子。合规使用安全，但它的存在本身就是一个信号——这食物的本味可能不够，需要\"化妆\"。孩子尤其该少吃\"化妆食品\"。"
+    },
+    {
+      "id": "RISK-HVO",
+      "name": "氢化植物油",
+      "aliases": [
+        "部分氢化植物油",
+        "氢化油"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "起酥、增香（反式脂肪来源）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "可能含反式脂肪酸，增加心血管负担，大人也要少吃",
+      "childExplain": "反式脂肪影响孩子发育，最好不要碰",
+      "sources": [
+        "膳食指南",
+        "WHO",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "反式脂肪酸：WHO 建议供能比 <1%（约 2g/日）",
+      "intl": "美国已禁部分氢化油；WHO 计划全球消除工业反式脂肪",
+      "funExplain": "氢化植物油，液态油\"变硬\"的工业魔法，副产品是反式脂肪酸——心血管的隐形杀手，没有安全摄入量，越少越好。配料表看到它，相当于看到\"伤心\"两个字。"
+    },
+    {
+      "id": "RISK-SHORTENING",
+      "name": "起酥油",
+      "aliases": [
+        "酥油",
+        "白油"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "起酥（反式脂肪风险）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "起酥油多为氢化工艺，反式脂肪风险同上",
+      "childExplain": "孩子最好不要碰",
+      "sources": [
+        "膳食指南",
+        "WHO",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "同反式脂肪酸建议",
+      "intl": "同氢化植物油",
+      "funExplain": "起酥油，蛋挞酥皮、手抓饼层层起酥的功臣。酥是真的酥，反式脂肪酸也是真的可能有。每一口酥脆背后，都是血管在负重前行。"
+    },
+    {
+      "id": "RISK-MARGARINE",
+      "name": "人造奶油",
+      "aliases": [
+        "人造黄油",
+        "麦淇淋",
+        "玛琪琳"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "替代黄油（反式脂肪风险）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "可能含反式脂肪酸，会增加心血管负担",
+      "childExplain": "反式脂肪影响发育，孩子最好不要碰",
+      "sources": [
+        "膳食指南",
+        "WHO",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "同反式脂肪酸建议",
+      "intl": "同氢化植物油",
+      "funExplain": "人造奶油，用植物油模仿黄油的平替。便宜、好塑形，但传统工艺会带来反式脂肪酸。蛋糕房、奶茶店最爱它——你吃的那口\"奶油\"，可能既不是奶也不是油。"
+    },
+    {
+      "id": "RISK-NONDairy",
+      "name": "植脂末",
+      "aliases": [
+        "奶精",
+        "咖啡伴侣"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "替代奶（反式脂肪风险）",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "奶茶咖啡里的'奶'多半是它，可能含反式脂肪",
+      "childExplain": "孩子最好不要碰",
+      "sources": [
+        "膳食指南",
+        "WHO",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "同反式脂肪酸建议",
+      "intl": "同氢化植物油",
+      "funExplain": "植脂末，奶茶丝滑口感的幕后玩家，俗称\"奶精\"。名字带奶，其实一滴奶都没有，主要成分是氢化植物油+糖浆。奶茶好喝，但你的血管在为这份丝滑买单。"
+    },
+    {
+      "id": "RISK-COCOA",
+      "name": "代可可脂",
+      "aliases": [
+        "类可可脂"
+      ],
+      "ins": null,
+      "category": "风险原料",
+      "func": "替代可可脂",
+      "level": "warning",
+      "childLevel": "danger",
+      "explain": "不是真巧克力，可能含反式脂肪，口感和成本都降级",
+      "childExplain": "给孩子买巧克力认准'可可脂'而非'代可可脂'",
+      "sources": [
+        "膳食指南",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "同反式脂肪酸建议",
+      "intl": "同氢化植物油",
+      "funExplain": "代可可脂，用植物油模仿可可脂的\"替身演员\"。真巧克力丝滑醇香靠可可脂，代可可脂靠氢化工艺——口感蜡、营养差，还可能有反式脂肪酸。买巧克力，先找\"代可可脂\"四个字，有就放下。"
+    },
+    {
+      "id": "FUNC-CAFFEINE",
+      "name": "咖啡因",
+      "aliases": [
+        "咖啡碱",
+        "瓜拉纳",
+        "瓜拉纳提取物"
+      ],
+      "ins": null,
+      "category": "功能成分",
+      "func": "提神（功能饮料、可乐）",
+      "level": "notice",
+      "childLevel": "danger",
+      "explain": "成人每日不超过400mg，功能饮料一罐约50-80mg",
+      "childExplain": "儿童和孕妇应避开含咖啡因饮料",
+      "sources": [
+        "膳食指南",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "健康成人 ≤400mg/日（EFSA）；单次 ≤200mg",
+      "intl": "全球普遍允许；多国要求能量饮料标注咖啡因含量",
+      "funExplain": "咖啡因，合法的精神兴奋剂。成人每天 400mg 以内是享受，超了是心慌失眠。孩子神经系统还在发育，可乐、奶茶、巧克力里的咖啡因都可能让他们晚上瞪眼到天亮——儿童最好零摄入。"
+    },
+    {
+      "id": "BANNED-SUDAN",
+      "name": "苏丹红",
+      "aliases": [
+        "苏丹红1号"
+      ],
+      "ins": null,
+      "category": "已禁用物质",
+      "func": "非法添加（染色）",
+      "level": "danger",
+      "childLevel": "danger",
+      "explain": "国家明令禁止的非法添加物！如在配料表出现，请勿购买并可举报",
+      "childExplain": "非法添加物，举报",
+      "sources": [
+        "食品安全法",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无（非食用物质）",
+      "intl": "全球禁用；中国列入食品非法添加物黑名单",
+      "funExplain": "苏丹红，工业染料，根本不是食品添加剂！曾有不法商贩用它给辣椒面、红心鸭蛋\"上色\"。明确致癌，全球通缉。配料表正常不会写，散装辣椒粉颜色异常鲜红的要警惕。"
+    },
+    {
+      "id": "BANNED-BROMATE",
+      "name": "溴酸钾",
+      "aliases": [
+        "溴酸钠"
+      ],
+      "ins": null,
+      "category": "已禁用物质",
+      "func": "非法添加（面粉处理）",
+      "level": "danger",
+      "childLevel": "danger",
+      "explain": "已禁用的面粉处理剂，致癌风险，如出现请举报",
+      "childExplain": "非法添加物，举报",
+      "sources": [
+        "食品安全法",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无（已禁用）",
+      "intl": "中国 2005 年起禁用；多数国家已禁用",
+      "funExplain": "溴酸钾，曾经的面包改良剂，让面包又大又软。后来证实致癌，被全球拉黑。现在正规面包早已不用，但小作坊散装面包仍有违规风险。"
+    },
+    {
+      "id": "BANNED-RONGALIT",
+      "name": "吊白块",
+      "aliases": [
+        "甲醛次硫酸氢钠"
+      ],
+      "ins": null,
+      "category": "已禁用物质",
+      "func": "非法添加（漂白）",
+      "level": "danger",
+      "childLevel": "danger",
+      "explain": "非法漂白剂，分解出甲醛，如出现请举报",
+      "childExplain": "非法添加物，举报",
+      "sources": [
+        "食品安全法",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无（非食用物质）",
+      "intl": "全球禁用；中国列入非法添加物黑名单",
+      "funExplain": "吊白块，工业漂白剂，化学名甲醛次硫酸氢钠——分解出甲醛的那种。曾被用来漂白米粉、腐竹、白糖。毒性明确，违法添加是要坐牢的。颜色惨白的干货，别买。"
+    },
+    {
+      "id": "BANNED-BORAX",
+      "name": "硼砂",
+      "aliases": [
+        "硼酸钠"
+      ],
+      "ins": null,
+      "category": "已禁用物质",
+      "func": "非法添加（增筋、防腐）",
+      "level": "danger",
+      "childLevel": "danger",
+      "explain": "非法添加物，毒性累积，如出现请举报",
+      "childExplain": "非法添加物，举报",
+      "sources": [
+        "食品安全法",
+        "JECFA/EFSA"
+      ],
+      "confidence": "high",
+      "adi": "无（非食用物质）",
+      "intl": "全球禁用；中国列入非法添加物黑名单",
+      "funExplain": "硼砂，工业原料，曾被加进肉丸、粽子、凉皮里追求\"Q 弹\"。在体内蓄积伤肝肾，儿童尤其敏感。Q 弹到不正常的丸子，可能不是手艺好，是加了料。"
+    }
+  ],
+  "updatedAt": "2026-08-30"
+}

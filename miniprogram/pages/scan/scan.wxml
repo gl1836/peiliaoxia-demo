@@ -1,0 +1,39 @@
+<view class="plx-page scan">
+
+  <block wx:if="{{state === 'idle'}}">
+    <view class="scan-hero">
+      <view class="scan-ring">
+        <view class="scan-ring-icon">◎</view>
+      </view>
+      <view class="scan-title">对准它，配料侠来把关</view>
+      <view class="scan-sub plx-muted">拍配料表 AI 识别；条码命中产品库可秒回</view>
+    </view>
+    <view class="scan-actions">
+      <button class="plx-btn" bindtap="pickImage">拍配料表照片</button>
+      <button class="plx-btn plx-btn--ghost" bindtap="startBarcode">扫商品条码</button>
+    </view>
+    <view class="scan-hint plx-tiny">拍照小技巧：让配料表文字铺满画面、避免反光，识别更准</view>
+  </block>
+
+  <block wx:elif="{{state === 'preview'}}">
+    <view class="preview-wrap">
+      <image class="preview-img" src="{{previewImg}}" mode="widthFix" />
+    </view>
+    <view class="preview-actions">
+      <button class="plx-btn" bindtap="confirmAnalyze">开始分析</button>
+      <view class="preview-secondary">
+        <button class="plx-btn plx-btn--ghost preview-half" bindtap="retake">重拍</button>
+        <button class="plx-btn plx-btn--ghost preview-half" bindtap="cancelPreview">取消</button>
+      </view>
+    </view>
+  </block>
+
+  <view class="analyzing-mask" wx:if="{{state === 'analyzing'}}">
+    <view class="analyzing-box">
+      <view class="spinner"></view>
+      <view class="analyzing-text">配料侠正在逐行检查…</view>
+      <view class="analyzing-tip">{{tip}}</view>
+    </view>
+  </view>
+
+</view>

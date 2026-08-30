@@ -1,0 +1,75 @@
+<view class="result" wx:if="{{r}}">
+
+  <view class="verdict-hero" style="background: {{ui.color}}">
+    <view class="verdict-emoji">{{ui.emoji}}</view>
+    <view class="verdict-label">{{ui.label}}</view>
+    <view class="verdict-text">{{r.verdictText}}</view>
+    <view class="verdict-score" wx:if="{{r.score !== undefined}}">配料侠评分 {{r.score}} / 100</view>
+  </view>
+
+  <view class="plx-page result-body">
+
+    <view class="plx-card product-card">
+      <view class="product-name">{{r.productName}}</view>
+      <view class="product-meta plx-muted" wx:if="{{r.brand}}">{{r.brand}}<text wx:if="{{r.barcode}}"> · {{r.barcode}}</text></view>
+      <view class="product-demo plx-tiny" wx:if="{{r.demo}}">演示模式数据 · 配置云环境后为真实分析</view>
+    </view>
+
+    <block wx:if="{{flags.length}}">
+      <view class="plx-section-title">需要注意</view>
+      <view class="plx-card flag-card">
+        <view class="flag-row" wx:for="{{flags}}" wx:key="name">
+          <view class="flag-dot" style="background: {{item.ui.color}}"></view>
+          <view class="flag-body">
+            <text class="flag-name">{{item.name}}</text>
+            <text class="flag-reason plx-muted">{{item.reason}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <block wx:if="{{r.conditionNotes && r.conditionNotes.length}}">
+      <view class="plx-section-title">慢病食养建议</view>
+      <view class="plx-card" wx:for="{{r.conditionNotes}}" wx:key="id" wx:for-item="cond">
+        <view class="alt-name">{{cond.name}}</view>
+        <view class="plx-tiny plx-muted" style="margin:2px 0 6px">{{cond.source}}</view>
+        <view class="flag-reason plx-muted" wx:for="{{cond.tips}}" wx:key="*this" wx:for-item="tip" style="display:block;margin-top:4px">· {{tip}}</view>
+      </view>
+    </block>
+
+    <view class="plx-section-title">配料逐行解读</view>
+    <view class="plx-card ing-card">
+      <view class="ing-row" wx:for="{{r.ingredients}}" wx:key="name">
+        <view class="ing-head">
+          <view class="ing-dot" style="background: {{item.ui.color}}"></view>
+          <text class="ing-name">{{item.name}}</text>
+          <text class="ing-level" style="color: {{item.ui.color}}" wx:if="{{item.level !== 'safe'}}">{{item.ui.label}}</text>
+        </view>
+        <view class="ing-explain plx-muted" wx:if="{{item.explanation}}">{{item.explanation}}</view>
+        <view class="ing-explain plx-muted plx-tiny" wx:if="{{item.fun}}">{{item.fun}}</view>
+      </view>
+    </view>
+
+    <block wx:if="{{r.alternatives && r.alternatives.length}}">
+      <view class="plx-section-title">配料侠推荐</view>
+      <view class="plx-card alt-card" wx:for="{{r.alternatives}}" wx:key="product">
+        <view class="alt-name">{{item.brand}} · {{item.product}}</view>
+        <view class="alt-reason plx-muted">{{item.reason}}</view>
+      </view>
+    </block>
+
+    <view class="plx-section-title" wx:if="{{r.tip}}">实用建议</view>
+    <view class="plx-card tip-card" wx:if="{{r.tip}}">{{r.tip}}</view>
+
+    <view class="disclaimer plx-tiny">
+      分析结果是基于公开标准与自建方法论的配料风险提示，仅供参考，不构成医疗或购买建议。
+      若你或家人有食物过敏，无论结果如何，请务必以产品包装标示为准。
+    </view>
+
+    <view class="result-actions">
+      <button class="plx-btn" bindtap="scanAgain">再扫一个</button>
+      <button class="plx-btn plx-btn--ghost" open-type="share">分享给家人</button>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view class="plx-page home">
+  <view class="hero">
+    <view class="hero-logo">配料侠</view>
+    <view class="hero-slogan">帮你读懂每一口</view>
+    <view class="hero-sub">拍一张配料表，秒懂能不能吃</view>
+  </view>
+
+  <view class="actions">
+    <button class="plx-btn actions-primary" bindtap="goPhoto">拍配料表</button>
+    <button class="plx-btn plx-btn--ghost" bindtap="goBarcode">扫商品条码</button>
+  </view>
+
+  <view class="plx-card profile-card" bindtap="goProfile">
+    <view class="profile-info">
+      <view class="profile-title">我的健康档案</view>
+      <view class="profile-summary" wx:if="{{hasProfile}}">{{profileSummary}}</view>
+      <view class="profile-summary plx-muted" wx:else>告诉我你的身体情况，分析更准（选填，仅存在本机）</view>
+    </view>
+    <view class="profile-arrow">›</view>
+  </view>
+
+  <view class="plx-section-title">配料侠小贴士</view>
+  <view class="plx-card tip-card">
+    <text>{{tip}}</text>
+  </view>
+
+  <view class="home-foot plx-tiny">分析结果仅供参考，不构成医疗建议</view>
+</view>

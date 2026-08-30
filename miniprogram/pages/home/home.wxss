@@ -1,0 +1,60 @@
+.home .hero {
+  padding: 72rpx 16rpx 56rpx;
+  text-align: center;
+}
+.hero-logo {
+  font-size: 72rpx;
+  font-weight: 800;
+  color: var(--brand);
+  letter-spacing: 8rpx;
+}
+.hero-slogan {
+  margin-top: 16rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--ink);
+}
+.hero-sub {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  color: var(--ink-2);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+  margin-top: 16rpx;
+}
+
+.profile-card {
+  margin-top: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-title {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.profile-summary {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  color: var(--brand);
+}
+.profile-arrow {
+  font-size: 48rpx;
+  color: var(--ink-3);
+  padding-left: 24rpx;
+}
+
+.tip-card {
+  font-size: 28rpx;
+  color: var(--ink-2);
+  line-height: 1.7;
+}
+
+.home-foot {
+  margin-top: 64rpx;
+  text-align: center;
+}

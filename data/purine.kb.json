@@ -1,0 +1,1408 @@
+{
+ "version": "2026.08.04-1",
+ "meta": {
+  "source": "国家卫健委《成人高尿酸血症与痛风食养指南（2024年版）》附录 1（数据本身引自《中国食物成分表》第6版第二册）",
+  "thresholds": "四类分级：高 ≥150 / 较高 75-150 / 较低 30-75 / 低 <30（mg/100g），按指南原文",
+  "quality": "auto_extracted_cleaned（自动提取并清理残渣，仍建议营养师抽检）"
+ },
+ "entries": [
+  {
+   "name": "鲅鱼(烤)",
+   "purineMgPer100g": 452,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "榆黄蘑(干)",
+   "purineMgPer100g": 415,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "紫菜(干)",
+   "purineMgPer100g": 415,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "贻贝",
+   "purineMgPer100g": 414,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "香菇(干，金钱菇)",
+   "purineMgPer100g": 405,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "烤虾",
+   "purineMgPer100g": 389,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "面条鱼(干)",
+   "purineMgPer100g": 383,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鹅肝",
+   "purineMgPer100g": 377,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "香菇(干,花菇)",
+   "purineMgPer100g": 357,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "干对虾",
+   "purineMgPer100g": 349,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鸭肠(熟)",
+   "purineMgPer100g": 346,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "干虾仁",
+   "purineMgPer100g": 345,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "毛蚶(熟)",
+   "purineMgPer100g": 343,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鸡肝",
+   "purineMgPer100g": 317,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鸭胗(熟)",
+   "purineMgPer100g": 316,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "蚕豆",
+   "purineMgPer100g": 307,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鲭鱼",
+   "purineMgPer100g": 298,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "生蚝",
+   "purineMgPer100g": 282,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "猪肝",
+   "purineMgPer100g": 275,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "猪肺",
+   "purineMgPer100g": 272,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "元蘑(干)",
+   "purineMgPer100g": 267,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "海兔",
+   "purineMgPer100g": 266,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "江虾(熟)",
+   "purineMgPer100g": 265,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "凤尾鱼(香辣)",
+   "purineMgPer100g": 263,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鹅心(熟)",
+   "purineMgPer100g": 259,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "皮皮虾(生)",
+   "purineMgPer100g": 254,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "猪肚(熟)",
+   "purineMgPer100g": 252,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "牛肝",
+   "purineMgPer100g": 251,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "海苔",
+   "purineMgPer100g": 249,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "泥鳅鱼",
+   "purineMgPer100g": 247,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鱿鱼",
+   "purineMgPer100g": 244,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "牡蛎",
+   "purineMgPer100g": 242,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "猪肾",
+   "purineMgPer100g": 239,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "扇贝",
+   "purineMgPer100g": 235,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "猪胰",
+   "purineMgPer100g": 234,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "江虾(生)",
+   "purineMgPer100g": 231,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鳕鱼(烤)",
+   "purineMgPer100g": 230,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鸡肚(熟)",
+   "purineMgPer100g": 229,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "羊肝(生)",
+   "purineMgPer100g": 228,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "羊肝(熟)",
+   "purineMgPer100g": 227,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鸭脑(熟)",
+   "purineMgPer100g": 227,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "海鲈鱼",
+   "purineMgPer100g": 227,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "姬松茸(干)",
+   "purineMgPer100g": 226,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "羊肉串(熟)",
+   "purineMgPer100g": 223,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "海米(小虾米)",
+   "purineMgPer100g": 220,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鸡胗",
+   "purineMgPer100g": 218,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鲅鱼",
+   "purineMgPer100g": 214,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "黑鱼(熟)",
+   "purineMgPer100g": 214,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鸦片鱼",
+   "purineMgPer100g": 211,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鸡肉(鸡胸)",
+   "purineMgPer100g": 208,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "蚬子(熟)",
+   "purineMgPer100g": 206,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "滑子蘑(干)",
+   "purineMgPer100g": 205,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鲟鱼(熟)",
+   "purineMgPer100g": 202,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鸳鸯贝",
+   "purineMgPer100g": 202,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "皮皮虾(熟)",
+   "purineMgPer100g": 200,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "八爪鱼",
+   "purineMgPer100g": 198,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "绿豆",
+   "purineMgPer100g": 196,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "红头鱼",
+   "purineMgPer100g": 195,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "干贝",
+   "purineMgPer100g": 193,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "蛏子(熟)",
+   "purineMgPer100g": 193,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "牡蛎(熟)",
+   "purineMgPer100g": 193,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鲫鱼(熟)",
+   "purineMgPer100g": 190,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "烧鸡(熟)",
+   "purineMgPer100g": 188,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鱼片(烤)",
+   "purineMgPer100g": 188,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鲶鱼",
+   "purineMgPer100g": 187,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "基围虾(生)",
+   "purineMgPer100g": 187,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "榛蘑(干)",
+   "purineMgPer100g": 186,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鱼肝",
+   "purineMgPer100g": 185,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鹅胗(熟)",
+   "purineMgPer100g": 182,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "河蟹黄(熟)",
+   "purineMgPer100g": 182,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "河蟹黄(生)",
+   "purineMgPer100g": 180,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "蚬子",
+   "purineMgPer100g": 180,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "青虾",
+   "purineMgPer100g": 180,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "深海鲐鱼(酱汁)",
+   "purineMgPer100g": 179,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "猴头菇(干)",
+   "purineMgPer100g": 178,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "微豆",
+   "purineMgPer100g": 175,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鲽鱼",
+   "purineMgPer100g": 175,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "小龙虾",
+   "purineMgPer100g": 174,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "基围虾(熟)",
+   "purineMgPer100g": 174,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "乌鸡肉(生)",
+   "purineMgPer100g": 173,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "虹鳟鱼",
+   "purineMgPer100g": 172,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "干鲍鱼",
+   "purineMgPer100g": 171,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "猪心",
+   "purineMgPer100g": 170,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鹅胗(生)",
+   "purineMgPer100g": 169,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鱼片",
+   "purineMgPer100g": 169,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "黑鱼",
+   "purineMgPer100g": 169,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "三文鱼",
+   "purineMgPer100g": 168,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "豆粉",
+   "purineMgPer100g": 167,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鲜贝",
+   "purineMgPer100g": 167,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "木耳(干)",
+   "purineMgPer100g": 166,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "海鲈鱼(熟)",
+   "purineMgPer100g": 165,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "黄花鱼",
+   "purineMgPer100g": 165,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "河鲈鱼(熟)",
+   "purineMgPer100g": 165,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "龙虾(澳洲)",
+   "purineMgPer100g": 163,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "草鱼(熟)",
+   "purineMgPer100g": 162,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "刀鱼",
+   "purineMgPer100g": 161,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "白鱼(熟)",
+   "purineMgPer100g": 160,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "乌鸡肉(熟)",
+   "purineMgPer100g": 159,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "红小豆",
+   "purineMgPer100g": 156,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "鲫鱼",
+   "purineMgPer100g": 154,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "白鱼",
+   "purineMgPer100g": 153,
+   "class": 1,
+   "label": "高嘌呤（150-1000mg/100g），痛风人群避免"
+  },
+  {
+   "name": "蛏子",
+   "purineMgPer100g": 149,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "棒棒鱼",
+   "purineMgPer100g": 149,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "兔肉(熟)",
+   "purineMgPer100g": 148,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "河蟹(生)",
+   "purineMgPer100g": 147,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "怀头鱼",
+   "purineMgPer100g": 147,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "大马哈鱼(熏熟)",
+   "purineMgPer100g": 147,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "金鳟鱼",
+   "purineMgPer100g": 146,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "河蟹肉(熟)",
+   "purineMgPer100g": 144,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鲢鱼",
+   "purineMgPer100g": 141,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鹅脑(熟)",
+   "purineMgPer100g": 140,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "猪肉",
+   "purineMgPer100g": 138,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "冬蟹(熟)",
+   "purineMgPer100g": 137,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "梭鱼",
+   "purineMgPer100g": 137,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "大马哈鱼籽",
+   "purineMgPer100g": 136,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "红线鱼",
+   "purineMgPer100g": 136,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "象鱼",
+   "purineMgPer100g": 135,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "猪手(熟)",
+   "purineMgPer100g": 134,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "草鱼",
+   "purineMgPer100g": 134,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "比目鱼(熟)",
+   "purineMgPer100g": 134,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "河鲈鱼",
+   "purineMgPer100g": 133,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鱼肉松",
+   "purineMgPer100g": 131,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "金昌鱼",
+   "purineMgPer100g": 130,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "武昌鱼",
+   "purineMgPer100g": 128,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鳝鱼",
+   "purineMgPer100g": 127,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "罗非鱼",
+   "purineMgPer100g": 126,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "白芸豆",
+   "purineMgPer100g": 125,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "银耳(干)",
+   "purineMgPer100g": 124,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "叉烧肉(熟)",
+   "purineMgPer100g": 124,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鲤鱼",
+   "purineMgPer100g": 122,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "大闸蟹(熟)",
+   "purineMgPer100g": 121,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "桂鱼",
+   "purineMgPer100g": 121,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "编织鱼",
+   "purineMgPer100g": 119,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "花芸豆",
+   "purineMgPer100g": 118,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "驴肉(熟)",
+   "purineMgPer100g": 117,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鳗鱼",
+   "purineMgPer100g": 117,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "大马哈鱼",
+   "purineMgPer100g": 117,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "章鱼片",
+   "purineMgPer100g": 116,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "猪耳朵(熟)",
+   "purineMgPer100g": 114,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鲟鱼",
+   "purineMgPer100g": 114,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鲜鲍鱼(熟)",
+   "purineMgPer100g": 112,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "纳豆",
+   "purineMgPer100g": 110,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "甲鱼",
+   "purineMgPer100g": 110,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "即食鲍鱼",
+   "purineMgPer100g": 110,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "豆腐渣",
+   "purineMgPer100g": 109,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "羊肉(生)",
+   "purineMgPer100g": 109,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鱿鱼丝",
+   "purineMgPer100g": 106,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "牛肉",
+   "purineMgPer100g": 105,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "比目鱼",
+   "purineMgPer100g": 104,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "火腿罐头",
+   "purineMgPer100g": 103,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鲜鲍鱼",
+   "purineMgPer100g": 102,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "小海螺",
+   "purineMgPer100g": 97,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "杏鲍蘑(鲜)",
+   "purineMgPer100g": 94,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "午餐肉罐头",
+   "purineMgPer100g": 94,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "牛蛙腿肉",
+   "purineMgPer100g": 92,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "海木耳(干)",
+   "purineMgPer100g": 90,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "平菇(鲜)",
+   "purineMgPer100g": 89,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "烧鹅",
+   "purineMgPer100g": 89,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "烧鸭(熟)",
+   "purineMgPer100g": 88,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "青椒",
+   "purineMgPer100g": 86,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "花生(熟)",
+   "purineMgPer100g": 85,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "牛肉火腿肠",
+   "purineMgPer100g": 85,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "鲽鱼(熟)",
+   "purineMgPer100g": 85,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "沙丁鱼",
+   "purineMgPer100g": 82,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "豆瓣酱",
+   "purineMgPer100g": 77,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "猪肉松",
+   "purineMgPer100g": 76,
+   "class": 2,
+   "label": "较高嘌呤（75-150mg/100g），严格限量"
+  },
+  {
+   "name": "滑子蘑(鲜)",
+   "purineMgPer100g": 73,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "牛肉松",
+   "purineMgPer100g": 71,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "鳕鱼",
+   "purineMgPer100g": 71,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "牛肉汤",
+   "purineMgPer100g": 70,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "多宝鱼",
+   "purineMgPer100g": 70,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "鸡腿蘑(干)",
+   "purineMgPer100g": 68,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "金针菇(鲜)",
+   "purineMgPer100g": 59,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "晶鱼",
+   "purineMgPer100g": 58,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "白玉茹(鲜)",
+   "purineMgPer100g": 56,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "黄蘑(鲜)",
+   "purineMgPer100g": 52,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "猴头菇(鲜,熟)",
+   "purineMgPer100g": 50,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "口蘑(鲜)",
+   "purineMgPer100g": 50,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "茶树菇(鲜)",
+   "purineMgPer100g": 48,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "冬瓜",
+   "purineMgPer100g": 45,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "杏仁(熟)",
+   "purineMgPer100g": 45,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "葱味虾酱",
+   "purineMgPer100g": 45,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "碧根果(熟)",
+   "purineMgPer100g": 42,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "颗粒花生酱",
+   "purineMgPer100g": 41,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "夏威夷果(熟)",
+   "purineMgPer100g": 40,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "牛蹄肉筋",
+   "purineMgPer100g": 40,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "猪血",
+   "purineMgPer100g": 40,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "白灵菇(鲜)",
+   "purineMgPer100g": 39,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "木耳(发后)",
+   "purineMgPer100g": 38,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "香菇(鲜)",
+   "purineMgPer100g": 37,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "鲍鱼果(熟)",
+   "purineMgPer100g": 37,
+   "class": 3,
+   "label": "较低嘌呤（30-75mg/100g），适量"
+  },
+  {
+   "name": "熟豆浆(甜)",
+   "purineMgPer100g": 29,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "茴香",
+   "purineMgPer100g": 29,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "菜花",
+   "purineMgPer100g": 23,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "黄花菜(干)",
+   "purineMgPer100g": 23,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "榛蘑(鲜)",
+   "purineMgPer100g": 23,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "银鱼",
+   "purineMgPer100g": 23,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "鸡腿蘑(鲜)",
+   "purineMgPer100g": 21,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "茭白",
+   "purineMgPer100g": 20,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "爆米花",
+   "purineMgPer100g": 20,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "干海参(发后)",
+   "purineMgPer100g": 18,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "空心菜",
+   "purineMgPer100g": 17,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "海带根",
+   "purineMgPer100g": 17,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "高粱米",
+   "purineMgPer100g": 15,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "香菜",
+   "purineMgPer100g": 15,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "苦瓜",
+   "purineMgPer100g": 14,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "芥蓝",
+   "purineMgPer100g": 14,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "提子",
+   "purineMgPer100g": 14,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "黄瓜",
+   "purineMgPer100g": 13,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "酸白菜",
+   "purineMgPer100g": 13,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "巨峰葡萄",
+   "purineMgPer100g": 13,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "菜心",
+   "purineMgPer100g": 12,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "山西陈醋",
+   "purineMgPer100g": 12,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "尖椒",
+   "purineMgPer100g": 11,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "香椿",
+   "purineMgPer100g": 11,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "马奶葡萄",
+   "purineMgPer100g": 11,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "菠萝",
+   "purineMgPer100g": 11,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "蜜橘",
+   "purineMgPer100g": 10,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "燕窝",
+   "purineMgPer100g": 10,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "甜面酱",
+   "purineMgPer100g": 10,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "干鲍鱼(发后)",
+   "purineMgPer100g": 9,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "海蜇丝",
+   "purineMgPer100g": 9,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "鹌鹑蛋(熟)",
+   "purineMgPer100g": 7,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "番茄酱",
+   "purineMgPer100g": 7,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "西瓜",
+   "purineMgPer100g": 6,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "砂糖橘",
+   "purineMgPer100g": 5,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "3.5度米醋",
+   "purineMgPer100g": 3,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "沙拉酱",
+   "purineMgPer100g": 3,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "番薯粉干",
+   "purineMgPer100g": 2,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "奶酪",
+   "purineMgPer100g": 2,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "菇娘",
+   "purineMgPer100g": 1,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "鹅蛋(熟)",
+   "purineMgPer100g": 1,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  },
+  {
+   "name": "冰红茶",
+   "purineMgPer100g": 1,
+   "class": 4,
+   "label": "低嘌呤（<30mg/100g），可放心选择"
+  }
+ ]
+}

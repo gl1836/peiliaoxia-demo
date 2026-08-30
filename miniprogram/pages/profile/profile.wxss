@@ -1,0 +1,40 @@
+.profile-intro {
+  font-size: 26rpx;
+  line-height: 1.7;
+  padding: 8rpx;
+}
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+}
+.chip {
+  padding: 20rpx 36rpx;
+  border-radius: 999rpx;
+  background: #fff;
+  border: 2rpx solid var(--line);
+  font-size: 28rpx;
+  color: var(--ink-2);
+}
+.chip--on {
+  background: var(--safe-bg);
+  border-color: var(--brand);
+  color: var(--brand);
+  font-weight: 600;
+}
+.chip--on-danger {
+  background: var(--danger-bg);
+  border-color: var(--danger);
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.profile-save {
+  margin-top: 64rpx;
+}
+.profile-privacy {
+  margin-top: 32rpx;
+  text-align: center;
+  line-height: 1.6;
+}

@@ -1,0 +1,96 @@
+.scan-hero {
+  padding: 96rpx 32rpx 64rpx;
+  text-align: center;
+}
+.scan-ring {
+  width: 220rpx;
+  height: 220rpx;
+  margin: 0 auto 40rpx;
+  border-radius: 50%;
+  border: 6rpx solid var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--safe-bg);
+}
+.scan-ring-icon {
+  font-size: 96rpx;
+  color: var(--brand);
+}
+.scan-title {
+  font-size: 38rpx;
+  font-weight: 700;
+}
+.scan-sub {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+}
+.scan-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+.scan-hint {
+  margin-top: 40rpx;
+  text-align: center;
+}
+
+.preview-wrap {
+  border-radius: 24rpx;
+  overflow: hidden;
+  background: #fff;
+}
+.preview-img {
+  width: 100%;
+  display: block;
+}
+.preview-actions {
+  margin-top: 32rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+.preview-secondary {
+  display: flex;
+  gap: 24rpx;
+}
+.preview-half {
+  flex: 1;
+}
+
+.analyzing-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.analyzing-box {
+  text-align: center;
+  padding: 0 64rpx;
+}
+.spinner {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto 32rpx;
+  border-radius: 50%;
+  border: 8rpx solid var(--safe-bg);
+  border-top-color: var(--brand);
+  animation: plx-spin 0.9s linear infinite;
+}
+@keyframes plx-spin {
+  to { transform: rotate(360deg); }
+}
+.analyzing-text {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.analyzing-tip {
+  margin-top: 24rpx;
+  font-size: 26rpx;
+  color: var(--ink-2);
+  line-height: 1.6;
+  min-height: 80rpx;
+}

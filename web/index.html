@@ -147,6 +147,10 @@
       <div style="font-weight:600;margin-bottom:4px">风险提示</div>
       <div id="flagsList"></div>
     </div>
+    <div class="card" id="condCard" style="display:none">
+      <div style="font-weight:600;margin-bottom:4px">慢病食养建议</div>
+      <div id="condList"></div>
+    </div>
     <div class="card">
       <div style="font-weight:600;margin-bottom:4px">逐行配料解读</div>
       <div id="ingList"></div>
@@ -169,6 +173,10 @@
       <div class="opt-group">
         <div class="opt-title">健康目标（可多选）</div>
         <div class="sample-chips" id="goalChips"></div>
+      </div>
+      <div class="opt-group">
+        <div class="opt-title">慢病情况（可多选，触发卫健委食养指南规则）</div>
+        <div class="sample-chips" id="condChips"></div>
       </div>
       <div class="opt-group">
         <div class="opt-title">过敏原（可多选，命中即判风险）</div>
@@ -215,13 +223,14 @@ const LEVEL_UI = {
 };
 const ROLES = [ {id:'adult',label:'成年人'}, {id:'child_1_3',label:'宝宝 1-3 岁'}, {id:'child_3_12',label:'儿童 3-12 岁'}, {id:'pregnant',label:'孕期'} ];
 const GOALS = [ {id:'fat_loss',label:'减脂控卡'}, {id:'sugar_control',label:'控糖'}, {id:'salt_control',label:'控盐'}, {id:'child_health',label:'儿童健康'} ];
+const CONDITIONS = (window.DiseaseRulesKB?.conditions || []).map(c => ({ id:c.id, label:c.name }));
 const ALLERGEN_LIST = ['牛奶','鸡蛋','花生','坚果','大豆','小麦','海鲜'];
 
 let samples = [];
 let pendingPhotoUrl = null;
 
 const store = {
-  get profile() { try { return JSON.parse(localStorage.getItem('plx_profile')) || { role:'adult', goals:[], allergens:[] } } catch { return { role:'adult', goals:[], allergens:[] } } },
+  get profile() { try { return Object.assign({ role:'adult', goals:[], allergens:[], conditions:[] }, JSON.parse(localStorage.getItem('plx_profile')) || {}) } catch { return { role:'adult', goals:[], allergens:[], conditions:[] } } },
   set profile(v) { localStorage.setItem('plx_profile', JSON.stringify(v)) },
   get history() { try { return JSON.parse(localStorage.getItem('plx_history')) || [] } catch { return [] } },
   pushHistory(item) { const h = store.history; h.unshift(item); store.history = h.slice(0, 50) },
@@ -266,9 +275,18 @@ function renderResult(name, r, ingredients) {
     return `<div class="flag"><span class="dot" style="background:${lu.color}"></span><div><div class="f-name">${f.name}</div><div class="f-reason">${f.reason}</div></div></div>`;
   }).join('');
 
+  const conds = r.conditionNotes || [];
+  document.getElementById('condCard').style.display = conds.length ? '' : 'none';
+  document.getElementById('condList').innerHTML = conds.map(c => `
+    <div style="margin-bottom:10px">
+      <div style="font-weight:600;font-size:14px">${c.name} <span class="tiny muted">${c.source}</span></div>
+      <div class="tiny" style="margin:4px 0">${Object.entries(c.nutrientLimits || {}).map(([k, v]) => `${v}`).slice(0, 3).join('；')}</div>
+      <ul style="margin:4px 0 0;padding-left:18px" class="tiny">${(c.tips || []).slice(0, 4).map(t => `<li>${t}</li>`).join('')}</ul>
+    </div>`).join('');
+
   document.getElementById('ingList').innerHTML = r.ingredientRows.map(row => {
     const lu = LEVEL_UI[row.level] || LEVEL_UI.safe;
-    return `<div class="ing-row"><span class="ing-name">${row.name}</span><span class="ing-tag" style="color:${lu.color};background:${lu.bg}">${lu.label}</span><span class="ing-explain">${row.explanation || '常规成分'}</span></div>`;
+    return `<div class="ing-row"><span class="ing-name">${row.name}</span><span class="ing-tag" style="color:${lu.color};background:${lu.bg}">${lu.label}</span><span class="ing-explain">${row.explanation || '常规成分'}${row.fun ? `<span class="tiny muted" style="display:block;margin-top:2px">${row.fun}</span>` : ''}</span></div>`;
   }).join('');
 
   store.pushHistory({ ts: Date.now(), name, verdict: r.verdict, score: r.score, result: r });
@@ -300,6 +318,7 @@ function renderProfileSummary() {
   const p = store.profile;
   const parts = [ROLES.find(r => r.id === p.role)?.label || '成年人'];
   if (p.goals.length) parts.push('关注 ' + p.goals.map(g => GOALS.find(x => x.id === g)?.label || g).join('/'));
+  if (p.conditions && p.conditions.length) parts.push('慢病 ' + p.conditions.map(c => CONDITIONS.find(x => x.id === c)?.label || c).join('/'));
   if (p.allergens.length) parts.push('过敏 ' + p.allergens.join('/'));
   document.getElementById('profileSummary').textContent = parts.join(' · ');
 }
@@ -316,6 +335,7 @@ function renderProfileForm() {
   };
   mk('roleChips', ROLES, draft.role, false, 'role');
   mk('goalChips', GOALS, draft.goals, true, 'goals');
+  mk('condChips', CONDITIONS, draft.conditions || [], true, 'conditions');
   mk('allergenChips', ALLERGEN_LIST, draft.allergens, true, 'allergens');
   document.querySelectorAll('#view-profile .chip').forEach(c => c.onclick = () => {
     const { k, id } = c.dataset;
