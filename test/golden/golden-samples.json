@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "description": "规则引擎黄金评测集：人工标注的配料表样本与期望结论。每次引擎/知识库变更必须全量回归，准确率不达标不上线。",
+    "version": "2026-08-31",
+    "labeling": "人工标注，标注口径见 README「评测体系」"
+  },
+  "samples": [
+    {
+      "id": "g01",
+      "name": "某可乐型碳酸饮料",
+      "ingredients": ["水", "果葡糖浆", "白砂糖", "二氧化碳", "焦糖色", "磷酸", "咖啡因", "食用香精"],
+      "profile": { "role": "adult", "goals": [], "allergens": [] },
+      "expect": { "verdict": "caution", "mustFlag": ["咖啡因"], "mustNotDanger": true }
+    },
+    {
+      "id": "g02",
+      "name": "某儿童乳饮料",
+      "ingredients": ["水", "白砂糖", "全脂乳粉", "阿斯巴甜", "安赛蜜", "柠檬酸"],
+      "profile": { "role": "child_3_12", "goals": [], "allergens": [] },
+      "expect": { "verdict": "caution", "mustFlag": ["阿斯巴甜"] }
+    },
+    {
+      "id": "g03",
+      "name": "某火腿肠",
+      "ingredients": ["猪肉", "鸡肉", "水", "淀粉", "食用盐", "亚硝酸钠", "三聚磷酸钠", "食用香精"],
+      "profile": { "role": "child_1_3", "goals": [], "allergens": [] },
+      "expect": { "verdict": "danger", "mustFlag": ["亚硝酸钠"] }
+    },
+    {
+      "id": "g04",
+      "name": "某无糖气泡水",
+      "ingredients": ["水", "二氧化碳", "赤藓糖醇", "三氯蔗糖", "柠檬酸", "食用香精"],
+      "profile": { "role": "adult", "goals": ["sugar_control"], "allergens": [] },
+      "expect": { "mustNotDanger": true }
+    },
+    {
+      "id": "g05",
+      "name": "某辣条",
+      "ingredients": ["小麦粉", "植物油", "食用盐", "辣椒粉", "谷氨酸钠", "呈味核苷酸二钠", "甜蜜素", "特丁基对苯二酚"],
+      "profile": { "role": "child_3_12", "goals": [], "allergens": [] },
+      "expect": { "verdict": "danger", "mustFlag": ["特丁基对苯二酚"] }
+    },
+    {
+      "id": "g06",
+      "name": "某纯牛奶",
+      "ingredients": ["生牛乳"],
+      "profile": { "role": "adult", "goals": [], "allergens": [] },
+      "expect": { "verdict": "safe" }
+    },
+    {
+      "id": "g07",
+      "name": "某奶茶粉（痛风用户）",
+      "ingredients": ["植脂末", "白砂糖", "果葡糖浆", "全脂乳粉", "红茶粉"],
+      "profile": { "role": "adult", "goals": [], "allergens": [], "conditions": ["hyperuricemia"] },
+      "expect": { "mustFlag": ["果葡糖浆"], "mustConditionNote": "hyperuricemia" }
+    },
+    {
+      "id": "g08",
+      "name": "某酱油（高血压用户）",
+      "ingredients": ["水", "大豆", "小麦", "食用盐", "白砂糖", "谷氨酸钠", "苯甲酸钠"],
+      "profile": { "role": "adult", "goals": [], "allergens": [], "conditions": ["hypertension"] },
+      "expect": { "mustFlag": ["食用盐"], "mustConditionNote": "hypertension" }
+    },
+    {
+      "id": "g09",
+      "name": "某夹心饼干（糖尿病用户）",
+      "ingredients": ["小麦粉", "白砂糖", "植物油", "果葡糖浆", "可可粉", "膨松剂", "食用香精"],
+      "profile": { "role": "adult", "goals": [], "allergens": [], "conditions": ["diabetes"] },
+      "expect": { "verdict": "danger", "mustConditionNote": "diabetes" }
+    },
+    {
+      "id": "g10",
+      "name": "某蛋黄派（高血脂用户）",
+      "ingredients": ["小麦粉", "鸡蛋", "白砂糖", "起酥油", "植脂末", "山梨糖醇", "单硬脂酸甘油酯"],
+      "profile": { "role": "adult", "goals": [], "allergens": [], "conditions": ["hyperlipidemia"] },
+      "expect": { "verdict": "danger", "mustFlag": ["起酥油"], "mustConditionNote": "hyperlipidemia" }
+    }
+  ]
+}

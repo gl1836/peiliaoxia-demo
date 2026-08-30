@@ -47,6 +47,7 @@
   .row-arrow { color:var(--ink-3); font-size:16px; line-height:1.2; }
   .badges { display:flex; flex-wrap:wrap; gap:5px; margin-top:7px; }
   .badge { font-size:11px; border-radius:8px; padding:2px 8px; }
+  .btn-small { font-size:12px; padding:4px 12px; border:1px solid var(--brand); color:var(--brand); background:none; border-radius:8px; cursor:pointer; }
   .b-safe { background:var(--safe-bg); color:var(--safe); }
   .b-notice { background:#F1F3F1; color:#8A948A; }
   .b-warning { background:var(--caution-bg); color:var(--caution); }
@@ -109,6 +110,7 @@
         <button id="tabAdd" class="on">添加剂与风险成分</button>
         <button id="tabPurine">食物嘌呤</button>
         <button id="tabDisease">慢病食养规则</button>
+        <button id="tabFb">用户纠错</button>
       </div>
     </div>
     <div class="filter-panel">
@@ -319,10 +321,37 @@ function renderList() {
         <div class="row-sub">${e.label}</div>
       </div>`;
     }).join('');
+  } else if (state.tab === 'fb') {
+    const fb = getFeedback();
+    const doneMap = getFbDone();
+    document.getElementById('listCount').textContent = `共 ${fb.length} 条用户纠错`;
+    document.getElementById('pendingHint').innerHTML = fb.length
+      ? `<a href="javascript:exportFeedback()" style="color:var(--brand)">导出纠错 JSON</a>（交给 data-pipeline/apply-feedback.js 回写知识库）`
+      : '暂无数据 —— 用户在结果页提交纠错后出现在这里';
+    if (!fb.length) { el.innerHTML = '<div class="empty">暂无用户纠错</div>'; return; }
+    const TYPE_LABEL = { ocr: '识别错误', level: '分级不对', explain: '解释不对', missing: '漏成分', other: '其他' };
+    el.innerHTML = fb.map((f, i) => {
+      const d = new Date(f.ts);
+      const done = doneMap[i];
+      return `<div class="row ${done ? 'reviewed' : ''}">
+        <div class="row-head">
+          <div class="row-name">${TYPE_LABEL[f.type] || f.type}${f.ingredient ? ` · ${f.ingredient}` : ''}</div>
+          <div class="row-arrow">${done ? '已处理' : ''}</div>
+        </div>
+        <div class="badges">
+          <span class="badge b-cat">${f.product || '未命名'}</span>
+          <span class="badge b-notice">${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}</span>
+        </div>
+        <div class="row-sub">${f.note || '（无备注）'} 配料：${(f.ingredients || []).join('、').slice(0, 80)}</div>
+        <div style="margin-top:6px">${done
+          ? ''
+          : `<button class="btn-small" onclick="markFbDone(${i})">标记已处理</button>`}</div>
+      </div>`;
+    }).join('');
   } else {
     const rows = diseases.filter(c => !state.q || (c.name + c.source + (c.principles||[]).join('')).includes(state.q));
     document.getElementById('listCount').textContent = `显示 ${rows.length} / 共 ${diseases.length} 组`;
-    document.getElementById('pendingHint').textContent = '来源：卫健委 4 项食养指南 2024';
+    document.getElementById('pendingHint').textContent = '来源：卫健委 8 项食养指南（2023+2024 年版）';
     if (!rows.length) { el.innerHTML = '<div class="empty">没有匹配的慢病规则</div>'; return; }
     el.innerHTML = rows.map(c => {
       const idx = diseases.indexOf(c);
@@ -511,10 +540,32 @@ function clearOp() {
 }
 
 document.getElementById('btnBack').onclick = closeDetail;
+function getFeedback() {
+  try { return JSON.parse(localStorage.getItem('plx_feedback')) || [] } catch { return [] }
+}
+function getFbDone() {
+  try { return JSON.parse(localStorage.getItem('plx_feedback_done')) || {} } catch { return {} }
+}
+function markFbDone(i) {
+  const m = getFbDone();
+  m[i] = true;
+  localStorage.setItem('plx_feedback_done', JSON.stringify(m));
+  renderList();
+}
+function exportFeedback() {
+  const fb = getFeedback();
+  const blob = new Blob([JSON.stringify({ exportedAt: new Date().toISOString(), count: fb.length, items: fb }, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'user-feedback.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
 function switchTab(tab) {
   state.tab = tab;
-  ['tabAdd','tabPurine','tabDisease'].forEach(id => document.getElementById(id).classList.remove('on'));
-  document.getElementById(tab === 'add' ? 'tabAdd' : tab === 'purine' ? 'tabPurine' : 'tabDisease').classList.add('on');
+  ['tabAdd','tabPurine','tabDisease','tabFb'].forEach(id => document.getElementById(id).classList.remove('on'));
+  document.getElementById(tab === 'add' ? 'tabAdd' : tab === 'purine' ? 'tabPurine' : tab === 'disease' ? 'tabDisease' : 'tabFb').classList.add('on');
   document.getElementById('addFilters').classList.toggle('hidden', tab !== 'add');
   document.getElementById('purineFilters').classList.toggle('hidden', tab !== 'purine');
   document.getElementById('listFooter').classList.toggle('hidden', tab !== 'add');
@@ -523,6 +574,7 @@ function switchTab(tab) {
 document.getElementById('tabAdd').onclick = () => switchTab('add');
 document.getElementById('tabPurine').onclick = () => switchTab('purine');
 document.getElementById('tabDisease').onclick = () => switchTab('disease');
+document.getElementById('tabFb').onclick = () => switchTab('fb');
 document.getElementById('search').oninput = e => { state.q = e.target.value; renderList(); };
 
 document.getElementById('exportBtn').onclick = () => {

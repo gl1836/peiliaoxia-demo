@@ -82,4 +82,23 @@ r = evaluate(['水', '啤酒'], { role: 'adult', goals: [], allergens: [], condi
 const beerRow = r.ingredientRows.find(x => x.name === '啤酒')
 assert.strictEqual(beerRow.level, 'danger', '啤酒成分行应升级为 danger')
 
-console.log('✔ 规则引擎全部 17 个用例通过')
+// 18. 糖尿病档案 + 果葡糖浆 → danger，返回 2023 指南来源
+r = evaluate(['水', '果葡糖浆', '柠檬酸'], { role: 'adult', goals: [], allergens: [], conditions: ['diabetes'] })
+assert.ok(r.flags.some(f => f.level === 'danger' && f.reason.includes('血糖')), '糖尿病规则应命中果葡糖浆')
+assert.ok(r.conditionNotes.some(n => n.source.includes('糖尿病')), '应返回糖尿病 conditionNotes')
+
+// 19. 高血压档案 + 酱油 → danger（隐形盐）
+r = evaluate(['水', '大豆', '酱油', '食盐'], { role: 'adult', goals: [], allergens: [], conditions: ['hypertension'] })
+assert.ok(r.flags.some(f => f.level === 'danger' && f.reason.includes('5g')), '高血压规则应命中隐形盐')
+
+// 20. 高血脂档案 + 植脂末 → danger（反式脂肪）
+r = evaluate(['水', '植脂末', '白砂糖'], { role: 'adult', goals: [], allergens: [], conditions: ['hyperlipidemia'] })
+assert.ok(r.flags.some(f => f.level === 'danger' && f.reason.includes('反式脂肪')), '高血脂规则应命中植脂末')
+
+// 21. 生长迟缓档案 + 儿童角色 → 命中；成人角色 → 不命中
+r = evaluate(['水', '可乐'], { role: 'child_3_12', goals: [], allergens: [], conditions: ['growth_retardation'] })
+assert.ok(r.conditionNotes.length === 1 && r.flags.some(f => f.reason.includes('正餐')), '生长迟缓规则应命中儿童')
+r = evaluate(['水', '可乐'], { role: 'adult', goals: [], allergens: [], conditions: ['growth_retardation'] })
+assert.ok(!r.conditionNotes.length, '生长迟缓规则不应用于成人')
+
+console.log('✔ 规则引擎全部 21 个用例通过')

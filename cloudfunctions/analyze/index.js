@@ -91,6 +91,8 @@ async function buildResult(product, profile, source) {
       verdict: evaluated.verdict,
       score: evaluated.score,
       flags: evaluated.flags,
+      ingredientRows: evaluated.ingredientRows,
+      conditionNotes: evaluated.conditionNotes,
       profile
     })
   } catch (e) {

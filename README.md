@@ -32,22 +32,24 @@ cloudfunctions/analyze/ 分析云函数
   rules/engine.js       规则引擎 v2（消费知识包，纯函数，可单测）
   rules/kb.additives.json  运行时知识包（由 build-kb 生成，勿手改）
   rules/promotion.js    两级数据闸晋升逻辑（纯函数，可单测）
-  llm.js                Qwen-VL OCR + 表达层
-data/additives.kb.json  风险成分知识库主库（人工/营养师维护，66 条，含 ADI/国际状态/生动解读）
-data/purine.kb.json     食物嘌呤知识库（236 条，源自卫健委痛风食养指南 2024）
-data/disease-rules.kb.json  慢病饮食规则库（4 组，源自卫健委 4 项食养指南 2024）
-data/sources/           指南原文存档（PDF/TXT，可追溯）
+  llm.js                Qwen-VL OCR + 表达层（零幻觉五层防线：架构隔离/RAG注入/输出约束/后置校验/模板兜底）
+data/additives.kb.json  风险成分知识库主库（217 条 = 66 条人工审定高频 + CFSA 官方库全量扩量）
+data/purine.kb.json     食物嘌呤知识库（233 条，源自卫健委痛风食养指南 2024）
+data/disease-rules.kb.json  慢病饮食规则库（8 组，源自卫健委 8 项食养指南 2023+2024）
+data/sources/           指南原文存档（PDF/TXT）+ CFSA 官方添加剂快照，可追溯
 data/top-sku-draft.json  TOP 5000 SKU 录入优先级清单草案
 data-pipeline/          数据管线
   build-kb.js           知识库构建：校验 → 知识包 + 待审清单 + 慢病/嘌呤运行时拷贝
+  expand-additives.js   CFSA 官方库全量扩量（括号配平解析又名/包括/简称，幂等合并）
   enrich-additives.js   条目增强：ADI + 国际状态 + 生动解读（幂等）
   apply-review.js       营养师审核结果回写主库
+  apply-feedback.js     用户纠错闭环：分析纠错 → 生成补丁 → 营养师裁定 → 回写主库
   import-off.js         Open Food Facts 中国数据 → candidates JSONL
   extract-purine.js     痛风指南 → 嘌呤知识库提取
   build-web.js          网页资源包构建（添加剂 + 嘌呤 + 慢病规则）
 tools/review/           旧审核页入口（已重定向到 web/kb.html）
 seed/products.seed.jsonl  产品库种子数据（5 条示例）
-test/                   rules / promotion / kb 单元测试
+test/                   rules / promotion / kb / llm 单元测试 + golden 黄金评测集 + eval.js 评测回归
 ```
 
 ## 网页演示版（手机可试用）
@@ -60,10 +62,12 @@ python3 -m http.server 8123 --bind 0.0.0.0   # 项目根目录起服务
 
 - `web/index.html`：完整用户流程演示（拍照→样本→分析→结果/档案/历史），
   规则引擎在浏览器真实运行，结论随健康档案实时变化；OCR 以样本商品演示；
-  档案支持慢病标签（肥胖/儿童肥胖/慢性肾病/高尿酸痛风），触发卫健委食养指南规则
-- `web/kb.html`：统一知识库列表（添加剂 + 嘌呤 + 慢病食养规则三个板块；
+  档案支持 8 组慢病标签（卫健委 2023+2024 全部食养指南），触发对应食养规则；
+  结果页底部可提交纠错（识别错/分级错/解释错/漏成分），进入审核队列
+- `web/kb.html`：统一知识库列表（添加剂 + 嘌呤 + 慢病食养规则 + 用户纠错四个板块；
   顶部筛选状态/等级/类别；详情页展示 ADI/国际状态/生动解读；
-  底部营养师可编辑分级与解读，导出后用 apply-review.js 回写主库）
+  底部营养师可编辑分级与解读，导出后用 apply-review.js 回写主库；
+  用户纠错页可导出 JSON，用 apply-feedback.js 分析回写）
 - 旧审核页 `tools/review/` 已重定向到 `web/kb.html?status=pending`
 
 ## 本地跑起来（5 分钟，无需任何配置）
@@ -89,9 +93,11 @@ python3 -m http.server 8123 --bind 0.0.0.0   # 项目根目录起服务
 ## 测试
 
 ```bash
-node test/rules.test.js      # 规则引擎 17 个用例（含慢病规则/嘌呤联动）
+node test/rules.test.js      # 规则引擎 21 个用例（含 8 组慢病规则/嘌呤联动）
 node test/promotion.test.js  # 候选库晋升逻辑 6 个用例
 node test/kb.test.js         # 知识库结构与关键条目 7 组断言
+node test/llm.test.js        # 零幻觉校验器 7 个用例（编造成分/数字/结论方向/医疗表述拦截）
+node test/eval.js            # 黄金评测集回归：结论一致率/必中召回/慢病触发/误伤率，不达标退出码非零
 ```
 
 ## 知识库迭代流程（每月）

@@ -1,0 +1,2038 @@
+{
+ "source": "国家食品安全风险评估中心 CFSA · GB 2760-2024 在线查询数据库 https://gb2760.cfsa.net.cn/index.php/addtives.html",
+ "fetchedAt": "2026-08-31",
+ "note": "GB 2760-2024 全部非香料类添加剂品种（食品用香料约1800种另列，配料表仅标「食用香精」）",
+ "count": 290,
+ "entries": [
+  {
+   "name": "阿拉伯胶",
+   "nameEn": "arabic gum",
+   "cns": "20.008",
+   "ins": "414",
+   "functions": "增稠剂、其他"
+  },
+  {
+   "name": "β－阿朴－8’－胡萝卜素醛",
+   "nameEn": "β-apo-8’-carotenal",
+   "cns": "08.018",
+   "ins": "160e",
+   "functions": "着色剂"
+  },
+  {
+   "name": "爱德万甜（又名N-{N-[3-（3-羟基-4-甲氧基苯基）丙基]-L-α-天冬氨酰}-L-苯丙氨酸-1-甲酯）",
+   "nameEn": "advantame(N-[N-[3-(3-hydroxy-4-methoxyphenyl) propyl]-L-α-aspartyl]-L-phenylalanine 1-methyl ester)",
+   "cns": "19.026",
+   "ins": "969",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "氨基乙酸（又名甘氨酸）",
+   "nameEn": "glycine",
+   "cns": "12.007",
+   "ins": "640",
+   "functions": "增味剂"
+  },
+  {
+   "name": "铵磷脂",
+   "nameEn": "ammonium phosphatide",
+   "cns": "10.033",
+   "ins": "442",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "巴西棕榈蜡",
+   "nameEn": "carnauba wax",
+   "cns": "14.008",
+   "ins": "903",
+   "functions": "被膜剂、抗结剂"
+  },
+  {
+   "name": "白油（又名液体石蜡）",
+   "nameEn": "mineral oil, white (liquid paraffin)",
+   "cns": "14.003",
+   "ins": "905a",
+   "functions": "被膜剂"
+  },
+  {
+   "name": "L-半胱氨酸盐酸盐",
+   "nameEn": "L-cysteine hydrochlorides sodium and potassium salts",
+   "cns": "13.003",
+   "ins": "920",
+   "functions": "面粉处理剂"
+  },
+  {
+   "name": "半乳甘露聚糖",
+   "nameEn": "galactomannan",
+   "cns": "00.014",
+   "ins": "&mdash;",
+   "functions": "其他"
+  },
+  {
+   "name": "苯甲酸及其钠盐（包括苯甲酸，苯甲酸钠）",
+   "nameEn": "benzoic acid, sodium benzoate",
+   "cns": "17.001,17.002",
+   "ins": "210,211",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "冰乙酸（又名冰醋酸）",
+   "nameEn": "acetic acid",
+   "cns": "01.107",
+   "ins": "260",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "冰乙酸（低压羰基化法）",
+   "nameEn": "acetic acid",
+   "cns": "01.112",
+   "ins": "&mdash;",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "冰结构蛋白",
+   "nameEn": "ice structuring protein",
+   "cns": "00.020",
+   "ins": "&mdash;",
+   "functions": "其他"
+  },
+  {
+   "name": "L-丙氨酸",
+   "nameEn": "L-alanine",
+   "cns": "12.006",
+   "ins": "&mdash;",
+   "functions": "增味剂"
+  },
+  {
+   "name": "丙二醇",
+   "nameEn": "propylene glycol",
+   "cns": "18.004",
+   "ins": "1520",
+   "functions": "稳定剂和凝固剂、抗结剂、乳化剂、水分保持剂、增稠剂"
+  },
+  {
+   "name": "丙二醇脂肪酸酯",
+   "nameEn": "propylene glycol esters of fatty acids",
+   "cns": "10.020",
+   "ins": "477",
+   "functions": "乳化剂、稳定剂"
+  },
+  {
+   "name": "丙酸及其钠盐、钙盐（包括丙酸，丙酸钠，丙酸钙）",
+   "nameEn": "propionic acid, sodium propionate, calcium propionate",
+   "cns": "17.029,17.006,17.005",
+   "ins": "280,281,282",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "茶多酚（又名维多酚，简称“TP”）",
+   "nameEn": "tea polyphenol (TP)",
+   "cns": "04.005",
+   "ins": "&mdash;",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "茶多酚棕榈酸酯",
+   "nameEn": "tea polyphenol palmitate",
+   "cns": "04.021",
+   "ins": "&mdash;",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "茶黄素",
+   "nameEn": "theaflavins",
+   "cns": "04.023",
+   "ins": "&mdash;",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "5’-呈味核苷酸二钠（又名呈味核苷酸二钠）",
+   "nameEn": "disodium 5'-ribonucleotide",
+   "cns": "12.004",
+   "ins": "635",
+   "functions": "增味剂"
+  },
+  {
+   "name": "赤藓红及其铝色淀（包括赤藓红，赤藓红铝色淀）",
+   "nameEn": "erythrosine, erythrosine aluminum lake",
+   "cns": "08.003",
+   "ins": "127",
+   "functions": "着色剂"
+  },
+  {
+   "name": "赤藓糖醇",
+   "nameEn": "erythritol",
+   "cns": "19.018",
+   "ins": "968",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "刺梧桐胶",
+   "nameEn": "karaya gum",
+   "cns": "18.010",
+   "ins": "416",
+   "functions": "稳定剂"
+  },
+  {
+   "name": "刺云实胶",
+   "nameEn": "tara gum",
+   "cns": "20.041",
+   "ins": "417",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "醋酸酯淀粉",
+   "nameEn": "starch acetate",
+   "cns": "20.039",
+   "ins": "1420",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "达瓦树胶",
+   "nameEn": "ghatti gum",
+   "cns": "10.043",
+   "ins": "419",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "单，双甘油脂肪酸酯",
+   "nameEn": "mono-and diglycerides of fatty acids",
+   "cns": "10.006",
+   "ins": "471",
+   "functions": "乳化剂、被膜剂"
+  },
+  {
+   "name": "单辛酸甘油酯",
+   "nameEn": "capryl monoglyceride",
+   "cns": "17.031",
+   "ins": "&mdash;",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "氮气（液氮）",
+   "nameEn": "nitrogen",
+   "cns": "00.024",
+   "ins": "&mdash;",
+   "functions": "其他"
+  },
+  {
+   "name": "淀粉磷酸酯钠（又名淀粉磷酸酯，磷酸酯淀粉，单淀粉磷酸酯）",
+   "nameEn": "sodium starch phosphate (monostarch phosphate)",
+   "cns": "20.013",
+   "ins": "1410",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "靛蓝及其铝色淀（包括靛蓝，靛蓝铝色淀）",
+   "nameEn": "indigotine, indigotine aluminum lake",
+   "cns": "08.008",
+   "ins": "132",
+   "functions": "着色剂"
+  },
+  {
+   "name": "丁基羟基茴香醚（简称“BHA”）",
+   "nameEn": "butylated hydroxyanisole (BHA)",
+   "cns": "04.001",
+   "ins": "320",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "对羟基苯甲酸酯类及其钠盐（包括对羟基苯甲酸甲酯钠，对羟基苯甲酸乙酯，对羟基苯甲酸乙酯钠）",
+   "nameEn": "p-hydroxy benzoates and its salts (sodium methyl p-hydroxy benzoate, ethyl p-hydroxy benzoate, sodium ethyl p-hydroxy benzoate)",
+   "cns": "17.032,17.007,17.036",
+   "ins": "219,214,215",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "二丁基羟基甲苯（简称“BHT”）",
+   "nameEn": "butylated hydroxytoluene (BHT)",
+   "cns": "04.002",
+   "ins": "321",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "纽甜（又名N-[N-（3，3-二甲基丁基）]-L-α-天门冬氨-L-苯丙氨酸1-甲酯）",
+   "nameEn": "neotame",
+   "cns": "19.019",
+   "ins": "961",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "二甲基二碳酸盐（又名维果灵）",
+   "nameEn": "dimethyl dicarbonate",
+   "cns": "17.033",
+   "ins": "242",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "二氧化硅",
+   "nameEn": "silicon dioxide",
+   "cns": "02.004",
+   "ins": "551",
+   "functions": "抗结剂"
+  },
+  {
+   "name": "二氧化硫及亚硫酸盐（包括二氧化硫，焦亚硫酸钾，焦亚硫酸钠，亚硫酸钠，亚硫酸氢钠，低亚硫酸钠）",
+   "nameEn": "sulfur dioxide, potassium metabisulphite, sodium metabisulphite, sodium sulfite, sodium hydrogen sulfite, sodium hyposulfite",
+   "cns": "05.001,05.002,05.003,05.004,05.005,05.006",
+   "ins": "220,224,223,221,222 ,&mdash;",
+   "functions": "漂白剂、防腐剂、抗氧化剂"
+  },
+  {
+   "name": "二氧化钛",
+   "nameEn": "titanium dioxide",
+   "cns": "08.011",
+   "ins": "171",
+   "functions": "着色剂"
+  },
+  {
+   "name": "二氧化碳",
+   "nameEn": "carbon dioxide",
+   "cns": "17.014",
+   "ins": "290",
+   "functions": "防腐剂、其他"
+  },
+  {
+   "name": "番茄红",
+   "nameEn": "tomato red",
+   "cns": "08.150",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "番茄红素",
+   "nameEn": "lycopene, synthetic;lycopene, Blakeslea trispora",
+   "cns": "08.017",
+   "ins": "160d(i),160d(iii)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "蜂蜡",
+   "nameEn": "beeswax",
+   "cns": "14.013",
+   "ins": "901",
+   "functions": "被膜剂"
+  },
+  {
+   "name": "富马酸",
+   "nameEn": "fumaric acid",
+   "cns": "01.110",
+   "ins": "297",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "富马酸一钠",
+   "nameEn": "monosodium fumarate",
+   "cns": "01.311",
+   "ins": "365",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "改性大豆磷脂",
+   "nameEn": "modified soybean phospholipid",
+   "cns": "10.019",
+   "ins": "&mdash;",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "甘草抗氧化物",
+   "nameEn": "antioxidant of glycyrrhiza",
+   "cns": "04.008",
+   "ins": "&mdash;",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "甘草酸盐（包括甘草酸铵，甘草酸一钾，甘草酸三钾）",
+   "nameEn": "ammonium glycyrrhizinate, monopotassium and tripotassium glycyrrhizinate",
+   "cns": "19.012,19.010,19.025",
+   "ins": "958",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "甘油（又名丙三醇）",
+   "nameEn": "glycerine (glycerol)",
+   "cns": "15.014",
+   "ins": "422",
+   "functions": "水分保持剂、乳化剂"
+  },
+  {
+   "name": "柑橘黄",
+   "nameEn": "orange yellow",
+   "cns": "08.143",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "高粱红",
+   "nameEn": "sorghum red",
+   "cns": "08.115",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "D-甘露糖醇",
+   "nameEn": "D-mannitol",
+   "cns": "19.017",
+   "ins": "421",
+   "functions": "甜味剂、乳化剂、膨松剂、稳定剂、增稠剂"
+  },
+  {
+   "name": "高锰酸钾",
+   "nameEn": "potassium permanganate",
+   "cns": "00.001",
+   "ins": "&mdash;",
+   "functions": "其他"
+  },
+  {
+   "name": "谷氨酸钠",
+   "nameEn": "monosodium glutamate",
+   "cns": "12.001",
+   "ins": "621",
+   "functions": "增味剂"
+  },
+  {
+   "name": "谷氨酰胺转氨酶",
+   "nameEn": "glutamine transaminase",
+   "cns": "18.013",
+   "ins": "&mdash;",
+   "functions": "稳定剂和凝固剂"
+  },
+  {
+   "name": "瓜尔胶",
+   "nameEn": "guar gum",
+   "cns": "20.025",
+   "ins": "412",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "硅酸钙",
+   "nameEn": "calcium silicate",
+   "cns": "02.009",
+   "ins": "552",
+   "functions": "抗结剂"
+  },
+  {
+   "name": "果胶",
+   "nameEn": "pectins",
+   "cns": "20.006",
+   "ins": "440",
+   "functions": "乳化剂、稳定剂、增稠剂"
+  },
+  {
+   "name": "海藻酸丙二醇酯",
+   "nameEn": "propylene glycol alginate",
+   "cns": "20.010",
+   "ins": "405",
+   "functions": "增稠剂、乳化剂、稳定剂"
+  },
+  {
+   "name": "海藻酸钙（又名褐藻酸钙）",
+   "nameEn": "calcium alginate",
+   "cns": "20.046",
+   "ins": "404",
+   "functions": "增稠剂、稳定剂和凝固剂"
+  },
+  {
+   "name": "海藻酸钾（又名褐藻酸钾）",
+   "nameEn": "potassium alginate",
+   "cns": "20.005",
+   "ins": "402",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "海藻酸钠（又名褐藻酸钠）",
+   "nameEn": "sodium alginate",
+   "cns": "20.004",
+   "ins": "401",
+   "functions": "增稠剂、稳定剂"
+  },
+  {
+   "name": "核黄素",
+   "nameEn": "riboflavin",
+   "cns": "08.148",
+   "ins": "101(i),101(iii)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "黑豆红",
+   "nameEn": "black bean red",
+   "cns": "08.114",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "黑加仑红",
+   "nameEn": "black currant red",
+   "cns": "08.122",
+   "ins": "163(iii)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "红花黄",
+   "nameEn": "carthamins yellow",
+   "cns": "08.103",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "红米红",
+   "nameEn": "red rice red",
+   "cns": "08.111",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "红曲黄色素",
+   "nameEn": "monascus yellow pigment",
+   "cns": "08.152",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "红曲米，红曲红",
+   "nameEn": "red kojic rice, monascus red",
+   "cns": "08.119,08.120",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "β-胡萝卜素",
+   "nameEn": "beta-carotene synthetic, beta-carotene, Blakeslea trispora, beta-carotene, algal",
+   "cns": "08.010",
+   "ins": "160a(i),160a(iii),160a(iv)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "琥珀酸单甘油酯",
+   "nameEn": "succinylated monoglycerides",
+   "cns": "10.038",
+   "ins": "472g",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "琥珀酸二钠",
+   "nameEn": "disodium succinate",
+   "cns": "12.005",
+   "ins": "364(ii)",
+   "functions": "增味剂"
+  },
+  {
+   "name": "花生衣红",
+   "nameEn": "peanut skin red",
+   "cns": "08.134",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "槐豆胶（又名刺槐豆胶）",
+   "nameEn": "carob bean gum",
+   "cns": "20.023",
+   "ins": "410",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "甜蜜素（又名环己基氨基磺酸钠），环己基氨基磺酸钙",
+   "nameEn": "sodium cyclamate, calcium cyclamate",
+   "cns": "19.002,19.024",
+   "ins": "952(iv),952(ii)",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "黄原胶（又名汉生胶）",
+   "nameEn": "xanthan gum",
+   "cns": "20.009",
+   "ins": "415",
+   "functions": "稳定剂、增稠剂"
+  },
+  {
+   "name": "α-环状糊精",
+   "nameEn": "alpha -cyclodextrin",
+   "cns": "18.011",
+   "ins": "457",
+   "functions": "稳定剂、增稠剂"
+  },
+  {
+   "name": "γ-环状糊精",
+   "nameEn": "gamma-cyclodextrin",
+   "cns": "18.012",
+   "ins": "458",
+   "functions": "稳定剂、增稠剂"
+  },
+  {
+   "name": "β-环状糊精",
+   "nameEn": "beta-cyclodextrin",
+   "cns": "20.024",
+   "ins": "459",
+   "functions": "增稠剂、其他"
+  },
+  {
+   "name": "5’-肌苷酸二钠",
+   "nameEn": "disodium 5'-inosinate",
+   "cns": "12.003",
+   "ins": "631",
+   "functions": "增味剂"
+  },
+  {
+   "name": "己二酸",
+   "nameEn": "adipic acid",
+   "cns": "01.109",
+   "ins": "355",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "4-己基间苯二酚",
+   "nameEn": "4-hexylresorcinol",
+   "cns": "04.013",
+   "ins": "586",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "甲基纤维素",
+   "nameEn": "methyl cellulose",
+   "cns": "20.043",
+   "ins": "461",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "甲壳素（又名几丁质）",
+   "nameEn": "chitin",
+   "cns": "20.018",
+   "ins": "&mdash;",
+   "functions": "增稠剂、稳定剂"
+  },
+  {
+   "name": "姜黄",
+   "nameEn": "turmeric",
+   "cns": "08.102",
+   "ins": "100(ii)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "姜黄素",
+   "nameEn": "curcumin",
+   "cns": "08.132",
+   "ins": "100(i)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "焦糖色（加氨生产）",
+   "nameEn": "caramel colour class Ⅲ-ammonia process",
+   "cns": "08.110",
+   "ins": "150c",
+   "functions": "着色剂"
+  },
+  {
+   "name": "焦糖色（苛性硫酸盐法）",
+   "nameEn": "caramel colour classⅡ-caustic sulfite",
+   "cns": "08.151",
+   "ins": "150b",
+   "functions": "着色剂"
+  },
+  {
+   "name": "焦糖色（普通法）",
+   "nameEn": "caramel colour classⅠ-plain",
+   "cns": "08.108",
+   "ins": "150a",
+   "functions": "着色剂"
+  },
+  {
+   "name": "焦糖色（亚硫酸铵法）",
+   "nameEn": "caramel colour class Ⅳ-ammonia sulphite process",
+   "cns": "08.109",
+   "ins": "150d",
+   "functions": "着色剂"
+  },
+  {
+   "name": "结冷胶",
+   "nameEn": "gellan gum",
+   "cns": "20.027",
+   "ins": "418",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "金樱子棕",
+   "nameEn": "rose laevigata michx brown",
+   "cns": "08.131",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "L（+）-酒石酸，dl-酒石酸",
+   "nameEn": "L (+)-tartaric acid, dl-tartaric acid",
+   "cns": "01.111,01.313",
+   "ins": "334,&mdash;",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "酒石酸氢钾",
+   "nameEn": "potassium bitartrate",
+   "cns": "06.007",
+   "ins": "336",
+   "functions": "膨松剂"
+  },
+  {
+   "name": "酒石酸铁",
+   "nameEn": "iron tartrate",
+   "cns": "02.011",
+   "ins": "&mdash;",
+   "functions": "抗结剂"
+  },
+  {
+   "name": "菊花黄浸膏",
+   "nameEn": "coreopsis yellow",
+   "cns": "08.113",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "聚丙烯酸钠",
+   "nameEn": "sodium polyacrylate",
+   "cns": "20.036",
+   "ins": "&mdash;",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "聚二甲基硅氧烷及其乳液（包括聚二甲基硅氧烷，聚二甲基硅氧烷乳液）",
+   "nameEn": "polydimethyl siloxane and emulsion",
+   "cns": "03.007",
+   "ins": "900a",
+   "functions": "被膜剂"
+  },
+  {
+   "name": "聚甘油蓖麻醇酸酯（简称“PGPR”）",
+   "nameEn": "polyglycerol polyricinoleate (polyglycerol esters of interesterified ricinoleic acid) (PGPR)",
+   "cns": "10.029",
+   "ins": "476",
+   "functions": "乳化剂、稳定剂"
+  },
+  {
+   "name": "聚甘油脂肪酸酯",
+   "nameEn": "polyglycerol esters of fatty acids (polyglycerol fatty acid esters)",
+   "cns": "10.022",
+   "ins": "475",
+   "functions": "乳化剂、稳定剂、增稠剂、抗结剂"
+  },
+  {
+   "name": "ε-聚赖氨酸",
+   "nameEn": "ε-polylysine",
+   "cns": "17.037",
+   "ins": "&mdash;",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "ε-聚赖氨酸盐酸盐",
+   "nameEn": "ε-polylysine hydrochloride",
+   "cns": "17.038",
+   "ins": "&mdash;",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "聚葡萄糖",
+   "nameEn": "polydextroses",
+   "cns": "20.022",
+   "ins": "1200",
+   "functions": "增稠剂、膨松剂、水分保持剂、稳定剂"
+  },
+  {
+   "name": "聚天冬氨酸钾",
+   "nameEn": "potassium polyaspartate",
+   "cns": "18.014",
+   "ins": "456",
+   "functions": "稳定剂和凝固剂"
+  },
+  {
+   "name": "吐温类[包括聚氧乙烯（20）山梨醇酐单月桂酸酯（又名吐温20），聚氧乙烯（20）山梨醇酐单棕榈酸酯（又名吐温40），聚氧乙烯（20）山梨醇酐单硬脂酸酯（又名吐温60），聚氧乙烯（20）山梨醇酐单油酸酯（又名吐温80）]",
+   "nameEn": "polysorbates, polyoxyethylene (20) sorbitan monolaurate, polyoxyethylene (20) sorbitan monopalmitate, polyoxyethylene (20) sorbitan monostearate, polyoxyethylene (20) sorbitan monooleate",
+   "cns": "10.025,10.026,10.015,10.016",
+   "ins": "432,434,435,433",
+   "functions": "乳化剂、稳定剂"
+  },
+  {
+   "name": "聚乙二醇",
+   "nameEn": "polyethylene glycol",
+   "cns": "14.012",
+   "ins": "1521",
+   "functions": "被膜剂"
+  },
+  {
+   "name": "聚乙烯醇",
+   "nameEn": "polyvinyl alcohol",
+   "cns": "14.010",
+   "ins": "1203",
+   "functions": "被膜剂"
+  },
+  {
+   "name": "决明胶",
+   "nameEn": "cassia gum",
+   "cns": "20.045",
+   "ins": "427",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "咖啡因",
+   "nameEn": "caffeine",
+   "cns": "00.007",
+   "ins": "&mdash;",
+   "functions": "其他"
+  },
+  {
+   "name": "卡拉胶",
+   "nameEn": "carrageenan",
+   "cns": "20.007",
+   "ins": "407",
+   "functions": "乳化剂、稳定剂、增稠剂"
+  },
+  {
+   "name": "抗坏血酸（又名维生素C）",
+   "nameEn": "ascorbic acid (vitamin C)",
+   "cns": "04.014",
+   "ins": "300",
+   "functions": "面粉处理剂、抗氧化剂"
+  },
+  {
+   "name": "抗坏血酸钙",
+   "nameEn": "calcium ascorbate",
+   "cns": "04.009",
+   "ins": "302",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "抗坏血酸钠",
+   "nameEn": "sodium ascorbate",
+   "cns": "04.015",
+   "ins": "301",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "抗坏血酸棕榈酸酯",
+   "nameEn": "ascorbyl palmitate",
+   "cns": "04.011",
+   "ins": "304",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "抗坏血酸棕榈酸酯（酶法）",
+   "nameEn": "ascorbyl palmitate (enzymatic)",
+   "cns": "04.024",
+   "ins": "304",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "可得然胶",
+   "nameEn": "curdlan",
+   "cns": "20.042",
+   "ins": "424",
+   "functions": "稳定剂和凝固剂、增稠剂"
+  },
+  {
+   "name": "可可壳色",
+   "nameEn": "cocao husk pigment",
+   "cns": "08.118",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "可溶性大豆多糖",
+   "nameEn": "soluble soybean polysaccharide",
+   "cns": "20.044",
+   "ins": "&mdash;",
+   "functions": "增稠剂、乳化剂、被膜剂、抗结剂"
+  },
+  {
+   "name": "喹啉黄及其铝色淀（包括喹啉黄，喹啉黄铝色淀）",
+   "nameEn": "quinoline yellow, quinoline yellow aluminum lake",
+   "cns": "08.016",
+   "ins": "104",
+   "functions": "着色剂"
+  },
+  {
+   "name": "辣椒橙",
+   "nameEn": "paprika orange",
+   "cns": "08.107",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "辣椒红",
+   "nameEn": "paprika red",
+   "cns": "08.106",
+   "ins": "160c(ii)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "辣椒油树脂",
+   "nameEn": "paprika oleoresin",
+   "cns": "00.012",
+   "ins": "160c(i)",
+   "functions": "增味剂、着色剂"
+  },
+  {
+   "name": "蓝锭果红",
+   "nameEn": "uguisukagura red",
+   "cns": "08.136",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "酪蛋白酸钠（又名酪朊酸钠）",
+   "nameEn": "sodium caseinate",
+   "cns": "10.002",
+   "ins": "&mdash;",
+   "functions": "乳化剂、其他"
+  },
+  {
+   "name": "联苯醚（又名二苯醚）",
+   "nameEn": "diphenyl ether (diphenyl oxide)",
+   "cns": "17.022",
+   "ins": "&mdash;",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "亮蓝及其铝色淀（包括亮蓝，亮蓝铝色淀）",
+   "nameEn": "brilliant blue, brilliant blue aluminum lake",
+   "cns": "08.007",
+   "ins": "133",
+   "functions": "着色剂"
+  },
+  {
+   "name": "磷酸及磷酸盐[包括磷酸，焦磷酸二氢二钠，焦磷酸钠，磷酸二氢钙，磷酸二氢钾，磷酸氢二铵，磷酸氢二钾，磷酸氢钙，磷酸三钙，磷酸三钾，磷酸三钠，多聚磷酸钠（包括六偏磷酸钠），三聚磷酸钠，磷酸二氢钠，磷酸氢二钠，焦磷酸四钾，焦磷酸一氢三钠，聚偏磷酸钾，酸式焦磷酸钙]",
+   "nameEn": "phosphoric acid, disodium dihydrogen pyrophosphate, tetrasodium pyrophosphate, calcium dihydrogen phosphate, potassium dihydrogen phosphate, diammonium hydrogen phosphate, dipotassium hydrogen phosphate, calcium hydrogen phosphate (dicalcium orthophosphate), tricalcium orthophosphate (calcium phosphate), tripotassium orthophosphate, trisodium orthophosphate, sodium polyphosphate, sodium tripolyphosphate, sodium dihydrogen phosphate, disodium hydrogen phosphate, tetrapotassium pyrophosphate, trisodium monohydrogen diphosphate, potassium polymetaphosphate, calcium acid pyrophosphate",
+   "cns": "01.106,15.008,15.004,15.007,15.010,06.008,15.009,06.006,02.003,01.308,15.001,15.002,15.003,15.005,15.006,15.017,15.013,15.015,15.016",
+   "ins": "338,450(i),450(iii),341(i),340(i),342(ii),340(ii),341(ii),341(iii),340(iii),339(iii),452(i),451(i),339(i),339(ii),450(v),450(ii),452(ii),450(vii)",
+   "functions": "水分保持剂、膨松剂、酸度调节剂、稳定剂、凝固剂、抗结剂"
+  },
+  {
+   "name": "磷酸化二淀粉磷酸酯",
+   "nameEn": "phosphated distarch phosphate",
+   "cns": "20.017",
+   "ins": "1413",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "磷酸酯双淀粉",
+   "nameEn": "distarch phosphate",
+   "cns": "20.034",
+   "ins": "1412",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "磷脂",
+   "nameEn": "phospholipid",
+   "cns": "04.010",
+   "ins": "322",
+   "functions": "抗氧化剂、乳化剂"
+  },
+  {
+   "name": "硫代二丙酸二月桂酯",
+   "nameEn": "dilauryl thiodipropionate",
+   "cns": "04.012",
+   "ins": "389",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "硫磺",
+   "nameEn": "sulfur (sulphur)",
+   "cns": "05.007",
+   "ins": "&mdash;",
+   "functions": "漂白剂、防腐剂"
+  },
+  {
+   "name": "硫酸钙（又名石膏）",
+   "nameEn": "calcium sulfate",
+   "cns": "18.001",
+   "ins": "516",
+   "functions": "稳定剂和凝固剂、增稠剂、酸度调节剂"
+  },
+  {
+   "name": "硫酸铝钾（又名钾明矾），硫酸铝铵（又名铵明矾）",
+   "nameEn": "aluminium potassium sulfate, aluminium ammonium sulfate",
+   "cns": "06.004,06.005",
+   "ins": "522,523",
+   "functions": "膨松剂、稳定剂"
+  },
+  {
+   "name": "硫酸镁",
+   "nameEn": "magnesium sulfate",
+   "cns": "00.021",
+   "ins": "518",
+   "functions": "其他"
+  },
+  {
+   "name": "硫酸锌",
+   "nameEn": "zinc sulfate",
+   "cns": "00.018",
+   "ins": "&mdash;",
+   "functions": "其他"
+  },
+  {
+   "name": "硫酸亚铁",
+   "nameEn": "ferrous sulfate",
+   "cns": "00.022",
+   "ins": "&mdash;",
+   "functions": "其他"
+  },
+  {
+   "name": "罗汉果甜苷",
+   "nameEn": "lo-han-kuo extract",
+   "cns": "19.015",
+   "ins": "&mdash;",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "罗望子多糖胶",
+   "nameEn": "tamarind polysaccharide gum",
+   "cns": "20.011",
+   "ins": "&mdash;",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "萝卜红",
+   "nameEn": "radish red",
+   "cns": "08.117",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "氯化钙",
+   "nameEn": "calcium chloride",
+   "cns": "18.002",
+   "ins": "509",
+   "functions": "稳定剂和凝固剂、增稠剂、其他"
+  },
+  {
+   "name": "氯化钾",
+   "nameEn": "potassium chloride",
+   "cns": "00.008",
+   "ins": "508",
+   "functions": "其他"
+  },
+  {
+   "name": "氯化镁",
+   "nameEn": "magnesium chloride",
+   "cns": "18.003",
+   "ins": "511",
+   "functions": "稳定剂和凝固剂、增味剂"
+  },
+  {
+   "name": "吗啉脂肪酸盐果蜡",
+   "nameEn": "morpholine fatty acid salt (fruit wax)",
+   "cns": "14.004",
+   "ins": "&mdash;",
+   "functions": "被膜剂"
+  },
+  {
+   "name": "麦芽糖醇，麦芽糖醇液",
+   "nameEn": "maltitol and maltitol syrup",
+   "cns": "19.005,19.022",
+   "ins": "965(i),965(ii)",
+   "functions": "甜味剂、稳定剂、水分保持剂、乳化剂、膨松剂、增稠剂"
+  },
+  {
+   "name": "没食子酸丙酯（简称“PG”）",
+   "nameEn": "propyl gallate (PG)",
+   "cns": "04.003",
+   "ins": "310",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "玫瑰茄红",
+   "nameEn": "roselle red",
+   "cns": "08.125",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "酶解大豆磷脂",
+   "nameEn": "enzymatically decomposed soybean phospholipid",
+   "cns": "10.040",
+   "ins": "&mdash;",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "迷迭香提取物",
+   "nameEn": "rosemary extract",
+   "cns": "04.017",
+   "ins": "392",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "明胶",
+   "nameEn": "gelatin",
+   "cns": "20.002",
+   "ins": "428",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "木松香甘油酯",
+   "nameEn": "glycerol ester of wood rosin",
+   "cns": "10.041",
+   "ins": "445(iii)",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "木糖醇",
+   "nameEn": "xylitol",
+   "cns": "19.007",
+   "ins": "967",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "木糖醇酐单硬脂酸酯",
+   "nameEn": "xylitan monostearate",
+   "cns": "10.007",
+   "ins": "&mdash;",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "纳他霉素",
+   "nameEn": "natamycin",
+   "cns": "17.030",
+   "ins": "235",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "5’-鸟苷酸二钠",
+   "nameEn": "disodium 5'-guanylate",
+   "cns": "12.002",
+   "ins": "627",
+   "functions": "增味剂"
+  },
+  {
+   "name": "柠檬黄及其铝色淀（包括柠檬黄，柠檬黄铝色淀）",
+   "nameEn": "tartrazine, tartrazine aluminum lake",
+   "cns": "08.005",
+   "ins": "102",
+   "functions": "着色剂"
+  },
+  {
+   "name": "柠檬酸",
+   "nameEn": "citric acid",
+   "cns": "01.101",
+   "ins": "330",
+   "functions": "酸度调节剂、抗氧化剂"
+  },
+  {
+   "name": "柠檬酸钾",
+   "nameEn": "tripotassium citrate",
+   "cns": "01.304",
+   "ins": "332(ii)",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "柠檬酸钠",
+   "nameEn": "trisodium citrate",
+   "cns": "01.303",
+   "ins": "331(iii)",
+   "functions": "酸度调节剂、稳定剂"
+  },
+  {
+   "name": "柠檬酸铁铵",
+   "nameEn": "ferric ammonium citrate",
+   "cns": "02.010",
+   "ins": "381",
+   "functions": "抗结剂"
+  },
+  {
+   "name": "柠檬酸亚锡二钠",
+   "nameEn": "disodium stannous citrate",
+   "cns": "18.006",
+   "ins": "&mdash;",
+   "functions": "稳定剂和凝固剂"
+  },
+  {
+   "name": "柠檬酸一钠",
+   "nameEn": "sodium dihydrogen citrate",
+   "cns": "01.306",
+   "ins": "331(i)",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "柠檬酸脂肪酸甘油酯",
+   "nameEn": "citric and fatty acid esters of glycerol",
+   "cns": "10.032",
+   "ins": "472c",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "DL-苹果酸钠",
+   "nameEn": "sodium DL-malate",
+   "cns": "01.314",
+   "ins": "350（ii）",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "L-苹果酸",
+   "nameEn": "L-malic acid",
+   "cns": "01.104",
+   "ins": "&mdash;",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "L-苹果酸钠",
+   "nameEn": "L- (-)-malic acid disodium salt",
+   "cns": "01.315",
+   "ins": "&mdash;",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "DL-苹果酸",
+   "nameEn": "DL -malic acid",
+   "cns": "01.309",
+   "ins": "296",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "偏酒石酸",
+   "nameEn": "metatartaric acid",
+   "cns": "01.105",
+   "ins": "353",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "葡萄皮红",
+   "nameEn": "grape skin extract",
+   "cns": "08.135",
+   "ins": "163(ii)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "葡萄糖酸-δ-内酯",
+   "nameEn": "glucono delta-lactone",
+   "cns": "18.007",
+   "ins": "575",
+   "functions": "稳定和凝固剂、酸度调节剂"
+  },
+  {
+   "name": "葡萄糖酸钠",
+   "nameEn": "sodium gluconate",
+   "cns": "01.312",
+   "ins": "576",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "葡萄糖酸亚铁",
+   "nameEn": "ferrous gluconate",
+   "cns": "09.005",
+   "ins": "579",
+   "functions": "护色剂"
+  },
+  {
+   "name": "普鲁兰多糖",
+   "nameEn": "pullulan",
+   "cns": "14.011",
+   "ins": "1204",
+   "functions": "被膜剂、增稠剂"
+  },
+  {
+   "name": "羟丙基淀粉",
+   "nameEn": "hydroxypropyl starch",
+   "cns": "20.014",
+   "ins": "1440",
+   "functions": "增稠剂、膨松剂、乳化剂、稳定剂"
+  },
+  {
+   "name": "羟丙基二淀粉磷酸酯",
+   "nameEn": "hydroxypropyl distarch phosphate",
+   "cns": "20.016",
+   "ins": "1442",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "羟丙基甲基纤维素（简称“HPMC”）",
+   "nameEn": "hydroxypropyl methyl cellulose",
+   "cns": "20.028",
+   "ins": "464",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "羟基硬脂精（又名氧化硬脂精）",
+   "nameEn": "oxystearin",
+   "cns": "00.017",
+   "ins": "387",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "氢化松香甘油酯",
+   "nameEn": "glycerol ester of hydrogenated rosin",
+   "cns": "10.013",
+   "ins": "&mdash;",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "氢氧化钙",
+   "nameEn": "calcium hydroxide",
+   "cns": "01.202",
+   "ins": "526",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "氢氧化钾",
+   "nameEn": "potassium hydroxide",
+   "cns": "01.203",
+   "ins": "525",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "琼脂",
+   "nameEn": "agar",
+   "cns": "20.001",
+   "ins": "406",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "日落黄及其铝色淀（包括日落黄，日落黄铝色淀）",
+   "nameEn": "sunset yellow, sunset yellow aluminum lake",
+   "cns": "08.006",
+   "ins": "110",
+   "functions": "着色剂"
+  },
+  {
+   "name": "溶菌酶",
+   "nameEn": "lysozyme",
+   "cns": "17.035",
+   "ins": "1105",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "肉桂醛",
+   "nameEn": "cinnamaldehyde",
+   "cns": "17.012",
+   "ins": "&mdash;",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "乳酸",
+   "nameEn": "lactic acid",
+   "cns": "01.102",
+   "ins": "270",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "乳酸钙",
+   "nameEn": "calcium lactate",
+   "cns": "01.310",
+   "ins": "327",
+   "functions": "酸度调节剂、抗氧化剂、乳化剂、稳定剂和凝固剂、增稠剂"
+  },
+  {
+   "name": "乳酸钾",
+   "nameEn": "potassium lactate",
+   "cns": "15.011",
+   "ins": "326",
+   "functions": "水分保持剂"
+  },
+  {
+   "name": "乳酸链球菌素",
+   "nameEn": "nisin",
+   "cns": "17.019",
+   "ins": "234",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "乳酸钠",
+   "nameEn": "sodium lactate",
+   "cns": "15.012",
+   "ins": "325",
+   "functions": "水分保持剂、酸度调节剂、抗氧化剂、膨松剂、增稠剂、稳定剂"
+  },
+  {
+   "name": "乳酸脂肪酸甘油酯",
+   "nameEn": "lactic and fatty acid esters of glycerol",
+   "cns": "10.031",
+   "ins": "472b",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "乳糖醇（又名4－β－D吡喃半乳糖－D－山梨醇）",
+   "nameEn": "lactitol",
+   "cns": "19.014",
+   "ins": "966",
+   "functions": "乳化剂、稳定剂、增稠剂、甜味剂"
+  },
+  {
+   "name": "乳糖酶",
+   "nameEn": "lactase",
+   "cns": "00.023",
+   "ins": "&mdash;",
+   "functions": "其他"
+  },
+  {
+   "name": "三氯蔗糖（又名蔗糖素）",
+   "nameEn": "sucralose",
+   "cns": "19.016",
+   "ins": "955",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "三赞胶",
+   "nameEn": "sanzan gum",
+   "cns": "20.047",
+   "ins": "&mdash;",
+   "functions": "增稠剂、稳定剂、凝固剂"
+  },
+  {
+   "name": "桑椹红",
+   "nameEn": "mulberry red",
+   "cns": "08.129",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "沙蒿胶",
+   "nameEn": "rtemisia gum (sa-hao seed gum)",
+   "cns": "20.037",
+   "ins": "&mdash;",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "沙棘黄",
+   "nameEn": "hippophae rhamnoides yellow",
+   "cns": "08.124",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "司盘类[包括山梨醇酐单月桂酸酯（又名司盘20），山梨醇酐单棕榈酸酯（又名司盘40），山梨醇酐单硬脂酸酯（又名司盘60），山梨醇酐三硬脂酸酯（又名司盘65），山梨醇酐单油酸酯（又名司盘80）]",
+   "nameEn": "sorbitan esters of fatty acids, sorbitan monolaurate, sorbitan monopalmitate, sorbitan monostearate, sorbitan tristearate, sorbitan monooleate",
+   "cns": "10.024,10.008,10.003,10.004,10.005",
+   "ins": "493,495,491,492,494",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "山梨酸及其钾盐（包括山梨酸，山梨酸钾）",
+   "nameEn": "sorbic acid, potassium sorbate",
+   "cns": "17.003,17.004",
+   "ins": "200,202",
+   "functions": "防腐剂、抗氧化剂"
+  },
+  {
+   "name": "山梨糖醇，山梨糖醇液",
+   "nameEn": "sorbitol and sorbitol syrup",
+   "cns": "19.006,19.023",
+   "ins": "420(i),420(ii)",
+   "functions": "甜味剂、膨松剂、乳化剂、水分保持剂、稳定剂、增稠剂"
+  },
+  {
+   "name": "双乙酸钠（又名二醋酸钠）",
+   "nameEn": "sodium diacetate",
+   "cns": "17.013",
+   "ins": "262(ii)",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "双乙酰酒石酸单双甘油酯（简称“DATEM”）",
+   "nameEn": "diacetyle tartaric acid esters of mono (di)glycerides (DATEM)",
+   "cns": "10.010",
+   "ins": "472e",
+   "functions": "乳化剂、增稠剂"
+  },
+  {
+   "name": "松香季戊四醇酯",
+   "nameEn": "pentaerythritol ester of wood rosin",
+   "cns": "14.005",
+   "ins": "&mdash;",
+   "functions": "被膜剂"
+  },
+  {
+   "name": "酸处理淀粉",
+   "nameEn": "acid treated starch",
+   "cns": "20.032",
+   "ins": "1401",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "酸性红（又名偶氮玉红）",
+   "nameEn": "carmoisine (azorubine)",
+   "cns": "08.013",
+   "ins": "122",
+   "functions": "着色剂"
+  },
+  {
+   "name": "羧甲基淀粉钠",
+   "nameEn": "sodium carboxy methyl starch",
+   "cns": "20.012",
+   "ins": "&mdash;",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "羧甲基纤维素钠",
+   "nameEn": "sodium carboxy methyl cellulose",
+   "cns": "20.003",
+   "ins": "466",
+   "functions": "增稠剂、稳定剂"
+  },
+  {
+   "name": "索马甜",
+   "nameEn": "thaumatin",
+   "cns": "19.020",
+   "ins": "957",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "碳酸铵",
+   "nameEn": "ammonium carbonate",
+   "cns": "06.009",
+   "ins": "503(i)",
+   "functions": "膨松剂"
+  },
+  {
+   "name": "碳酸钙（包括轻质碳酸钙，重质碳酸钙）",
+   "nameEn": "calcium carbonate (light and heavy)",
+   "cns": "13.006",
+   "ins": "170(i)",
+   "functions": "膨松剂、面粉处理剂、稳定剂"
+  },
+  {
+   "name": "碳酸钾",
+   "nameEn": "potassium carbonate",
+   "cns": "01.301",
+   "ins": "501(i)",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "碳酸镁（包括轻质碳酸镁，重质碳酸镁）",
+   "nameEn": "magnesium carbonate",
+   "cns": "13.005",
+   "ins": "504(i)",
+   "functions": "面粉处理剂、膨松剂、稳定剂、抗结剂"
+  },
+  {
+   "name": "碳酸钠",
+   "nameEn": "sodium carbonate",
+   "cns": "01.302",
+   "ins": "500(i)",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "碳酸氢铵",
+   "nameEn": "ammonium hydrogen carbonate",
+   "cns": "06.002",
+   "ins": "503(ii)",
+   "functions": "膨松剂"
+  },
+  {
+   "name": "碳酸氢钾",
+   "nameEn": "potassium hydrogen carbonate",
+   "cns": "01.307",
+   "ins": "501(ii)",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "碳酸氢钠",
+   "nameEn": "sodium hydrogen carbonate",
+   "cns": "06.001",
+   "ins": "500(ii)",
+   "functions": "膨松剂、酸度调节剂、稳定剂"
+  },
+  {
+   "name": "碳酸氢三钠（又名倍半碳酸钠）",
+   "nameEn": "sodium sesquicarbonate",
+   "cns": "01.305",
+   "ins": "500(iii)",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "糖精钠",
+   "nameEn": "sodium saccharin",
+   "cns": "19.001",
+   "ins": "954(iv)",
+   "functions": "甜味剂、增味剂"
+  },
+  {
+   "name": "特丁基对苯二酚（简称“TBHQ”）",
+   "nameEn": "tertiary butylhydroquinone (TBHQ)",
+   "cns": "04.007",
+   "ins": "319",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "阿力甜（又名L-α-天冬氨酰-N-（2，2，4，4-四甲基-3-硫化三亚甲基）-D-丙氨酰胺）",
+   "nameEn": "alitame",
+   "cns": "19.013",
+   "ins": "956",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "阿斯巴甜（又名天门冬酰苯丙氨酸甲酯）",
+   "nameEn": "aspartame",
+   "cns": "19.004",
+   "ins": "951",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "天门冬酰苯丙氨酸甲酯乙酰磺胺酸",
+   "nameEn": "aspartame-acesulfame salt",
+   "cns": "19.021",
+   "ins": "962",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "天然胡萝卜素",
+   "nameEn": "natural carotene",
+   "cns": "08.147",
+   "ins": "160a(ii)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "天然苋菜红",
+   "nameEn": "natural amaranthus red",
+   "cns": "08.130",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "田菁胶",
+   "nameEn": "sesbania gum",
+   "cns": "20.021",
+   "ins": "&mdash;",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "甜菜红",
+   "nameEn": "beet red",
+   "cns": "08.101",
+   "ins": "162",
+   "functions": "着色剂"
+  },
+  {
+   "name": "甜菊糖苷",
+   "nameEn": "steviol glycosides",
+   "cns": "19.008",
+   "ins": "960a",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "脱氢乙酸及其钠盐（包括脱氢乙酸，脱氢乙酸钠）",
+   "nameEn": "dehydroacetic acid, sodium dehydroacetate",
+   "cns": "17.009(i),17.009 (ii)",
+   "ins": "265,266",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "脱乙酰甲壳素（又名壳聚糖）",
+   "nameEn": "deacetylated chitin (chitosan)",
+   "cns": "20.026",
+   "ins": "&mdash;",
+   "functions": "增稠剂、被膜剂"
+  },
+  {
+   "name": "微晶纤维素",
+   "nameEn": "microcrystallin cellulose",
+   "cns": "02.005",
+   "ins": "460(i)",
+   "functions": "抗结剂、增稠剂、稳定剂"
+  },
+  {
+   "name": "维生素E（包括dl-α-生育酚，d-α-生育酚，混合生育酚浓缩物）",
+   "nameEn": "vitamine E (dl-α-tocopherol , d-α- tocopherol , mixed tocopherol concentrate)",
+   "cns": "04.016",
+   "ins": "307",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "稳定态二氧化氯",
+   "nameEn": "stabilized chlorine dioxide",
+   "cns": "17.028",
+   "ins": "926",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "纤维素",
+   "nameEn": "cellulose",
+   "cns": "02.012",
+   "ins": "460",
+   "functions": "抗结剂、稳定剂和凝固剂、增稠剂"
+  },
+  {
+   "name": "苋菜红及其铝色淀（包括苋菜红，苋菜红铝色淀）",
+   "nameEn": "amaranth, amaranth aluminum lake",
+   "cns": "08.001",
+   "ins": "123",
+   "functions": "着色剂"
+  },
+  {
+   "name": "橡子壳棕",
+   "nameEn": "acorn shell brown",
+   "cns": "08.126",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "硝酸钠，硝酸钾",
+   "nameEn": "sodium nitrate, potassium nitrate",
+   "cns": "09.001,09.003",
+   "ins": "251,252",
+   "functions": "护色剂、防腐剂"
+  },
+  {
+   "name": "辛，癸酸甘油酯",
+   "nameEn": "octyl and decyl glycerate",
+   "cns": "10.018",
+   "ins": "&mdash;",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "辛烯基琥珀酸淀粉钠",
+   "nameEn": "starch sodium octenyl succinate",
+   "cns": "10.030",
+   "ins": "1450",
+   "functions": "乳化剂，其他"
+  },
+  {
+   "name": "新红及其铝色淀（包括新红，新红铝色淀）",
+   "nameEn": "new red, new red aluminum lake",
+   "cns": "08.004",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "亚麻籽胶（又名富兰克胶）",
+   "nameEn": "linseed gum",
+   "cns": "20.020",
+   "ins": "&mdash;",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "亚铁氰化钾，亚铁氰化钠",
+   "nameEn": "potassium ferrocyanide, sodium ferrocyanide",
+   "cns": "02.001,02.008",
+   "ins": "536,535",
+   "functions": "抗结剂"
+  },
+  {
+   "name": "亚硝酸钠，亚硝酸钾",
+   "nameEn": "sodium nitrite, potassium nitrite",
+   "cns": "09.002,09.004",
+   "ins": "250,249",
+   "functions": "护色剂、防腐剂"
+  },
+  {
+   "name": "胭脂虫红及其铝色淀（包括胭脂虫红，胭脂虫红铝色淀）",
+   "nameEn": "carmine cochineal, carmine cochineal aluminum lake",
+   "cns": "08.145",
+   "ins": "120",
+   "functions": "着色剂"
+  },
+  {
+   "name": "胭脂红及其铝色淀（包括胭脂红，胭脂红铝色淀）",
+   "nameEn": "ponceau 4R, ponceau 4R aluminum lake",
+   "cns": "08.002",
+   "ins": "124",
+   "functions": "着色剂"
+  },
+  {
+   "name": "胭脂树橙（又名红木素，降红木素）",
+   "nameEn": "annatto extracts",
+   "cns": "08.144",
+   "ins": "160b",
+   "functions": "着色剂"
+  },
+  {
+   "name": "盐酸",
+   "nameEn": "hydrochloric acid",
+   "cns": "01.108",
+   "ins": "507",
+   "functions": "酸度调节剂"
+  },
+  {
+   "name": "杨梅红",
+   "nameEn": "mynica red",
+   "cns": "08.149",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "氧化淀粉",
+   "nameEn": "oxidized starch",
+   "cns": "20.030",
+   "ins": "1404",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "氧化羟丙基淀粉",
+   "nameEn": "oxidized hydroxypropyl starch",
+   "cns": "20.033",
+   "ins": "&mdash;",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "氧化铁黑，氧化铁红",
+   "nameEn": "iron oxide black, iron oxide red",
+   "cns": "08.014,08.015",
+   "ins": "172(i),172(ii)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "叶黄素",
+   "nameEn": "lutein",
+   "cns": "08.146",
+   "ins": "161b(i)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "叶绿素铜",
+   "nameEn": "copper chlorophyll",
+   "cns": "08.153",
+   "ins": "141(i)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "叶绿素铜钠盐，叶绿素铜钾盐",
+   "nameEn": "chlorophyllin copper complex, sodium and potassium salts",
+   "cns": "08.009,08.155",
+   "ins": "141(ii)",
+   "functions": "着色剂"
+  },
+  {
+   "name": "液体二氧化碳（煤气化法）",
+   "nameEn": "carbon dioxide",
+   "cns": "17.034",
+   "ins": "&mdash;",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "乙二胺四乙酸二钠",
+   "nameEn": "disodium ethylene-diamine-tetra-acetate",
+   "cns": "18.005",
+   "ins": "386",
+   "functions": "稳定剂、凝固剂、抗氧化剂、防腐剂"
+  },
+  {
+   "name": "乙二胺四乙酸二钠钙",
+   "nameEn": "calcium disodium ethylene-diamine-tetra-acetate",
+   "cns": "04.020",
+   "ins": "385",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "乙酸钠（又名醋酸钠）",
+   "nameEn": "sodium acetate",
+   "cns": "00.013",
+   "ins": "262(i)",
+   "functions": "酸度调节剂、防腐剂"
+  },
+  {
+   "name": "乙酰化单、双甘油脂肪酸酯",
+   "nameEn": "acetylated mono- and diglyceride (acetic and fatty acid esters of glycerol)",
+   "cns": "10.027",
+   "ins": "472a",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "乙酰化二淀粉磷酸酯",
+   "nameEn": "acetylated distarch phosphate",
+   "cns": "20.015",
+   "ins": "1414",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "乙酰化双淀粉己二酸酯",
+   "nameEn": "acetylated distarch adipate",
+   "cns": "20.031",
+   "ins": "1422",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "安赛蜜（又名乙酰磺胺酸钾）",
+   "nameEn": "acesulfame potassium",
+   "cns": "19.011",
+   "ins": "950",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "乙氧基喹",
+   "nameEn": "ethoxy quin",
+   "cns": "17.010",
+   "ins": "324",
+   "functions": "防腐剂"
+  },
+  {
+   "name": "D-异抗坏血酸及其钠盐（包括D-异抗坏血酸，D-异抗坏血酸钠）",
+   "nameEn": "D-isoascorbic acid (erythorbic acid), sodium D-isoascorbate",
+   "cns": "04.004,04.018",
+   "ins": "315,316",
+   "functions": "抗氧化剂、护色剂"
+  },
+  {
+   "name": "异构化乳糖",
+   "nameEn": "isomerized lactose",
+   "cns": "00.003",
+   "ins": "&mdash;",
+   "functions": "其他"
+  },
+  {
+   "name": "异麦芽酮糖",
+   "nameEn": "isomaltulose (palatinose)",
+   "cns": "19.003",
+   "ins": "&mdash;",
+   "functions": "甜味剂"
+  },
+  {
+   "name": "硬脂酸（又名十八烷酸）",
+   "nameEn": "stearic acid (octadecanoic acid)",
+   "cns": "14.009",
+   "ins": "570",
+   "functions": "被膜剂"
+  },
+  {
+   "name": "硬脂酸钙",
+   "nameEn": "calcium stearate",
+   "cns": "10.039",
+   "ins": "&mdash;",
+   "functions": "乳化剂、抗结剂"
+  },
+  {
+   "name": "硬脂酸钾",
+   "nameEn": "potassium stearate",
+   "cns": "10.028",
+   "ins": "&mdash;",
+   "functions": "乳化剂、抗结剂"
+  },
+  {
+   "name": "硬脂酸镁",
+   "nameEn": "magnesium stearate",
+   "cns": "02.006",
+   "ins": "470(iii)",
+   "functions": "乳化剂、抗结剂"
+  },
+  {
+   "name": "硬脂酰乳酸钠，硬脂酰乳酸钙",
+   "nameEn": "sodium stearoyl lactylate, calcium stearoyl lactylate",
+   "cns": "10.011,10.009",
+   "ins": "481(i),482(i)",
+   "functions": "乳化剂、稳定剂"
+  },
+  {
+   "name": "诱惑红及其铝色淀（包括诱惑红，诱惑红铝色淀）",
+   "nameEn": "allura red, allura aluminum lake",
+   "cns": "08.012",
+   "ins": "129",
+   "functions": "着色剂"
+  },
+  {
+   "name": "玉米黄",
+   "nameEn": "corn yellow",
+   "cns": "08.116",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "越橘红",
+   "nameEn": "cowberry red",
+   "cns": "08.105",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "藻蓝",
+   "nameEn": "spirulina blue",
+   "cns": "08.137",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "皂荚糖胶",
+   "nameEn": "gleditsia sinenis lam gum",
+   "cns": "20.029",
+   "ins": "&mdash;",
+   "functions": "增稠剂"
+  },
+  {
+   "name": "皂树皮提取物",
+   "nameEn": "quillaia extract",
+   "cns": "10.042",
+   "ins": "999",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "蔗糖脂肪酸酯",
+   "nameEn": "sucrose esters of fatty acids",
+   "cns": "10.001",
+   "ins": "473",
+   "functions": "乳化剂"
+  },
+  {
+   "name": "栀子黄",
+   "nameEn": "gardenia yellow",
+   "cns": "08.112",
+   "ins": "164",
+   "functions": "着色剂"
+  },
+  {
+   "name": "栀子蓝",
+   "nameEn": "gardenia blue",
+   "cns": "08.123",
+   "ins": "165",
+   "functions": "着色剂"
+  },
+  {
+   "name": "植酸（又名肌醇六磷酸），植酸钠",
+   "nameEn": "phytic acid (inositol hexaphosphoric acid), sodium phytate",
+   "cns": "04.006,04.025",
+   "ins": "391,&mdash;",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "植物炭黑",
+   "nameEn": "vegetable carbon",
+   "cns": "08.138",
+   "ins": "153",
+   "functions": "着色剂"
+  },
+  {
+   "name": "竹叶抗氧化物",
+   "nameEn": "antioxidant of bamboo leaves",
+   "cns": "04.019",
+   "ins": "&mdash;",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "紫草红",
+   "nameEn": "gromwell red",
+   "cns": "08.140",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "紫甘薯色素",
+   "nameEn": "purple sweet potato colour",
+   "cns": "08.154",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "紫胶（又名虫胶）",
+   "nameEn": "shellac",
+   "cns": "14.001",
+   "ins": "904",
+   "functions": "被膜剂，胶姆糖基础剂、着色剂"
+  },
+  {
+   "name": "紫胶红（又名虫胶红）",
+   "nameEn": "lac dye red (lac red)",
+   "cns": "08.104",
+   "ins": "&mdash;",
+   "functions": "着色剂"
+  },
+  {
+   "name": "混合三烯生育酚浓缩物",
+   "nameEn": "Mixed tocotrienol tocopherol concentrate",
+   "cns": "",
+   "ins": "",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "羟基酪醇",
+   "nameEn": "Hydroxytyrosol",
+   "cns": "",
+   "ins": "",
+   "functions": "抗氧化剂"
+  },
+  {
+   "name": "氧化镁",
+   "nameEn": "Magnesium oxide",
+   "cns": "",
+   "ins": "",
+   "functions": "固化剂"
+  }
+ ]
+}

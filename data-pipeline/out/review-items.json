@@ -1,8 +1,8 @@
 {
-  "version": "2026.08.30-1",
-  "generatedAt": "2026-08-30T13:09:03.220Z",
-  "totalEntries": 66,
-  "pendingCount": 48,
+  "version": "2026.08.31-cfsa-full",
+  "generatedAt": "2026-08-30T23:37:58.394Z",
+  "totalEntries": 217,
+  "pendingCount": 199,
   "items": [
     {
       "id": "INS250",
@@ -89,7 +89,8 @@
       "name": "脱氢乙酸钠",
       "aliases": [
         "脱氢醋酸钠",
-        "脱氢醋酸"
+        "脱氢醋酸",
+        "脱氢乙酸"
       ],
       "ins": "266",
       "category": "防腐剂",
@@ -116,7 +117,9 @@
       "id": "INS282",
       "name": "丙酸钙",
       "aliases": [
-        "丙酸钠"
+        "丙酸钠",
+        "丙酸",
+        "钙盐"
       ],
       "ins": "282",
       "category": "防腐剂",
@@ -147,7 +150,9 @@
         "尼泊金甲酯",
         "尼泊金乙酯",
         "尼泊金丙酯",
-        "羟苯甲酯"
+        "羟苯甲酯",
+        "对羟基苯甲酸甲酯钠",
+        "对羟基苯甲酸乙酯钠"
       ],
       "ins": "218",
       "category": "防腐剂",
@@ -320,7 +325,8 @@
       "name": "阿斯巴甜",
       "aliases": [
         "阿斯帕坦",
-        "甜味素"
+        "甜味素",
+        "天门冬酰苯丙氨酸甲酯"
       ],
       "ins": "951",
       "category": "甜味剂",
@@ -374,7 +380,8 @@
       "id": "INS952",
       "name": "甜蜜素",
       "aliases": [
-        "环己基氨基磺酸钠"
+        "环己基氨基磺酸钠",
+        "环己基氨基磺酸钙"
       ],
       "ins": "952",
       "category": "甜味剂",
@@ -452,7 +459,9 @@
     {
       "id": "INS961",
       "name": "纽甜",
-      "aliases": [],
+      "aliases": [
+        "N-[N-（3，3-二甲基丁基）]-L-α-天门冬氨-L-苯丙氨酸1-甲酯"
+      ],
       "ins": "961",
       "category": "甜味剂",
       "func": "高强度代糖",
@@ -528,7 +537,8 @@
       "id": "INS965",
       "name": "麦芽糖醇",
       "aliases": [
-        "氢化麦芽糖"
+        "氢化麦芽糖",
+        "麦芽糖醇液"
       ],
       "ins": "965",
       "category": "甜味剂",
@@ -555,7 +565,8 @@
       "id": "INS420",
       "name": "山梨糖醇",
       "aliases": [
-        "山梨醇"
+        "山梨醇",
+        "山梨糖醇液"
       ],
       "ins": "420",
       "category": "甜味剂",
@@ -582,7 +593,8 @@
       "id": "INS102",
       "name": "柠檬黄",
       "aliases": [
-        "酒石黄"
+        "酒石黄",
+        "柠檬黄铝色淀"
       ],
       "ins": "102",
       "category": "着色剂",
@@ -608,7 +620,9 @@
     {
       "id": "INS110",
       "name": "日落黄",
-      "aliases": [],
+      "aliases": [
+        "日落黄铝色淀"
+      ],
       "ins": "110",
       "category": "着色剂",
       "func": "人工色素（橙黄色）",
@@ -634,7 +648,8 @@
       "id": "INS124",
       "name": "胭脂红",
       "aliases": [
-        "丽春红4R"
+        "丽春红4R",
+        "胭脂红铝色淀"
       ],
       "ins": "124",
       "category": "着色剂",
@@ -660,7 +675,8 @@
       "id": "INS129",
       "name": "诱惑红",
       "aliases": [
-        "艳丽红"
+        "艳丽红",
+        "诱惑红铝色淀"
       ],
       "ins": "129",
       "category": "着色剂",
@@ -685,7 +701,9 @@
     {
       "id": "INS133",
       "name": "亮蓝",
-      "aliases": [],
+      "aliases": [
+        "亮蓝铝色淀"
+      ],
       "ins": "133",
       "category": "着色剂",
       "func": "人工色素（蓝色）",
@@ -709,7 +727,9 @@
     {
       "id": "INS123",
       "name": "苋菜红",
-      "aliases": [],
+      "aliases": [
+        "苋菜红铝色淀"
+      ],
       "ins": "123",
       "category": "着色剂",
       "func": "人工色素（紫红色）",
@@ -842,7 +862,23 @@
       "id": "INS338",
       "name": "磷酸",
       "aliases": [
-        "正磷酸"
+        "正磷酸",
+        "焦磷酸二氢二钠",
+        "磷酸二氢钙",
+        "磷酸二氢钾",
+        "磷酸氢二铵",
+        "磷酸氢二钾",
+        "磷酸氢钙",
+        "磷酸三钙",
+        "磷酸三钾",
+        "磷酸三钠",
+        "多聚磷酸钠",
+        "磷酸二氢钠",
+        "磷酸氢二钠",
+        "焦磷酸四钾",
+        "焦磷酸一氢三钠",
+        "聚偏磷酸钾",
+        "酸式焦磷酸钙"
       ],
       "ins": "338",
       "category": "酸度调节剂",
@@ -869,7 +905,14 @@
       "name": "聚氧乙烯山梨醇酐单油酸酯",
       "aliases": [
         "吐温80",
-        "聚山梨酯80"
+        "聚山梨酯80",
+        "聚氧乙烯（20）山梨醇酐单月桂酸酯",
+        "吐温20",
+        "聚氧乙烯（20）山梨醇酐单棕榈酸酯",
+        "吐温40",
+        "聚氧乙烯（20）山梨醇酐单硬脂酸酯",
+        "吐温60",
+        "聚氧乙烯（20）山梨醇酐单油酸酯"
       ],
       "ins": "433",
       "category": "乳化剂",
@@ -1069,9 +1112,10 @@
       "name": "起酥油",
       "aliases": [
         "酥油",
-        "白油"
+        "白油",
+        "液体石蜡"
       ],
-      "ins": null,
+      "ins": "905a",
       "category": "风险原料",
       "func": "起酥（反式脂肪风险）",
       "level": "warning",
@@ -1187,7 +1231,7 @@
         "瓜拉纳",
         "瓜拉纳提取物"
       ],
-      "ins": null,
+      "ins": "&mdash;",
       "category": "功能成分",
       "func": "提神（功能饮料、可乐）",
       "level": "notice",
@@ -1305,6 +1349,3741 @@
       "confidence": "high",
       "reviewReasons": [
         "成人分级为 danger"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.008",
+      "name": "阿拉伯胶",
+      "aliases": [],
+      "ins": "414",
+      "category": "增稠剂",
+      "func": "增稠剂、其他",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.018",
+      "name": "β－阿朴－8’－胡萝卜素醛",
+      "aliases": [],
+      "ins": "160e",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS19.026",
+      "name": "爱德万甜",
+      "aliases": [
+        "N-{N-[3-（3-羟基-4-甲氧基苯基）丙基]-L-α-天冬氨酰}-L-苯丙氨酸-1-甲酯"
+      ],
+      "ins": "969",
+      "category": "甜味剂",
+      "func": "甜味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "提供甜味，热量低或无热量，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS12.007",
+      "name": "氨基乙酸",
+      "aliases": [
+        "甘氨酸"
+      ],
+      "ins": "640",
+      "category": "增味剂",
+      "func": "增味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增强鲜味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.033",
+      "name": "铵磷脂",
+      "aliases": [],
+      "ins": "442",
+      "category": "乳化剂",
+      "func": "乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS14.008",
+      "name": "巴西棕榈蜡",
+      "aliases": [],
+      "ins": "903",
+      "category": "被膜剂",
+      "func": "被膜剂、抗结剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "在食品表面形成保护膜，保鲜防粘，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS13.003",
+      "name": "L-半胱氨酸盐酸盐",
+      "aliases": [],
+      "ins": "920",
+      "category": "面粉处理剂",
+      "func": "面粉处理剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "改善面粉加工性能，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS00.014",
+      "name": "半乳甘露聚糖",
+      "aliases": [
+        "维多酚",
+        "简称“TP”",
+        "红曲红",
+        "几丁质",
+        "酪朊酸钠",
+        "二苯醚",
+        "壳聚糖",
+        "癸酸甘油酯",
+        "新红",
+        "新红铝色淀",
+        "富兰克胶",
+        "虫胶红"
+      ],
+      "ins": "&mdash;",
+      "category": "其他",
+      "func": "其他",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "国标允许使用的食品添加剂，按规定使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.107",
+      "name": "冰乙酸",
+      "aliases": [
+        "冰醋酸"
+      ],
+      "ins": "260",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS18.004",
+      "name": "丙二醇",
+      "aliases": [],
+      "ins": "1520",
+      "category": "其他",
+      "func": "稳定剂和凝固剂、抗结剂、乳化剂、水分保持剂、增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "国标允许使用的食品添加剂，按规定使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.020",
+      "name": "丙二醇脂肪酸酯",
+      "aliases": [],
+      "ins": "477",
+      "category": "乳化剂",
+      "func": "乳化剂、稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.003",
+      "name": "赤藓红及其铝色淀",
+      "aliases": [
+        "赤藓红",
+        "赤藓红铝色淀"
+      ],
+      "ins": "127",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS18.010",
+      "name": "刺梧桐胶",
+      "aliases": [],
+      "ins": "416",
+      "category": "稳定剂",
+      "func": "稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "保持食品结构稳定，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.041",
+      "name": "刺云实胶",
+      "aliases": [],
+      "ins": "417",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.039",
+      "name": "醋酸酯淀粉",
+      "aliases": [],
+      "ins": "1420",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.043",
+      "name": "达瓦树胶",
+      "aliases": [],
+      "ins": "419",
+      "category": "乳化剂",
+      "func": "乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.013",
+      "name": "淀粉磷酸酯钠",
+      "aliases": [
+        "淀粉磷酸酯",
+        "磷酸酯淀粉",
+        "单淀粉磷酸酯"
+      ],
+      "ins": "1410",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.008",
+      "name": "靛蓝及其铝色淀",
+      "aliases": [
+        "靛蓝",
+        "靛蓝铝色淀"
+      ],
+      "ins": "132",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS17.033",
+      "name": "二甲基二碳酸盐",
+      "aliases": [
+        "维果灵"
+      ],
+      "ins": "242",
+      "category": "防腐剂",
+      "func": "防腐剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "抑制微生物繁殖、延长保质期，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS17.014",
+      "name": "二氧化碳",
+      "aliases": [],
+      "ins": "290",
+      "category": "防腐剂",
+      "func": "防腐剂、其他",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "抑制微生物繁殖、延长保质期，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.017",
+      "name": "番茄红素",
+      "aliases": [],
+      "ins": "160d(i),160d(iii)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS14.013",
+      "name": "蜂蜡",
+      "aliases": [],
+      "ins": "901",
+      "category": "被膜剂",
+      "func": "被膜剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "在食品表面形成保护膜，保鲜防粘，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.110",
+      "name": "富马酸",
+      "aliases": [],
+      "ins": "297",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.311",
+      "name": "富马酸一钠",
+      "aliases": [],
+      "ins": "365",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS19.012,19.010,19.025",
+      "name": "甘草酸盐",
+      "aliases": [
+        "甘草酸铵",
+        "甘草酸一钾",
+        "甘草酸三钾"
+      ],
+      "ins": "958",
+      "category": "甜味剂",
+      "func": "甜味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "提供甜味，热量低或无热量，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS15.014",
+      "name": "甘油",
+      "aliases": [
+        "丙三醇"
+      ],
+      "ins": "422",
+      "category": "水分保持剂",
+      "func": "水分保持剂、乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "保持肉制品水分和嫩度，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS19.017",
+      "name": "D-甘露糖醇",
+      "aliases": [],
+      "ins": "421",
+      "category": "甜味剂",
+      "func": "甜味剂、乳化剂、膨松剂、稳定剂、增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "提供甜味，热量低或无热量，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS02.009",
+      "name": "硅酸钙",
+      "aliases": [],
+      "ins": "552",
+      "category": "抗结剂",
+      "func": "抗结剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止粉状食品结块，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.010",
+      "name": "海藻酸丙二醇酯",
+      "aliases": [],
+      "ins": "405",
+      "category": "增稠剂",
+      "func": "增稠剂、乳化剂、稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.046",
+      "name": "海藻酸钙",
+      "aliases": [
+        "褐藻酸钙"
+      ],
+      "ins": "404",
+      "category": "增稠剂",
+      "func": "增稠剂、稳定剂和凝固剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.005",
+      "name": "海藻酸钾",
+      "aliases": [
+        "褐藻酸钾"
+      ],
+      "ins": "402",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.148",
+      "name": "核黄素",
+      "aliases": [],
+      "ins": "101(i),101(iii)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.122",
+      "name": "黑加仑红",
+      "aliases": [],
+      "ins": "163(iii)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.038",
+      "name": "琥珀酸单甘油酯",
+      "aliases": [],
+      "ins": "472g",
+      "category": "乳化剂",
+      "func": "乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS12.005",
+      "name": "琥珀酸二钠",
+      "aliases": [],
+      "ins": "364(ii)",
+      "category": "增味剂",
+      "func": "增味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增强鲜味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS18.011",
+      "name": "α-环状糊精",
+      "aliases": [],
+      "ins": "457",
+      "category": "稳定剂",
+      "func": "稳定剂、增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "保持食品结构稳定，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS18.012",
+      "name": "γ-环状糊精",
+      "aliases": [],
+      "ins": "458",
+      "category": "稳定剂",
+      "func": "稳定剂、增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "保持食品结构稳定，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.024",
+      "name": "β-环状糊精",
+      "aliases": [],
+      "ins": "459",
+      "category": "增稠剂",
+      "func": "增稠剂、其他",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS12.003",
+      "name": "5’-肌苷酸二钠",
+      "aliases": [],
+      "ins": "631",
+      "category": "增味剂",
+      "func": "增味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增强鲜味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.109",
+      "name": "己二酸",
+      "aliases": [],
+      "ins": "355",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS04.013",
+      "name": "4-己基间苯二酚",
+      "aliases": [],
+      "ins": "586",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.043",
+      "name": "甲基纤维素",
+      "aliases": [],
+      "ins": "461",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.110",
+      "name": "焦糖色（加氨生产）",
+      "aliases": [],
+      "ins": "150c",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.151",
+      "name": "焦糖色（苛性硫酸盐法）",
+      "aliases": [],
+      "ins": "150b",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.108",
+      "name": "焦糖色（普通法）",
+      "aliases": [],
+      "ins": "150a",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.109",
+      "name": "焦糖色（亚硫酸铵法）",
+      "aliases": [],
+      "ins": "150d",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.027",
+      "name": "结冷胶",
+      "aliases": [],
+      "ins": "418",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.111,01.313",
+      "name": "L（+）-酒石酸",
+      "aliases": [
+        "dl-酒石酸"
+      ],
+      "ins": "334,&mdash;",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS06.007",
+      "name": "酒石酸氢钾",
+      "aliases": [],
+      "ins": "336",
+      "category": "膨松剂",
+      "func": "膨松剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让面制品疏松多孔，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS03.007",
+      "name": "聚二甲基硅氧烷及其乳液",
+      "aliases": [
+        "聚二甲基硅氧烷",
+        "聚二甲基硅氧烷乳液"
+      ],
+      "ins": "900a",
+      "category": "被膜剂",
+      "func": "被膜剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "在食品表面形成保护膜，保鲜防粘，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.029",
+      "name": "聚甘油蓖麻醇酸酯",
+      "aliases": [
+        "PGPR"
+      ],
+      "ins": "476",
+      "category": "乳化剂",
+      "func": "乳化剂、稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.022",
+      "name": "聚甘油脂肪酸酯",
+      "aliases": [],
+      "ins": "475",
+      "category": "乳化剂",
+      "func": "乳化剂、稳定剂、增稠剂、抗结剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.022",
+      "name": "聚葡萄糖",
+      "aliases": [],
+      "ins": "1200",
+      "category": "增稠剂",
+      "func": "增稠剂、膨松剂、水分保持剂、稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS18.014",
+      "name": "聚天冬氨酸钾",
+      "aliases": [],
+      "ins": "456",
+      "category": "其他",
+      "func": "稳定剂和凝固剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "国标允许使用的食品添加剂，按规定使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS14.012",
+      "name": "聚乙二醇",
+      "aliases": [],
+      "ins": "1521",
+      "category": "被膜剂",
+      "func": "被膜剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "在食品表面形成保护膜，保鲜防粘，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS14.010",
+      "name": "聚乙烯醇",
+      "aliases": [],
+      "ins": "1203",
+      "category": "被膜剂",
+      "func": "被膜剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "在食品表面形成保护膜，保鲜防粘，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.045",
+      "name": "决明胶",
+      "aliases": [],
+      "ins": "427",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS04.009",
+      "name": "抗坏血酸钙",
+      "aliases": [],
+      "ins": "302",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS04.011",
+      "name": "抗坏血酸棕榈酸酯",
+      "aliases": [],
+      "ins": "304",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.042",
+      "name": "可得然胶",
+      "aliases": [],
+      "ins": "424",
+      "category": "其他",
+      "func": "稳定剂和凝固剂、增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "国标允许使用的食品添加剂，按规定使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.016",
+      "name": "喹啉黄及其铝色淀",
+      "aliases": [
+        "喹啉黄",
+        "喹啉黄铝色淀"
+      ],
+      "ins": "104",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.106",
+      "name": "辣椒红",
+      "aliases": [],
+      "ins": "160c(ii)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS00.012",
+      "name": "辣椒油树脂",
+      "aliases": [],
+      "ins": "160c(i)",
+      "category": "增味剂",
+      "func": "增味剂、着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增强鲜味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.017",
+      "name": "磷酸化二淀粉磷酸酯",
+      "aliases": [],
+      "ins": "1413",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.034",
+      "name": "磷酸酯双淀粉",
+      "aliases": [],
+      "ins": "1412",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS04.012",
+      "name": "硫代二丙酸二月桂酯",
+      "aliases": [],
+      "ins": "389",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS00.021",
+      "name": "硫酸镁",
+      "aliases": [],
+      "ins": "518",
+      "category": "其他",
+      "func": "其他",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "国标允许使用的食品添加剂，按规定使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS18.002",
+      "name": "氯化钙",
+      "aliases": [],
+      "ins": "509",
+      "category": "其他",
+      "func": "稳定剂和凝固剂、增稠剂、其他",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "国标允许使用的食品添加剂，按规定使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS00.008",
+      "name": "氯化钾",
+      "aliases": [],
+      "ins": "508",
+      "category": "其他",
+      "func": "其他",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "国标允许使用的食品添加剂，按规定使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS18.003",
+      "name": "氯化镁",
+      "aliases": [],
+      "ins": "511",
+      "category": "其他",
+      "func": "稳定剂和凝固剂、增味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "国标允许使用的食品添加剂，按规定使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS04.017",
+      "name": "迷迭香提取物",
+      "aliases": [],
+      "ins": "392",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.002",
+      "name": "明胶",
+      "aliases": [],
+      "ins": "428",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.041",
+      "name": "木松香甘油酯",
+      "aliases": [],
+      "ins": "445(iii)",
+      "category": "乳化剂",
+      "func": "乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS12.002",
+      "name": "5’-鸟苷酸二钠",
+      "aliases": [],
+      "ins": "627",
+      "category": "增味剂",
+      "func": "增味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增强鲜味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.304",
+      "name": "柠檬酸钾",
+      "aliases": [],
+      "ins": "332(ii)",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS02.010",
+      "name": "柠檬酸铁铵",
+      "aliases": [],
+      "ins": "381",
+      "category": "抗结剂",
+      "func": "抗结剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止粉状食品结块，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.306",
+      "name": "柠檬酸一钠",
+      "aliases": [],
+      "ins": "331(i)",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.032",
+      "name": "柠檬酸脂肪酸甘油酯",
+      "aliases": [],
+      "ins": "472c",
+      "category": "乳化剂",
+      "func": "乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.314",
+      "name": "DL-苹果酸钠",
+      "aliases": [],
+      "ins": "350（ii）",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.309",
+      "name": "DL-苹果酸",
+      "aliases": [],
+      "ins": "296",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.105",
+      "name": "偏酒石酸",
+      "aliases": [],
+      "ins": "353",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.135",
+      "name": "葡萄皮红",
+      "aliases": [],
+      "ins": "163(ii)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.312",
+      "name": "葡萄糖酸钠",
+      "aliases": [],
+      "ins": "576",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS09.005",
+      "name": "葡萄糖酸亚铁",
+      "aliases": [],
+      "ins": "579",
+      "category": "护色剂",
+      "func": "护色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "保持肉制品色泽，国标对使用范围限制严格",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS14.011",
+      "name": "普鲁兰多糖",
+      "aliases": [],
+      "ins": "1204",
+      "category": "被膜剂",
+      "func": "被膜剂、增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "在食品表面形成保护膜，保鲜防粘，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.014",
+      "name": "羟丙基淀粉",
+      "aliases": [],
+      "ins": "1440",
+      "category": "增稠剂",
+      "func": "增稠剂、膨松剂、乳化剂、稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.016",
+      "name": "羟丙基二淀粉磷酸酯",
+      "aliases": [],
+      "ins": "1442",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.028",
+      "name": "羟丙基甲基纤维素",
+      "aliases": [
+        "HPMC"
+      ],
+      "ins": "464",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS00.017",
+      "name": "羟基硬脂精",
+      "aliases": [
+        "氧化硬脂精"
+      ],
+      "ins": "387",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.202",
+      "name": "氢氧化钙",
+      "aliases": [],
+      "ins": "526",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.203",
+      "name": "氢氧化钾",
+      "aliases": [],
+      "ins": "525",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.001",
+      "name": "琼脂",
+      "aliases": [],
+      "ins": "406",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS17.035",
+      "name": "溶菌酶",
+      "aliases": [],
+      "ins": "1105",
+      "category": "防腐剂",
+      "func": "防腐剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "抑制微生物繁殖、延长保质期，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.102",
+      "name": "乳酸",
+      "aliases": [],
+      "ins": "270",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.310",
+      "name": "乳酸钙",
+      "aliases": [],
+      "ins": "327",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂、抗氧化剂、乳化剂、稳定剂和凝固剂、增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS15.011",
+      "name": "乳酸钾",
+      "aliases": [],
+      "ins": "326",
+      "category": "水分保持剂",
+      "func": "水分保持剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "保持肉制品水分和嫩度，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS15.012",
+      "name": "乳酸钠",
+      "aliases": [],
+      "ins": "325",
+      "category": "水分保持剂",
+      "func": "水分保持剂、酸度调节剂、抗氧化剂、膨松剂、增稠剂、稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "保持肉制品水分和嫩度，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.031",
+      "name": "乳酸脂肪酸甘油酯",
+      "aliases": [],
+      "ins": "472b",
+      "category": "乳化剂",
+      "func": "乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS19.014",
+      "name": "乳糖醇",
+      "aliases": [
+        "4－β－D吡喃半乳糖－D－山梨醇"
+      ],
+      "ins": "966",
+      "category": "乳化剂",
+      "func": "乳化剂、稳定剂、增稠剂、甜味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.024,10.008,10.003,10.004,10.005",
+      "name": "司盘类",
+      "aliases": [
+        "山梨醇酐单月桂酸酯",
+        "司盘20",
+        "山梨醇酐单棕榈酸酯",
+        "司盘40",
+        "山梨醇酐单硬脂酸酯",
+        "司盘60",
+        "山梨醇酐三硬脂酸酯",
+        "司盘65",
+        "山梨醇酐单油酸酯",
+        "司盘80"
+      ],
+      "ins": "493,495,491,492,494",
+      "category": "乳化剂",
+      "func": "乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS17.013",
+      "name": "双乙酸钠",
+      "aliases": [
+        "二醋酸钠"
+      ],
+      "ins": "262(ii)",
+      "category": "防腐剂",
+      "func": "防腐剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "抑制微生物繁殖、延长保质期，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.010",
+      "name": "双乙酰酒石酸单双甘油酯",
+      "aliases": [
+        "DATEM"
+      ],
+      "ins": "472e",
+      "category": "乳化剂",
+      "func": "乳化剂、增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.032",
+      "name": "酸处理淀粉",
+      "aliases": [],
+      "ins": "1401",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.013",
+      "name": "酸性红",
+      "aliases": [
+        "偶氮玉红"
+      ],
+      "ins": "122",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS19.020",
+      "name": "索马甜",
+      "aliases": [],
+      "ins": "957",
+      "category": "甜味剂",
+      "func": "甜味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "提供甜味，热量低或无热量，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS06.009",
+      "name": "碳酸铵",
+      "aliases": [],
+      "ins": "503(i)",
+      "category": "膨松剂",
+      "func": "膨松剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让面制品疏松多孔，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS13.006",
+      "name": "碳酸钙",
+      "aliases": [
+        "轻质碳酸钙",
+        "重质碳酸钙"
+      ],
+      "ins": "170(i)",
+      "category": "膨松剂",
+      "func": "膨松剂、面粉处理剂、稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让面制品疏松多孔，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.301",
+      "name": "碳酸钾",
+      "aliases": [],
+      "ins": "501(i)",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS13.005",
+      "name": "碳酸镁",
+      "aliases": [
+        "轻质碳酸镁",
+        "重质碳酸镁"
+      ],
+      "ins": "504(i)",
+      "category": "面粉处理剂",
+      "func": "面粉处理剂、膨松剂、稳定剂、抗结剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "改善面粉加工性能，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.302",
+      "name": "碳酸钠",
+      "aliases": [],
+      "ins": "500(i)",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS06.002",
+      "name": "碳酸氢铵",
+      "aliases": [],
+      "ins": "503(ii)",
+      "category": "膨松剂",
+      "func": "膨松剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让面制品疏松多孔，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.307",
+      "name": "碳酸氢钾",
+      "aliases": [],
+      "ins": "501(ii)",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.305",
+      "name": "碳酸氢三钠",
+      "aliases": [
+        "倍半碳酸钠"
+      ],
+      "ins": "500(iii)",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS19.013",
+      "name": "阿力甜",
+      "aliases": [
+        "L-α-天冬氨酰-N-（2，2，4，4-四甲基-3-硫化三亚甲基）-D-丙氨酰胺"
+      ],
+      "ins": "956",
+      "category": "甜味剂",
+      "func": "甜味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "提供甜味，热量低或无热量，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS19.021",
+      "name": "天门冬酰苯丙氨酸甲酯乙酰磺胺酸",
+      "aliases": [],
+      "ins": "962",
+      "category": "甜味剂",
+      "func": "甜味剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "提供甜味，热量低或无热量，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.147",
+      "name": "天然胡萝卜素",
+      "aliases": [],
+      "ins": "160a(ii)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.101",
+      "name": "甜菜红",
+      "aliases": [],
+      "ins": "162",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS02.005",
+      "name": "微晶纤维素",
+      "aliases": [],
+      "ins": "460(i)",
+      "category": "抗结剂",
+      "func": "抗结剂、增稠剂、稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止粉状食品结块，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS04.016",
+      "name": "维生素E",
+      "aliases": [
+        "dl-α-生育酚",
+        "d-α-生育酚",
+        "混合生育酚浓缩物"
+      ],
+      "ins": "307",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS17.028",
+      "name": "稳定态二氧化氯",
+      "aliases": [],
+      "ins": "926",
+      "category": "防腐剂",
+      "func": "防腐剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "抑制微生物繁殖、延长保质期，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS02.012",
+      "name": "纤维素",
+      "aliases": [],
+      "ins": "460",
+      "category": "抗结剂",
+      "func": "抗结剂、稳定剂和凝固剂、增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止粉状食品结块，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS09.001,09.003",
+      "name": "硝酸钠",
+      "aliases": [
+        "硝酸钾"
+      ],
+      "ins": "251,252",
+      "category": "护色剂",
+      "func": "护色剂、防腐剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "保持肉制品色泽，国标对使用范围限制严格",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.030",
+      "name": "辛烯基琥珀酸淀粉钠",
+      "aliases": [],
+      "ins": "1450",
+      "category": "乳化剂",
+      "func": "乳化剂，其他",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.145",
+      "name": "胭脂虫红及其铝色淀",
+      "aliases": [
+        "胭脂虫红",
+        "胭脂虫红铝色淀"
+      ],
+      "ins": "120",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.144",
+      "name": "胭脂树橙",
+      "aliases": [
+        "红木素",
+        "降红木素"
+      ],
+      "ins": "160b",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS01.108",
+      "name": "盐酸",
+      "aliases": [],
+      "ins": "507",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.030",
+      "name": "氧化淀粉",
+      "aliases": [],
+      "ins": "1404",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.014,08.015",
+      "name": "氧化铁黑",
+      "aliases": [
+        "氧化铁红"
+      ],
+      "ins": "172(i),172(ii)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.146",
+      "name": "叶黄素",
+      "aliases": [],
+      "ins": "161b(i)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.153",
+      "name": "叶绿素铜",
+      "aliases": [],
+      "ins": "141(i)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.009,08.155",
+      "name": "叶绿素铜钠盐",
+      "aliases": [
+        "叶绿素铜钾盐"
+      ],
+      "ins": "141(ii)",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS18.005",
+      "name": "乙二胺四乙酸二钠",
+      "aliases": [],
+      "ins": "386",
+      "category": "稳定剂",
+      "func": "稳定剂、凝固剂、抗氧化剂、防腐剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "保持食品结构稳定，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS04.020",
+      "name": "乙二胺四乙酸二钠钙",
+      "aliases": [],
+      "ins": "385",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS00.013",
+      "name": "乙酸钠",
+      "aliases": [
+        "醋酸钠"
+      ],
+      "ins": "262(i)",
+      "category": "酸度调节剂",
+      "func": "酸度调节剂、防腐剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "调节酸碱度、改善风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.015",
+      "name": "乙酰化二淀粉磷酸酯",
+      "aliases": [],
+      "ins": "1414",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS20.031",
+      "name": "乙酰化双淀粉己二酸酯",
+      "aliases": [],
+      "ins": "1422",
+      "category": "增稠剂",
+      "func": "增稠剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "增加黏稠度、改善口感，多为天然来源多糖，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS17.010",
+      "name": "乙氧基喹",
+      "aliases": [],
+      "ins": "324",
+      "category": "防腐剂",
+      "func": "防腐剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "抑制微生物繁殖、延长保质期，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS04.004,04.018",
+      "name": "D-异抗坏血酸及其钠盐",
+      "aliases": [
+        "D-异抗坏血酸",
+        "D-异抗坏血酸钠"
+      ],
+      "ins": "315,316",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂、护色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS14.009",
+      "name": "硬脂酸",
+      "aliases": [
+        "十八烷酸"
+      ],
+      "ins": "570",
+      "category": "被膜剂",
+      "func": "被膜剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "在食品表面形成保护膜，保鲜防粘，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS02.006",
+      "name": "硬脂酸镁",
+      "aliases": [],
+      "ins": "470(iii)",
+      "category": "乳化剂",
+      "func": "乳化剂、抗结剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.011,10.009",
+      "name": "硬脂酰乳酸钠",
+      "aliases": [
+        "硬脂酰乳酸钙"
+      ],
+      "ins": "481(i),482(i)",
+      "category": "乳化剂",
+      "func": "乳化剂、稳定剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.042",
+      "name": "皂树皮提取物",
+      "aliases": [],
+      "ins": "999",
+      "category": "乳化剂",
+      "func": "乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS10.001",
+      "name": "蔗糖脂肪酸酯",
+      "aliases": [],
+      "ins": "473",
+      "category": "乳化剂",
+      "func": "乳化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "让油和水均匀混合不分层，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.112",
+      "name": "栀子黄",
+      "aliases": [],
+      "ins": "164",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.123",
+      "name": "栀子蓝",
+      "aliases": [],
+      "ins": "165",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS04.006,04.025",
+      "name": "植酸",
+      "aliases": [
+        "肌醇六磷酸",
+        "植酸钠"
+      ],
+      "ins": "391,&mdash;",
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS08.138",
+      "name": "植物炭黑",
+      "aliases": [],
+      "ins": "153",
+      "category": "着色剂",
+      "func": "着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "赋予食品色泽，国标对使用范围和限量有严格规定",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "CNS14.001",
+      "name": "紫胶",
+      "aliases": [
+        "虫胶"
+      ],
+      "ins": "904",
+      "category": "被膜剂",
+      "func": "被膜剂，胶姆糖基础剂、着色剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "在食品表面形成保护膜，保鲜防粘，安全性高",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "NAME-混合三烯生育酚浓缩物",
+      "name": "混合三烯生育酚浓缩物",
+      "aliases": [],
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "NAME-羟基酪醇",
+      "name": "羟基酪醇",
+      "aliases": [],
+      "category": "抗氧化剂",
+      "func": "抗氧化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "防止油脂氧化哈败，保持食品风味，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
+      ],
+      "decision": null,
+      "adjustedLevel": null,
+      "adjustedChildLevel": null,
+      "reviewerNote": ""
+    },
+    {
+      "id": "NAME-氧化镁",
+      "name": "氧化镁",
+      "aliases": [],
+      "category": "固化剂",
+      "func": "固化剂",
+      "level": "safe",
+      "childLevel": "safe",
+      "explain": "使食品保持形态稳定，国标限量内使用安全",
+      "childExplain": "国标允许使用的添加剂，合规剂量下儿童可食用",
+      "sources": [
+        "GB2760",
+        "CFSA官方数据库"
+      ],
+      "confidence": "medium",
+      "reviewReasons": [
+        "置信度 medium"
       ],
       "decision": null,
       "adjustedLevel": null,

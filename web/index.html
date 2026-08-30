@@ -158,6 +158,22 @@
     <div class="card">
       <div class="disclaimer">本结果为配料成分风险提示与信息参考，依据公开国家标准与规则引擎得出，不构成医疗、诊断或治疗建议。营养需求因人而异，过敏体质请务必以产品包装标识为准，必要时请咨询医生或注册营养师。</div>
     </div>
+    <div class="card" id="fbCard">
+      <div style="font-weight:600;margin-bottom:6px">结果有误？帮我们纠错</div>
+      <div id="fbForm">
+        <select id="fbType" style="width:100%;padding:8px;margin-bottom:6px;border:1px solid #ddd;border-radius:8px">
+          <option value="ocr">成分识别错了（OCR 认错字）</option>
+          <option value="level">风险分级不对</option>
+          <option value="explain">解释内容不对</option>
+          <option value="missing">漏掉了某个成分</option>
+          <option value="other">其他问题</option>
+        </select>
+        <input id="fbIngredient" placeholder="涉及成分（选填）" style="width:100%;padding:8px;margin-bottom:6px;border:1px solid #ddd;border-radius:8px;box-sizing:border-box">
+        <textarea id="fbNote" rows="2" placeholder="简单说说哪里不对（选填）" style="width:100%;padding:8px;margin-bottom:8px;border:1px solid #ddd;border-radius:8px;box-sizing:border-box"></textarea>
+        <button class="btn" onclick="submitFeedback()">提交纠错</button>
+      </div>
+      <div id="fbDone" style="display:none" class="tiny muted">已收到，感谢！纠错数据会进入营养师审核队列，核实后更新知识库。</div>
+    </div>
     <button class="btn" onclick="showView('home')" style="margin-bottom:10px">再分析一个</button>
     <button class="btn btn-ghost" onclick="showView('home')">返回首页</button>
   </div>
@@ -234,6 +250,8 @@ const store = {
   set profile(v) { localStorage.setItem('plx_profile', JSON.stringify(v)) },
   get history() { try { return JSON.parse(localStorage.getItem('plx_history')) || [] } catch { return [] } },
   pushHistory(item) { const h = store.history; h.unshift(item); store.history = h.slice(0, 50) },
+  get feedback() { try { return JSON.parse(localStorage.getItem('plx_feedback')) || [] } catch { return [] } },
+  set feedback(v) { localStorage.setItem('plx_feedback', JSON.stringify(v)) },
   set history(v) { localStorage.setItem('plx_history', JSON.stringify(v)) }
 };
 
@@ -259,7 +277,32 @@ function analyze(ingredients, productName) {
   }, 1900);
 }
 
+let currentResult = null;
+
+function submitFeedback() {
+  const fb = {
+    ts: Date.now(),
+    type: document.getElementById('fbType').value,
+    ingredient: document.getElementById('fbIngredient').value.trim(),
+    note: document.getElementById('fbNote').value.trim(),
+    product: currentResult?.name || '',
+    ingredients: currentResult?.ingredients || [],
+    verdict: currentResult?.result?.verdict || '',
+    profile: store.profile
+  };
+  const all = store.feedback;
+  all.push(fb);
+  store.feedback = all;
+  document.getElementById('fbForm').style.display = 'none';
+  document.getElementById('fbDone').style.display = '';
+}
+
 function renderResult(name, r, ingredients) {
+  currentResult = { name, result: r, ingredients: ingredients || [] };
+  document.getElementById('fbForm').style.display = '';
+  document.getElementById('fbDone').style.display = 'none';
+  document.getElementById('fbIngredient').value = '';
+  document.getElementById('fbNote').value = '';
   const ui = VERDICT_UI[r.verdict] || VERDICT_UI.caution;
   const banner = document.getElementById('verdictBanner');
   banner.style.background = ui.color;

@@ -19,7 +19,11 @@ const CONDITIONS = [
   { id: 'obesity', label: '肥胖/减重' },
   { id: 'obesity_child', label: '儿童肥胖' },
   { id: 'ckd', label: '慢性肾病' },
-  { id: 'hyperuricemia', label: '高尿酸/痛风' }
+  { id: 'hyperuricemia', label: '高尿酸/痛风' },
+  { id: 'diabetes', label: '糖尿病' },
+  { id: 'hypertension', label: '高血压' },
+  { id: 'hyperlipidemia', label: '高血脂' },
+  { id: 'growth_retardation', label: '儿童生长迟缓' }
 ]
 
 function roleLabel(id) {
